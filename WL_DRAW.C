@@ -1,7 +1,7 @@
 // WL_DRAW.C
 
 #include "WL_DEF.H"
-#include <DOS.H>
+//#include <DOS.H>
 #pragma hdrstop
 
 //#define DEBUGWALLS
@@ -48,15 +48,15 @@ fixed	mindist		= MINDIST;
 //
 // math tables
 //
-int			pixelangle[MAXVIEWWIDTH];
-long		far finetangent[FINEANGLES/4];
-fixed 		far sintable[ANGLES+ANGLES/4],far *costable = sintable+(ANGLES/4);
+int		pixelangle[MAXVIEWWIDTH];
+long		finetangent[FINEANGLES/4];
+fixed 		sintable[ANGLES+ANGLES/4],*costable = sintable+(ANGLES/4);
 
 //
 // refresh variables
 //
 fixed	viewx,viewy;			// the focal point
-int		viewangle;
+int	viewangle;
 fixed	viewsin,viewcos;
 
 
@@ -138,46 +138,10 @@ void AsmRefresh (void);			// in WL_DR_A.ASM
 
 #pragma warn -rvl			// I stick the return value in with ASMs
 
+#define FRACBITS 16
 fixed FixedByFrac (fixed a, fixed b)
 {
-//
-// setup
-//
-asm	mov	si,[WORD PTR b+2]	// sign of result = sign of fraction
-
-asm	mov	ax,[WORD PTR a]
-asm	mov	cx,[WORD PTR a+2]
-
-asm	or	cx,cx
-asm	jns	aok:				// negative?
-asm	neg	cx
-asm	neg	ax
-asm	sbb	cx,0
-asm	xor	si,0x8000			// toggle sign of result
-aok:
-
-//
-// multiply  cx:ax by bx
-//
-asm	mov	bx,[WORD PTR b]
-asm	mul	bx					// fraction*fraction
-asm	mov	di,dx				// di is low word of result
-asm	mov	ax,cx				//
-asm	mul	bx					// units*fraction
-asm add	ax,di
-asm	adc	dx,0
-
-//
-// put result dx:ax in 2's complement
-//
-asm	test	si,0x8000		// is the result negative?
-asm	jz	ansok:
-asm	neg	dx
-asm	neg	ax
-asm	sbb	dx,0
-
-ansok:;
-
+	return ((int64_t) a * (int64_t) b) >> FRACBITS;
 }
 
 #pragma warn +rvl
@@ -252,6 +216,7 @@ void TransformActor (objtype *ob)
 //
 // calculate height (heightnumerator/(nx>>8))
 //
+	/*
 	asm	mov	ax,[WORD PTR heightnumerator]
 	asm	mov	dx,[WORD PTR heightnumerator+2]
 	asm	idiv	[WORD PTR nx+1]			// nx>>8
@@ -259,6 +224,8 @@ void TransformActor (objtype *ob)
 	asm	mov	[WORD PTR temp+2],dx
 
 	ob->viewheight = temp;
+	*/
+	ob->viewheight = heightnumerator/(nx>>8);
 }
 
 //==========================================================================
@@ -325,6 +292,7 @@ boolean TransformTile (int tx, int ty, int *dispx, int *dispheight)
 //
 // calculate height (heightnumerator/(nx>>8))
 //
+	/*
 	asm	mov	ax,[WORD PTR heightnumerator]
 	asm	mov	dx,[WORD PTR heightnumerator+2]
 	asm	idiv	[WORD PTR nx+1]			// nx>>8
@@ -332,7 +300,8 @@ boolean TransformTile (int tx, int ty, int *dispx, int *dispheight)
 	asm	mov	[WORD PTR temp+2],dx
 
 	*dispheight = temp;
-
+	*/
+	*dispheight = heightnumerator/(nx>>8);
 //
 // see if it should be grabbed
 //
@@ -377,9 +346,12 @@ int	CalcHeight (void)
 	if (nx<mindist)
 		nx=mindist;			// don't let divide overflow
 
+	/*
 	asm	mov	ax,[WORD PTR heightnumerator]
 	asm	mov	dx,[WORD PTR heightnumerator+2]
 	asm	idiv	[WORD PTR nx+1]			// nx>>8
+	*/
+	return heightnumerator/(nx>>8);
 }
 
 
@@ -397,8 +369,10 @@ long		postsource;
 unsigned	postx;
 unsigned	postwidth;
 
-void	near ScalePost (void)		// VGA version
+void	ScalePost (void)		// VGA version
 {
+	PRINT_UNIMPLEMENTED;
+	/*
 	asm	mov	ax,SCREENSEG
 	asm	mov	es,ax
 
@@ -455,6 +429,7 @@ heightok:
 nomore:
 	asm	mov	ax,ss
 	asm	mov	ds,ax
+	*/
 }
 
 void  FarScalePost (void)				// just so other files can call
@@ -500,7 +475,7 @@ void HitVertWall (void)
 		else
 		{
 			ScalePost ();
-			(unsigned)postsource = texture;
+			postsource = texture;
 			postwidth = 1;
 			postx = pixx;
 		}
@@ -1335,6 +1310,8 @@ void WallRefresh (void)
 
 void	ThreeDRefresh (void)
 {
+	PRINT_UNIMPLEMENTED;
+	/*
 	int tracedir;
 
 // this wouldn't need to be done except for my debugger/video wierdness
@@ -1396,6 +1373,7 @@ asm	rep stosw
 
 	frameon++;
 	PM_NextFrame();
+	*/
 }
 
 

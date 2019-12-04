@@ -1,26 +1,29 @@
 // ID_GLOB.H
 
 
-#include <ALLOC.H>
-#include <CTYPE.H>
-#include <DOS.H>
-#include <ERRNO.H>
-#include <FCNTL.H>
-#include <IO.H>
-#include <MEM.H>
-#include <PROCESS.H>
-#include <STDIO.H>
-#include <STDLIB.H>
-#include <STRING.H>
-#include <SYS\STAT.H>
-#include <VALUES.H>
-#include <DIR.H>
+//#include <ALLOC.H>
+#include <ctype.h>
+//#include <DOS.H>
+#include <errno.h>
+#include <fcntl.h>
+//#include <IO.H>
+//#include <MEM.H>
+//#include <PROCESS.H>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+//#include <SYS\STAT.H>
+#include <values.h>
+//#include <DIR.H>
+#include <stdbool.h>
 #define __ID_GLOB__
 #include "VERSION.H"
 
 //--------------------------------------------------------------------------
 
-extern	char		far signon;
+extern char		signon;
+extern int              _argc;
+extern char**           _argv;
 
 #define	introscn	signon
 
@@ -65,11 +68,11 @@ extern	char		far signon;
 //	v1.0d1
 //
 
-typedef	enum	{false,true}	boolean;
-typedef	unsigned	char		byte;
-typedef	unsigned	int			word;
+typedef bool                            boolean;
+typedef	unsigned	char            byte;
+typedef	unsigned	int		word;
 typedef	unsigned	long		longword;
-typedef	byte *					Ptr;
+typedef	byte*				Ptr;
 
 typedef	struct
 		{
@@ -121,3 +124,4 @@ extern	byte		fontcolor,backcolor;
 
 #define SETFONTCOLOR(f,b) fontcolor=f;backcolor=b;
 
+#define PRINT_UNIMPLEMENTED fprintf(stderr, "implement %s", __PRETTY_FUNCTION__)

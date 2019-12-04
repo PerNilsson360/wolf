@@ -1,0 +1,5568 @@
+
+WOLFGTV.H,97
+#define GOODTIMES3,32
+#define ARTSEXTERN4,50
+#define DEMOSEXTERN5,69
+#define CARMACIZED8,128
+
+WL_INTER.C,1604
+void ClearSplitVWB 17,196
+void EndScreen 37,580
+void EndSpear(50,817
+void Victory 108,1998
+#define RATIOX	115,2091
+#define RATIOY	116,2108
+#define TIMEX	117,2126
+#define TIMEY	118,2143
+void PG13 310,5601
+void Write(331,5937
+void BJ_Breathe(392,6941
+LRstruct LevelRatios[LevelRatios424,7354
+LRstruct LevelRatios[LevelRatios426,7385
+void LevelCompleted 429,7419
+	#define VBLWAIT	431,7448
+	#define PAR_AMOUNT	432,7468
+	#define PERCENT100AMT	433,7492
+			float time;::time435,7539
+			char timestr[::timestr436,7554
+			} times;437,7574
+	 #define RATIOXX	688,12068
+	 #define RATIOXX	690,12098
+boolean PreloadUpdate(972,17075
+void PreloadGraphics(995,17525
+void	DrawHighScores(1030,18087
+void	CheckHighScore 1195,21019
+void NonShareware(1272,22341
+char 	far CopyProFailedStrs[CopyProFailedStrs1321,23232
+		far BackDoorStrs[BackDoorStrs1350,23514
+		far GoodBoyStrs[GoodBoyStrs1362,23652
+		far bossstrs[bossstrs1383,24001
+		far WordStr[WordStr1390,24122
+		far	WordCorrect[WordCorrect1397,24240
+		far MemberStr[MemberStr1399,24290
+		far MemberCorrect[MemberCorrect1415,24458
+		far DosMessages[DosMessages1422,24592
+		far MiscTitle[MiscTitle1433,24749
+		far MiscStr[MiscStr1440,24863
+		far MiscCorrect[MiscCorrect1458,25045
+int  BackDoor(1461,25099
+void CopyProtection(1485,25427
+#define TYPEBOX_Y	1487,25455
+#define TYPEBOX_BKGD	1488,25478
+#define PRINTCOLOR	1489,25504
+		debriefing,::debriefing1501,25845
+		checkmanual,::checkmanual1502,25859
+		staffquiz,::staffquiz1503,25874
+		miscquiz,::miscquiz1504,25887
+		totaltypes::totaltypes1506,25900
+
+WL_GAME.C,1173
+boolean		ingame,28,473
+boolean		ingame,fizzlein;28,473
+unsigned	latchpics[latchpics29,499
+gametype	gamestate;30,533
+long		spearx,32,554
+long		spearx,speary;32,554
+unsigned	spearangle;33,575
+boolean		spearflag;34,596
+int ElevatorBackTo[ElevatorBackTo39,663
+	fixed	globalsoundx,74,1512
+	fixed	globalsoundx,globalsoundy;74,1512
+	int		leftchannel,75,1546
+	int		leftchannel,rightchannel;75,1546
+#define ATABLEMAX 76,1578
+byte righttable[righttable77,1599
+byte lefttable[lefttable94,3042
+SetSoundLoc(113,4490
+void PlaySoundLocGlobal(170,5573
+void UpdateSoundLoc(181,5764
+void ClearMemory 203,6007
+void ScanInfoPlane 221,6226
+void SetupGameLevel 625,11949
+void DrawPlayBorderSides 777,14438
+void DrawAllPlayBorderSides 800,14811
+void DrawAllPlayBorder 820,15054
+void DrawPlayBorder 841,15288
+void DrawPlayScreen 868,15758
+#define MAXDEMOSIZE	912,16334
+void StartDemoRecord 914,16360
+char	demoname[demoname935,16704
+void FinishDemoRecord 937,16735
+void RecordDemo 979,17460
+void PlayDemo 1044,18433
+#define DEATHROTATE 1112,19570
+void Died 1114,19593
+void GameLoop 1238,21882
+#define FROMSECRET1	1398,24619
+#define FROMSECRET2	1399,24642
+
+MAPSWL6.H,2724
+		WOLF1_MAP1_MAP,::WOLF1_MAP1_MAP11,148
+		WOLF1_MAP2_MAP,::WOLF1_MAP2_MAP12,180
+		WOLF1_MAP3_MAP,::WOLF1_MAP3_MAP13,212
+		WOLF1_MAP4_MAP,::WOLF1_MAP4_MAP14,244
+		WOLF1_MAP5_MAP,::WOLF1_MAP5_MAP15,276
+		WOLF1_MAP6_MAP,::WOLF1_MAP6_MAP16,308
+		WOLF1_MAP7_MAP,::WOLF1_MAP7_MAP17,340
+		WOLF1_MAP8_MAP,::WOLF1_MAP8_MAP18,372
+		WOLF1_BOSS_MAP,::WOLF1_BOSS_MAP19,404
+		WOLF1_SECRET_MAP,::WOLF1_SECRET_MAP20,436
+		WOLF2_MAP1_MAP,::WOLF2_MAP1_MAP21,468
+		WOLF2_MAP2_MAP,::WOLF2_MAP2_MAP22,501
+		WOLF2_MAP3_MAP,::WOLF2_MAP3_MAP23,534
+		WOLF2_MAP4_MAP,::WOLF2_MAP4_MAP24,567
+		WOLF2_MAP5_MAP,::WOLF2_MAP5_MAP25,600
+		WOLF2_MAP6_MAP,::WOLF2_MAP6_MAP26,633
+		WOLF2_MAP7_MAP,::WOLF2_MAP7_MAP27,666
+		WOLF2_MAP8_MAP,::WOLF2_MAP8_MAP28,699
+		WOLF2_BOSS_MAP,::WOLF2_BOSS_MAP29,732
+		WOLF2_SECRET_MAP,::WOLF2_SECRET_MAP30,765
+		WOLF3_MAP1_MAP,::WOLF3_MAP1_MAP31,798
+		WOLF3_MAP2_MAP,::WOLF3_MAP2_MAP32,831
+		WOLF3_MAP3_MAP,::WOLF3_MAP3_MAP33,864
+		WOLF3_MAP4_MAP,::WOLF3_MAP4_MAP34,897
+		WOLF3_MAP5_MAP,::WOLF3_MAP5_MAP35,930
+		WOLF3_MAP6_MAP,::WOLF3_MAP6_MAP36,963
+		WOLF3_MAP7_MAP,::WOLF3_MAP7_MAP37,996
+		WOLF3_MAP8_MAP,::WOLF3_MAP8_MAP38,1029
+		WOLF3_BOSS_MAP,::WOLF3_BOSS_MAP39,1062
+		WOLF3_SECRET_MAP,::WOLF3_SECRET_MAP40,1095
+		WOLF4_MAP_1_MAP,::WOLF4_MAP_1_MAP41,1128
+		WOLF4_MAP_2_MAP,::WOLF4_MAP_2_MAP42,1161
+		WOLF4_MAP_3_MAP,::WOLF4_MAP_3_MAP43,1194
+		WOLF4_MAP_4_MAP,::WOLF4_MAP_4_MAP44,1227
+		WOLF4_MAP_5_MAP,::WOLF4_MAP_5_MAP45,1260
+		WOLF4_MAP_6_MAP,::WOLF4_MAP_6_MAP46,1293
+		WOLF4_MAP_7_MAP,::WOLF4_MAP_7_MAP47,1326
+		WOLF4_MAP_8_MAP,::WOLF4_MAP_8_MAP48,1359
+		WOLF4_BOSS_MAP,::WOLF4_BOSS_MAP49,1392
+		WOLF4_SECRET_MAP,::WOLF4_SECRET_MAP50,1425
+		WOLF5_MAP_1_MAP,::WOLF5_MAP_1_MAP51,1458
+		WOLF5_MAP_2_MAP,::WOLF5_MAP_2_MAP52,1491
+		WOLF5_MAP_3_MAP,::WOLF5_MAP_3_MAP53,1524
+		WOLF5_MAP_4_MAP,::WOLF5_MAP_4_MAP54,1557
+		WOLF5_MAP_5_MAP,::WOLF5_MAP_5_MAP55,1590
+		WOLF5_MAP_6_MAP,::WOLF5_MAP_6_MAP56,1623
+		WOLF5_MAP_7_MAP,::WOLF5_MAP_7_MAP57,1656
+		WOLF5_MAP_8_MAP,::WOLF5_MAP_8_MAP58,1689
+		WOLF5_BOSS_MAP,::WOLF5_BOSS_MAP59,1722
+		WOLF5_SECRET_MAP,::WOLF5_SECRET_MAP60,1755
+		WOLF6_MAP_1_MAP,::WOLF6_MAP_1_MAP61,1788
+		WOLF6_MAP_2_MAP,::WOLF6_MAP_2_MAP62,1821
+		WOLF6_MAP_3_MAP,::WOLF6_MAP_3_MAP63,1854
+		WOLF6_MAP_4_MAP,::WOLF6_MAP_4_MAP64,1887
+		WOLF6_MAP_5_MAP,::WOLF6_MAP_5_MAP65,1920
+		WOLF6_MAP_6_MAP,::WOLF6_MAP_6_MAP66,1953
+		WOLF6_MAP_7_MAP,::WOLF6_MAP_7_MAP67,1986
+		WOLF6_MAP_8_MAP,::WOLF6_MAP_8_MAP68,2019
+		WOLF6_BOSS_MAP,::WOLF6_BOSS_MAP69,2052
+		WOLF6_SECRET_MAP,::WOLF6_SECRET_MAP70,2085
+		MAP4L10PATH_MAP,::MAP4L10PATH_MAP71,2118
+		LASTMAP::LASTMAP72,2151
+	     } mapnames;73,2161
+
+WL_AGENT.C,1553
+#define MAXMOUSETURN	15,241
+#define MOVESCALE	18,267
+#define BACKMOVESCALE	19,291
+#define ANGLESCALE	20,318
+boolean		running;35,560
+long		thrustspeed;36,578
+unsigned	plux,38,598
+unsigned	plux,pluy;38,598
+int			anglefrac;40,662
+int			gotgatgun;41,679
+objtype		*LastAttacker;LastAttacker43,703
+statetype s_player 57,976
+statetype s_attack 58,1029
+long	playerxmove,61,1084
+long	playerxmove,playerymove;61,1084
+struct atkinf63,1115
+	char	tics,atkinf::tics65,1131
+	char	tics,attack,atkinf::attack65,1131
+	char	tics,attack,frame;atkinf::frame65,1131
+} attackinfo[attackinfo66,1193
+int	strafeangle[strafeangle76,1375
+void CheckWeaponChange 117,2138
+void ControlMovement 149,2704
+void StatusDrawPic 244,4243
+void DrawFace 270,4692
+#define FACETICS	303,5189
+int	facecount;305,5210
+void	UpdateFace 307,5226
+void	LatchNumber 337,5593
+void	DrawHealth 372,5998
+void	TakeDamage 386,6124
+void	HealSelf 434,6754
+void	DrawLevel 457,7057
+void	DrawLives 478,7341
+void	GiveExtraMan 492,7467
+void	DrawScore 510,7720
+void	GivePoints 523,7842
+void DrawWeapon 544,8172
+void DrawKeys 558,8310
+void GiveWeapon 581,8603
+void	DrawAmmo 603,8917
+void	GiveAmmo 617,9037
+void GiveKey 643,9443
+void GetBonus 667,9759
+boolean TryMove 801,11917
+void ClipMove 866,12903
+void VictoryTile 910,13642
+void Thrust 928,13805
+void Cmd_Fire 983,14736
+void Cmd_Use 1008,15183
+void SpawnPlayer 1100,16845
+void	KnifeAttack 1133,17600
+void	GunAttack 1168,18142
+void VictorySpin 1255,19538
+void	T_Attack 1293,20103
+void	T_Player 1393,22000
+
+WL_ACT1.C,1124
+statobj_t	statobjlist[statobjlist15,232
+statobj_t	statobjlist[MAXSTATS],*laststatobj;laststatobj15,232
+	int		picnum;::picnum20,289
+	stat_t	type;::type21,303
+} statinfo[statinfo22,317
+void InitStaticList 124,3087
+void SpawnStatic 139,3210
+void PlaceItemType 199,4364
+#define DOORWIDTH	269,6093
+#define OPENTICS	270,6118
+doorobj_t	doorobjlist[doorobjlist272,6140
+doorobj_t	doorobjlist[MAXDOORS],*lastdoorobj;lastdoorobj272,6140
+int			doornum;273,6186
+unsigned	doorposition[doorposition275,6202
+byte		far areaconnect[areaconnect278,6303
+boolean		areabyplayer[areabyplayer280,6347
+void RecursiveConnect 293,6501
+void ConnectAreas 308,6701
+void InitAreas 316,6861
+void InitDoorList 332,7037
+void SpawnDoor 350,7264
+void OpenDoor 400,8356
+void CloseDoor 417,8618
+void OperateDoor 498,10269
+void DoorOpen 538,10848
+void DoorOpening 554,11013
+void DoorClosing 617,12099
+void MoveDoors 686,13214
+unsigned	pwallstate;719,13760
+unsigned	pwallpos;720,13781
+unsigned	pwallx,721,13850
+unsigned	pwallx,pwally;721,13850
+int			pwalldir;722,13874
+void PushWall 732,13945
+void MovePWalls 809,15172
+
+MAPSSOD.H,914
+		TUNNELS_1_MAP,::TUNNELS_1_MAP11,148
+		TUNNELS_2_MAP,::TUNNELS_2_MAP12,180
+		TUNNELS_3_MAP,::TUNNELS_3_MAP13,212
+		TUNNELS_4_MAP,::TUNNELS_4_MAP14,244
+		TUNNEL_BOSS_MAP,::TUNNEL_BOSS_MAP15,276
+		DUNGEONS_1_MAP,::DUNGEONS_1_MAP16,308
+		DUNGEONS_2_MAP,::DUNGEONS_2_MAP17,340
+		DUNGEONS_3_MAP,::DUNGEONS_3_MAP18,372
+		DUNGEONS_4_MAP,::DUNGEONS_4_MAP19,404
+		DUNGEON_BOSS_MAP,::DUNGEON_BOSS_MAP20,436
+		CASTLE_1_MAP,::CASTLE_1_MAP21,468
+		CASTLE_2_MAP,::CASTLE_2_MAP22,501
+		CASTLE_3_MAP,::CASTLE_3_MAP23,534
+		CASTLE_4_MAP,::CASTLE_4_MAP24,567
+		CASTLE_5_MAP,::CASTLE_5_MAP25,600
+		CASTLE_BOSS_MAP,::CASTLE_BOSS_MAP26,633
+		RAMPARTS_MAP,::RAMPARTS_MAP27,666
+		DEATH_KNIGHT_MAP,::DEATH_KNIGHT_MAP28,699
+		SECRET_1_MAP,::SECRET_1_MAP29,732
+		SECRET_2_MAP,::SECRET_2_MAP30,765
+		ANGEL_OF_DEATH_MAP,::ANGEL_OF_DEATH_MAP31,798
+		LASTMAP::LASTMAP32,831
+	     } mapnames;33,841
+
+WOLF1VER.H,94
+#define ARTSEXTERN2,16
+#define DEMOSEXTERN3,35
+#define CARMACIZED6,94
+#define UPLOAD7,113
+
+WL_DEBUG.C,545
+#define VIEWTILEX	15,258
+#define VIEWTILEY	16,291
+int	maporgx;38,728
+int	maporgy;39,741
+enum {mapview,::mapview40,754
+enum {mapview,tilemapview,::tilemapview40,754
+enum {mapview,tilemapview,actoratview,::actoratview40,754
+enum {mapview,tilemapview,actoratview,visview}::visview40,754
+enum {mapview,tilemapview,actoratview,visview}	viewtype;40,754
+void DebugMemory 54,976
+void CountObjects 86,1568
+void PicturePause 137,2446
+void ShapeTest 217,3525
+int DebugKeys 415,7325
+void OverheadRefresh 611,10835
+void ViewMap 669,11768
+
+ID_HEADS.H,722
+#define __ID_GLOB__19,315
+#define	introscn	28,519
+#define GREXT	63,993
+typedef bool                            boolean;71,1087
+typedef	unsigned	char            byte;72,1136
+typedef	unsigned	int		word;73,1175
+typedef	unsigned	long		longword;74,1203
+typedef	byte*				Ptr;75,1236
+			int	x,::x79,1278
+			int	x,y;::y79,1278
+		} Point;80,1290
+			Point	ul,::ul83,1320
+			Point	ul,lr;::lr83,1320
+		} Rect;84,1336
+#define	nil	86,1347
+#define	PORTTILESWIDE	105,1638
+#define	PORTTILESHIGH	106,1705
+#define UPDATEWIDE	108,1768
+#define UPDATEHIGH	109,1803
+#define	MAXTICS	111,1839
+#define DEMOTICS	112,1861
+#define	UPDATETERMINATE	114,1883
+#define SETFONTCOLOR(125,2142
+#define PRINT_UNIMPLEMENTED 127,2194
+
+ID_SD.C,5343
+#undef	nil44,1008
+#define	nil	46,1026
+#define	SDL_SoundFinished(48,1041
+#define	sbOut(51,1138
+#define	sbIn(52,1186
+#define	sbWriteDelay(53,1229
+#define	sbReadDelay(54,1286
+#define	selreg(57,1369
+#define	writereg(58,1408
+#define	readstat(59,1449
+	boolean		SoundSourcePresent,69,1724
+				AdLibPresent,70,1754
+				SoundBlasterPresent,71,1772
+				SoundBlasterPresent,SBProPresent,71,1772
+				NeedsDigitized,72,1810
+				NeedsDigitized,NeedsMusic,72,1810
+				SoundPositioned;73,1841
+	SDMode		SoundMode;74,1862
+	SMMode		MusicMode;75,1882
+	SDSMode		DigiMode;76,1902
+	longword	TimeCount;77,1922
+	word		HackCount;78,1943
+	word		*SoundTable;SoundTable79,1961
+	boolean		ssIsTandy;80,2031
+	word		ssPort 81,2052
+	int			DigiMap[DigiMap82,2071
+static	boolean			SD_Started;85,2121
+		boolean			nextsoundpos;86,2150
+		longword		TimerDivisor,87,2176
+		longword		TimerDivisor,TimerCount;87,2176
+static	char			*ParmStrings[ParmStrings88,2213
+		soundnames		SoundNumber,101,2427
+		soundnames		SoundNumber,DigiNumber;101,2427
+		word			SoundPriority,102,2465
+		word			SoundPriority,DigiPriority;102,2465
+		int				LeftPosition,103,2502
+		int				LeftPosition,RightPosition;103,2502
+		long			LocalTime;105,2579
+		word			TimerRate;106,2599
+		word			NumDigi,108,2620
+		word			NumDigi,DigiLeft,108,2620
+		word			NumDigi,DigiLeft,DigiPage;108,2620
+		word			_seg *DigiList;DigiList109,2656
+		word			DigiLastStart,110,2681
+		word			DigiLastStart,DigiLastEnd;110,2681
+		boolean			DigiPlaying;111,2717
+static	boolean			DigiMissed,112,2742
+static	boolean			DigiMissed,DigiLastSegment;112,2742
+static	memptr			DigiNextAddr;113,2787
+static	word			DigiNextLen;114,2817
+static	boolean					sbNoCheck,117,2871
+static	boolean					sbNoCheck,sbNoProCheck;117,2871
+static	volatile boolean		sbSamplePlaying;118,2914
+static	byte					sbOldIntMask 119,2956
+static	volatile byte			huge *sbNextSegPtr;sbNextSegPtr120,2991
+static	byte					sbDMA 121,3034
+								sba2Vals[sba2Vals124,3150
+								sba3Vals[sba3Vals125,3182
+static	int						sbLocation 126,3214
+static	volatile longword		sbNextSegLen;128,3343
+static	volatile SampledSound	huge *sbSamples;sbSamples129,3383
+static	byte					sbpOldFMMix,131,3476
+static	byte					sbpOldFMMix,sbpOldVOCMix;131,3476
+		boolean				ssNoCheck;134,3544
+		boolean				ssActive;135,3568
+		word				ssControl,136,3591
+		word				ssControl,ssStatus,136,3591
+		word				ssControl,ssStatus,ssData;136,3591
+		byte				ssOn,137,3628
+		byte				ssOn,ssOff;137,3628
+		volatile byte		far *ssSample;ssSample138,3650
+		volatile longword	ssLengthLeft;139,3682
+		volatile byte	pcLastSample,142,3739
+		volatile byte	pcLastSample,far *pcSound;pcSound142,3739
+		longword		pcLengthLeft;143,3782
+		word			pcSoundLookup[pcSoundLookup144,3808
+		boolean			alNoCheck;147,3857
+		byte			far *alSound;alSound148,3880
+		word			alBlock;149,3903
+		longword		alLengthLeft;150,3921
+		longword		alTimeCount;151,3947
+		Instrument		alZeroInst;152,3972
+static	byte			carriers[carriers155,4068
+						modifiers[modifiers156,4127
+						pcarriers[pcarriers158,4234
+						pmodifiers[pmodifiers159,4281
+		boolean			sqActive;162,4345
+static	word			alFXReg;163,4367
+static	ActiveTrack		*tracks[tracks164,4390
+						mytracks[mytracks165,4432
+static	word			sqMode,166,4461
+static	word			sqMode,sqFadeStep;166,4461
+		word			far *sqHack,sqHack167,4494
+		word			far *sqHack,far *sqHackPtr,sqHackPtr167,4494
+		word			far *sqHack,far *sqHackPtr,sqHackLen,167,4494
+		word			far *sqHack,far *sqHackPtr,sqHackLen,sqHackSeqLen;167,4494
+		long			sqHackTime;168,4554
+SDL_SetTimer0(180,4883
+SDL_SetIntsPerSec(208,5625
+SDL_SetTimerSpeed(215,5722
+SDL_SBStopSample(263,6558
+SDL_SBPlaySeg(296,7316
+SDL_SBService(346,8738
+SDL_SBPlaySample(383,9416
+SDL_PositionSBP(421,10268
+SDL_CheckSB(448,10812
+SDL_DetectSoundBlaster(499,12047
+SDL_SBSetDMA(534,12990
+SDL_StartSB(551,13425
+SDL_ShutSB(607,14832
+SDL_SSStopSample(637,15468
+SDL_SSService(653,15789
+SDL_SSPlaySample(702,16707
+SDL_StartSS(719,17079
+SDL_ShutSS(745,17688
+SDL_CheckSS(757,18033
+SDL_DetectSoundSource(808,19041
+SDL_PCPlaySample(830,19462
+SDL_PCStopSample(853,19893
+SDL_PCPlaySound(879,20348
+SDL_PCStopSound(901,20775
+SDL_PCService(922,21178
+SDL_ShutPC(977,22149
+SDL_LoadDigiSegment(995,22348
+SDL_PlayDigiSegment(1028,22883
+SD_StopDigitized(1045,23141
+SD_Poll(1084,23755
+SD_SetPosition(1109,24255
+SD_PlayDigitized(1130,24572
+SDL_DigitizedDone(1165,25261
+SD_SetDigiDevice(1193,25697
+SDL_SetupDigi(1235,26295
+alOut(1272,27178
+SDL_SetInstrument(1340,28104
+SDL_ALStopSound(1389,29187
+SDL_AlSetFXInst(1401,29298
+SDL_ALPlaySound(1433,30113
+SDL_ALSoundService(1471,30843
+SDL_ALService(1498,31150
+SDL_ShutAL(1532,31794
+SDL_CleanAL(1551,32157
+SDL_StartAL(1571,32511
+SDL_DetectAdLib(1585,32882
+SDL_t0Service(1631,33832
+SDL_ShutDevice(1723,35459
+SDL_CleanDevice(1743,35844
+SDL_StartDevice(1755,36192
+SD_SetSoundMode(1774,36582
+SD_SetMusicMode(1830,37553
+SD_Startup(1868,38185
+SD_Default(2012,41176
+SD_Shutdown(2063,42072
+SD_SetUserHook(2098,42659
+SD_PositionSound(2110,43015
+SD_PlaySound(2123,43377
+SD_SoundPlaying(2211,45055
+SD_StopSound(2237,45526
+SD_WaitSoundDone(2263,45991
+SD_MusicOn(2275,46254
+SD_MusicOff(2286,46522
+SD_StartMusic(2309,46947
+SD_FadeOutMusic(2334,47480
+SD_MusicPlaying(2352,47872
+
+ID_HEAD.H,503
+#define	EXTENSION	6,55
+#define WOLF7,79
+#define	TEXTGR	9,93
+#define	CGAGR	10,110
+#define	EGAGR	11,126
+#define	VGAGR	12,142
+#define GRMODE	14,159
+typedef	bool            boolean;18,203
+typedef	unsigned	char		byte;19,236
+typedef	unsigned	int			word;20,265
+typedef	unsigned	long		longword;21,294
+typedef	byte *					Ptr;22,327
+			int	x,::x26,371
+			int	x,y;::y26,371
+		} Point;27,383
+			Point	ul,::ul31,414
+			Point	ul,lr;::lr31,414
+		} Rect;32,430
+#define PRINT_UNIMPLEMENTED 37,496
+
+VERSION.H,97
+#define GOODTIMES3,32
+#define ARTSEXTERN4,50
+#define DEMOSEXTERN5,69
+#define CARMACIZED8,128
+
+ID_CA.C,2449
+#define THREEBYTEGRSTARTS23,456
+  unsigned bit0,::bit035,688
+  unsigned bit0,bit1;::bit135,688
+} huffnode;36,760
+	unsigned	RLEWtag;::RLEWtag41,791
+	long		headeroffsets[::headeroffsets42,810
+	byte		tileinfo[::tileinfo43,837
+} mapfiletype;44,856
+byte 		_seg	*tinf;tinf55,1062
+int			mapon;56,1081
+unsigned	_seg	*mapsegs[mapsegs58,1095
+maptype		_seg	*mapheaderseg[mapheaderseg59,1130
+byte		_seg	*audiosegs[audiosegs60,1168
+void		_seg	*grsegs[grsegs61,1205
+byte		far	grneeded[grneeded63,1237
+byte		ca_levelbit,64,1268
+byte		ca_levelbit,ca_levelnum;64,1268
+int			profilehandle,66,1300
+int			profilehandle,debughandle;66,1300
+char		audioname[audioname68,1334
+char extension[extension88,1743
+     gheadname[gheadname89,1815
+long		_seg *grstarts;grstarts99,2075
+long		_seg *audiostarts;audiostarts100,2144
+huffnode	*grhuffman;grhuffman103,2230
+huffnode	grhuffman[grhuffman105,2257
+huffnode	*audiohuffman;audiohuffman109,2315
+huffnode	audiohuffman[audiohuffman111,2345
+int			grhandle;115,2382
+int			maphandle;116,2421
+int			audiohandle;117,2471
+long		chunkcomplen,119,2519
+long		chunkcomplen,chunkexplen;119,2519
+SDMode		oldsoundmode;121,2552
+#define FILEPOSSIZE	130,2690
+long GRFILEPOS(132,2790
+#define FILEPOSSIZE	149,3001
+#define	GRFILEPOS(150,3023
+void CA_OpenDebug 171,3412
+void CA_CloseDebug 177,3528
+void CAL_GetGrChunkLength 195,3812
+boolean CA_FarRead 213,4121
+boolean CA_FarWrite 249,4752
+boolean CA_ReadFile 286,5405
+boolean CA_WriteFile 315,5827
+boolean CA_LoadFile 347,6281
+void CAL_OptimizeNodes 387,7025
+void CAL_HuffExpand 418,7511
+#define NEARTAG	606,10949
+#define FARTAG	607,10970
+void CAL_CarmackExpand 609,10991
+long CA_RLEWCompress 677,12116
+void CA_RLEWexpand 734,12947
+void CAL_SetupGrFile 861,14811
+void CAL_SetupMapFile 942,16459
+void CAL_SetupAudioFile 1026,18010
+void CA_Startup 1083,19136
+void CA_Shutdown 1113,19568
+void CA_CacheAudioChunk 1134,19862
+void CA_LoadAllSounds 1208,21297
+void CAL_ExpandGrChunk 1261,22117
+#define BLOCK	1272,22299
+#define MASKBLOCK	1273,22317
+void CA_CacheGrChunk 1318,23269
+void CA_CacheScreen 1381,24475
+void CA_CacheMap 1428,25496
+void CA_UpLevel 1506,27149
+void CA_DownLevel 1533,27610
+void CA_ClearMarks 1554,27958
+void CA_ClearAllMarks 1575,28257
+void CA_SetGrPurge 1595,28525
+void CA_SetAllPurge 1621,28805
+#define MAXEMPTYREAD	1649,29155
+void CA_CacheMarks 1651,29182
+void CA_CannotOpen(1760,31628
+
+ID_SD.H,3797
+#define	__ID_SD__9,122
+#define	__DEBUG_SoundMgr__14,186
+#define	TickBase	17,221
+					sdm_Off,::sdm_Off20,304
+					sdm_PC,::sdm_PC21,318
+					sdm_PC,sdm_AdLib,::sdm_AdLib21,318
+				}	SDMode;22,341
+					smm_Off,::smm_Off24,370
+					smm_Off,smm_AdLib::smm_AdLib24,370
+				}	SMMode;25,393
+					sds_Off,::sds_Off27,422
+					sds_Off,sds_PC,::sds_PC27,422
+					sds_Off,sds_PC,sds_SoundSource,::sds_SoundSource27,422
+					sds_Off,sds_PC,sds_SoundSource,sds_SoundBlaster::sds_SoundBlaster27,422
+				}	SDSMode;28,475
+			longword	length;::length31,509
+			word		priority;::priority32,529
+		} SoundCommon;33,548
+#define	pcTimer	36,584
+#define	pcTAccess	37,606
+#define	pcSpeaker	38,629
+#define	pcSpkBits	40,653
+			SoundCommon	common;::common44,693
+			byte		data[::data45,716
+		} PCSound;46,734
+#define	sbReset	49,848
+#define	sbFMStatus	50,876
+#define	sbFMAddr	51,906
+#define	sbFMData	52,934
+#define	sbReadData	53,962
+#define	sbWriteCmd	54,992
+#define	sbWriteData	55,1022
+#define	sbWriteStat	56,1053
+#define	sbDataAvail	57,1084
+#define	sbpLFMStatus	60,1202
+#define	sbpLFMAddr	61,1234
+#define	sbpLFMData	62,1265
+#define	sbpRFMStatus	63,1296
+#define	sbpRFMAddr	64,1328
+#define	sbpRFMData	65,1359
+#define	sbpMixerAddr	66,1390
+#define	sbpMixerData	67,1422
+#define	sbpCDData	68,1455
+#define	sbpCDCommand	69,1485
+#define	sbpCDStatus	70,1517
+#define	sbpCDReset	71,1549
+#define	sbpmReset	74,1606
+#define	sbpmVoiceVol	75,1630
+#define	sbpmMicMix	76,1656
+#define	sbpmFilterADC	77,1681
+#define	sbpmControl	78,1708
+#define	sbpmMasterVol	79,1734
+#define	sbpmFMVol	80,1761
+#define	sbpmCDVol	81,1785
+#define	sbpmLineVol	82,1809
+			SoundCommon	common;::common86,1855
+			word		hertz;::hertz87,1878
+			byte		bits,::bits88,1894
+						reference,::reference89,1909
+						data[::data90,1926
+		} SampledSound;91,1941
+#define	alFMStatus	94,1993
+#define	alFMAddr	95,2023
+#define	alFMData	96,2051
+#define	alChar	100,2120
+#define	alScale	101,2141
+#define	alAttack	102,2163
+#define	alSus	103,2185
+#define	alWave	104,2205
+#define	alFreqL	106,2243
+#define	alFreqH	107,2265
+#define	alFeedCon	108,2287
+#define	alEffects	110,2326
+			byte	mChar,::mChar114,2369
+			byte	mChar,cChar,::cChar114,2369
+					mScale,::mScale115,2390
+					mScale,cScale,::cScale115,2390
+					mAttack,::mAttack116,2410
+					mAttack,cAttack,::cAttack116,2410
+					mSus,::mSus117,2432
+					mSus,cSus,::cSus117,2432
+					mWave,::mWave118,2448
+					mWave,cWave,::cWave118,2448
+					nConn,::nConn119,2466
+					voice,::voice122,2543
+					mode,::mode123,2555
+					unused[::unused124,2566
+		} Instrument;125,2582
+			SoundCommon	common;::common129,2618
+			Instrument	inst;::inst130,2641
+			byte		block,::block131,2661
+						data[::data132,2677
+		} AdLibSound;133,2692
+#define	sqMaxTracks	138,2735
+#define	sqMaxMoods	139,2758
+#define	sev_Null	141,2789
+#define	sev_NoteOff	142,2825
+#define	sev_NoteOn	143,2868
+#define	sev_NotePitch	144,2909
+#define	sev_NewInst	145,2979
+#define	sev_NewPerc	146,3031
+#define	sev_PercOn	147,3094
+#define	sev_PercOff	148,3146
+#define	sev_SeqEnd	149,3200
+#define	sf_Melodic	152,3280
+#define	sf_Percussive	153,3302
+			word	length,::length158,3352
+					values[::values159,3368
+		} MusicGroup;160,3384
+			word	flags,::flags164,3425
+					count,::count165,3440
+					offsets[::offsets166,3452
+		} MusicGroup;167,3469
+			word        mood,::mood173,3562
+			word        mood, *moods[::moods173,3562
+			Instrument	inst;::inst176,3644
+			boolean		percussive;::percussive177,3664
+			word		*seq;::seq178,3688
+			longword	nextevent;::nextevent179,3703
+		} ActiveTrack;180,3726
+#define	sqmode_Normal	182,3744
+#define	sqmode_FadeIn	183,3769
+#define	sqmode_FadeOut	184,3794
+#define	sqMaxFade	186,3821
+
+AUDIOWL1.H,3858
+#define NUMSOUNDS	8,167
+#define NUMSNDCHUNKS	9,189
+		HITWALLSND,::HITWALLSND15,262
+		SELECTWPNSND,::SELECTWPNSND16,294
+		SELECTITEMSND,::SELECTITEMSND17,326
+		HEARTBEATSND,::HEARTBEATSND18,358
+		MOVEGUN2SND,::MOVEGUN2SND19,390
+		MOVEGUN1SND,::MOVEGUN1SND20,422
+		NOWAYSND,::NOWAYSND21,454
+		NAZIHITPLAYERSND,::NAZIHITPLAYERSND22,486
+		NAZIMISSSND,::NAZIMISSSND23,518
+		PLAYERDEATHSND,::PLAYERDEATHSND24,550
+		DOGDEATHSND,::DOGDEATHSND25,582
+		ATKGATLINGSND,::ATKGATLINGSND26,615
+		GETKEYSND,::GETKEYSND27,648
+		NOITEMSND,::NOITEMSND28,681
+		WALK1SND,::WALK1SND29,714
+		WALK2SND,::WALK2SND30,747
+		TAKEDAMAGESND,::TAKEDAMAGESND31,780
+		GAMEOVERSND,::GAMEOVERSND32,813
+		OPENDOORSND,::OPENDOORSND33,846
+		CLOSEDOORSND,::CLOSEDOORSND34,879
+		DONOTHINGSND,::DONOTHINGSND35,912
+		HALTSND,::HALTSND36,945
+		DEATHSCREAM2SND,::DEATHSCREAM2SND37,978
+		ATKKNIFESND,::ATKKNIFESND38,1011
+		ATKPISTOLSND,::ATKPISTOLSND39,1044
+		DEATHSCREAM3SND,::DEATHSCREAM3SND40,1077
+		ATKMACHINEGUNSND,::ATKMACHINEGUNSND41,1110
+		HITENEMYSND,::HITENEMYSND42,1143
+		SHOOTDOORSND,::SHOOTDOORSND43,1176
+		DEATHSCREAM1SND,::DEATHSCREAM1SND44,1209
+		GETMACHINESND,::GETMACHINESND45,1242
+		GETAMMOSND,::GETAMMOSND46,1275
+		SHOOTSND,::SHOOTSND47,1308
+		HEALTH1SND,::HEALTH1SND48,1341
+		HEALTH2SND,::HEALTH2SND49,1374
+		BONUS1SND,::BONUS1SND50,1407
+		BONUS2SND,::BONUS2SND51,1440
+		BONUS3SND,::BONUS3SND52,1473
+		GETGATLINGSND,::GETGATLINGSND53,1506
+		ESCPRESSEDSND,::ESCPRESSEDSND54,1539
+		LEVELDONESND,::LEVELDONESND55,1572
+		DOGBARKSND,::DOGBARKSND56,1605
+		ENDBONUS1SND,::ENDBONUS1SND57,1638
+		ENDBONUS2SND,::ENDBONUS2SND58,1671
+		BONUS1UPSND,::BONUS1UPSND59,1704
+		BONUS4SND,::BONUS4SND60,1737
+		PUSHWALLSND,::PUSHWALLSND61,1770
+		NOBONUSSND,::NOBONUSSND62,1803
+		PERCENT100SND,::PERCENT100SND63,1836
+		BOSSACTIVESND,::BOSSACTIVESND64,1869
+		BOSSDIESSND,::BOSSDIESSND65,1902
+		SCHUTZADSND,::SCHUTZADSND66,1935
+		AHHHGSND,::AHHHGSND67,1968
+		DIESND,::DIESND68,2001
+		EVASND,::EVASND69,2034
+		GUTENTAGSND,::GUTENTAGSND70,2067
+		LEBENSND,::LEBENSND71,2100
+		MUTTISND,::MUTTISND72,2133
+		NAZIFIRESND,::NAZIFIRESND73,2166
+		BOSSFIRESND,::BOSSFIRESND74,2199
+		SSFIRESND,::SSFIRESND75,2232
+		SLURPIESND,::SLURPIESND76,2265
+		TOT_HUNDSND,::TOT_HUNDSND77,2298
+		MEINGOTTSND,::MEINGOTTSND78,2331
+		SCHABBSHASND,::SCHABBSHASND79,2364
+		HILTERHASND,::HILTERHASND80,2397
+		SPIONSND,::SPIONSND81,2430
+		NEINSOVASSND,::NEINSOVASSND82,2463
+		DOGATTACKSND,::DOGATTACKSND83,2496
+		LASTSOUND::LASTSOUND84,2529
+	     } soundnames;85,2541
+#define STARTPCSOUNDS	90,2584
+#define STARTADLIBSOUNDS	91,2609
+#define STARTDIGISOUNDS	92,2637
+#define STARTMUSIC	93,2666
+		CORNER_MUS,::CORNER_MUS99,2737
+		DUNGEON_MUS,::DUNGEON_MUS100,2769
+		GETOUT_MUS,::GETOUT_MUS101,2801
+		GETTHEM_MUS,::GETTHEM_MUS102,2833
+		HEADACHE_MUS,::HEADACHE_MUS103,2865
+		HITLWLTZ_MUS,::HITLWLTZ_MUS104,2897
+		INTROCW3_MUS,::INTROCW3_MUS105,2929
+		NAZI_NOR_MUS,::NAZI_NOR_MUS106,2961
+		NAZI_OMI_MUS,::NAZI_OMI_MUS107,2993
+		POW_MUS,::POW_MUS108,3025
+		SALUTE_MUS,::SALUTE_MUS109,3057
+		SEARCHN_MUS,::SEARCHN_MUS110,3090
+		SUSPENSE_MUS,::SUSPENSE_MUS111,3123
+		VICTORS_MUS,::VICTORS_MUS112,3156
+		WONDERIN_MUS,::WONDERIN_MUS113,3189
+		FUNKYOU_MUS,::FUNKYOU_MUS114,3222
+		ENDLEVEL_MUS,::ENDLEVEL_MUS115,3255
+		GOINGAFT_MUS,::GOINGAFT_MUS116,3288
+		PREGNANT_MUS,::PREGNANT_MUS117,3321
+		ULTIMATE_MUS,::ULTIMATE_MUS118,3354
+		NAZI_RAP_MUS,::NAZI_RAP_MUS119,3387
+		ZEROHOUR_MUS,::ZEROHOUR_MUS120,3420
+		TWELFTH_MUS,::TWELFTH_MUS121,3453
+		ROSTER_MUS,::ROSTER_MUS122,3486
+		URAHERO_MUS,::URAHERO_MUS123,3519
+		VICMARCH_MUS,::VICMARCH_MUS124,3552
+		WARMRCH1_MUS,::WARMRCH1_MUS125,3585
+		LASTMUSIC::LASTMUSIC126,3618
+	     } musicnames;127,3630
+
+FOREIGN.H,2148
+#define QUITSUR	1,0
+#define CURGAME	4,73
+#define GAMESVD	8,171
+#define ENDGAMESTR	12,268
+#define STR_NG	16,375
+#define	STR_SD	17,401
+#define	STR_CL	18,424
+#define	STR_LG	19,449
+#define	STR_SG	20,476
+#define	STR_CV	21,503
+#define	STR_VS	22,532
+#define STR_EG	23,561
+#define	STR_BD	24,587
+#define STR_QT	25,617
+#define STR_LOADING	27,640
+#define STR_SAVING	28,670
+#define STR_GAME	30,699
+#define STR_DEMO	31,723
+#define STR_LGC	32,747
+#define STR_EMPTY	33,787
+#define STR_CALIB	34,813
+#define STR_JOYST	35,843
+#define STR_MOVEJOY	36,872
+#define STR_MOVEJOY2 37,945
+#define STR_ESCEXIT	38,1020
+#define STR_NONE	40,1055
+#define	STR_PC	41,1079
+#define	STR_ALSB	42,1108
+#define	STR_DISNEY	43,1147
+#define	STR_SB	44,1188
+#define	STR_MOUSEEN	46,1221
+#define	STR_JOYEN	47,1257
+#define	STR_PORT2	48,1294
+#define	STR_GAMEPAD	49,1334
+#define	STR_SENS	50,1379
+#define	STR_CUSTOM	51,1416
+#define	STR_DADDY	53,1457
+#define	STR_HURTME	54,1496
+#define	STR_BRINGEM	55,1532
+#define	STR_DEATH	56,1568
+#define	STR_MOUSEADJ	58,1611
+#define STR_SLOW	59,1659
+#define STR_FAST	60,1683
+#define	STR_CRUN	62,1708
+#define STR_COPEN	63,1731
+#define STR_CFIRE	64,1756
+#define STR_CSTRAFE	65,1781
+#define	STR_LEFT	67,1811
+#define	STR_RIGHT	68,1835
+#define	STR_FRWD	69,1861
+#define	STR_BKWD	70,1885
+#define	STR_THINK	71,1910
+#define STR_SIZE1	73,1940
+#define STR_SIZE2	74,1979
+#define STR_SIZE3	75,2015
+#define STR_YOUWIN	77,2050
+#define STR_TOTALTIME	79,2081
+#define STR_RATKILL	81,2117
+#define STR_RATSECRET 82,2154
+#define STR_RATTREASURE	83,2194
+#define STR_BONUS	85,2235
+#define STR_TIME	86,2261
+#define STR_PAR	87,2285
+#define STR_RAT2KILL 89,2310
+#define STR_RAT2SECRET 90,2360
+#define STR_RAT2TREASURE	91,2407
+#define STR_DEFEATED	93,2455
+#define STR_CHEATER1	95,2489
+#define STR_CHEATER2 96,2538
+#define STR_CHEATER3	97,2587
+#define STR_CHEATER4	98,2639
+#define STR_CHEATER5	99,2689
+#define STR_NOSPACE1	101,2735
+#define STR_NOSPACE2	102,2784
+#define STR_SAVECHT1	104,2835
+#define STR_SAVECHT2	105,2882
+#define STR_SAVECHT3	106,2934
+#define STR_SAVECHT4	107,2984
+#define	STR_SEEAGAIN	109,3024
+
+GFXV_WL6.H,6052
+		H_BJPIC=::H_BJPIC10,185
+		H_CASTLEPIC,::H_CASTLEPIC11,198
+		H_BLAZEPIC,::H_BLAZEPIC12,242
+		H_TOPWINDOWPIC,::H_TOPWINDOWPIC13,286
+		H_LEFTWINDOWPIC,::H_LEFTWINDOWPIC14,330
+		H_RIGHTWINDOWPIC,::H_RIGHTWINDOWPIC15,374
+		H_BOTTOMINFOPIC,::H_BOTTOMINFOPIC16,418
+		C_OPTIONSPIC,::C_OPTIONSPIC18,478
+		C_CURSOR1PIC,::C_CURSOR1PIC19,523
+		C_CURSOR2PIC,::C_CURSOR2PIC20,568
+		C_NOTSELECTEDPIC,::C_NOTSELECTEDPIC21,613
+		C_SELECTEDPIC,::C_SELECTEDPIC22,658
+		C_FXTITLEPIC,::C_FXTITLEPIC23,703
+		C_DIGITITLEPIC,::C_DIGITITLEPIC24,748
+		C_MUSICTITLEPIC,::C_MUSICTITLEPIC25,793
+		C_MOUSELBACKPIC,::C_MOUSELBACKPIC26,838
+		C_BABYMODEPIC,::C_BABYMODEPIC27,883
+		C_EASYPIC,::C_EASYPIC28,928
+		C_NORMALPIC,::C_NORMALPIC29,973
+		C_HARDPIC,::C_HARDPIC30,1018
+		C_LOADSAVEDISKPIC,::C_LOADSAVEDISKPIC31,1063
+		C_DISKLOADING1PIC,::C_DISKLOADING1PIC32,1108
+		C_DISKLOADING2PIC,::C_DISKLOADING2PIC33,1153
+		C_CONTROLPIC,::C_CONTROLPIC34,1198
+		C_CUSTOMIZEPIC,::C_CUSTOMIZEPIC35,1243
+		C_LOADGAMEPIC,::C_LOADGAMEPIC36,1288
+		C_SAVEGAMEPIC,::C_SAVEGAMEPIC37,1333
+		C_EPISODE1PIC,::C_EPISODE1PIC38,1378
+		C_EPISODE2PIC,::C_EPISODE2PIC39,1423
+		C_EPISODE3PIC,::C_EPISODE3PIC40,1468
+		C_EPISODE4PIC,::C_EPISODE4PIC41,1513
+		C_EPISODE5PIC,::C_EPISODE5PIC42,1558
+		C_EPISODE6PIC,::C_EPISODE6PIC43,1603
+		C_CODEPIC,::C_CODEPIC44,1648
+		C_TIMECODEPIC,::C_TIMECODEPIC45,1693
+		C_LEVELPIC,::C_LEVELPIC46,1738
+		C_NAMEPIC,::C_NAMEPIC47,1783
+		C_SCOREPIC,::C_SCOREPIC48,1828
+		C_JOY1PIC,::C_JOY1PIC49,1873
+		C_JOY2PIC,::C_JOY2PIC50,1918
+		L_GUYPIC,::L_GUYPIC52,1979
+		L_COLONPIC,::L_COLONPIC53,2024
+		L_NUM0PIC,::L_NUM0PIC54,2069
+		L_NUM1PIC,::L_NUM1PIC55,2114
+		L_NUM2PIC,::L_NUM2PIC56,2159
+		L_NUM3PIC,::L_NUM3PIC57,2204
+		L_NUM4PIC,::L_NUM4PIC58,2249
+		L_NUM5PIC,::L_NUM5PIC59,2294
+		L_NUM6PIC,::L_NUM6PIC60,2339
+		L_NUM7PIC,::L_NUM7PIC61,2384
+		L_NUM8PIC,::L_NUM8PIC62,2429
+		L_NUM9PIC,::L_NUM9PIC63,2474
+		L_PERCENTPIC,::L_PERCENTPIC64,2519
+		L_APIC,::L_APIC65,2564
+		L_BPIC,::L_BPIC66,2609
+		L_CPIC,::L_CPIC67,2654
+		L_DPIC,::L_DPIC68,2699
+		L_EPIC,::L_EPIC69,2744
+		L_FPIC,::L_FPIC70,2789
+		L_GPIC,::L_GPIC71,2834
+		L_HPIC,::L_HPIC72,2879
+		L_IPIC,::L_IPIC73,2924
+		L_JPIC,::L_JPIC74,2969
+		L_KPIC,::L_KPIC75,3014
+		L_LPIC,::L_LPIC76,3059
+		L_MPIC,::L_MPIC77,3104
+		L_NPIC,::L_NPIC78,3149
+		L_OPIC,::L_OPIC79,3194
+		L_PPIC,::L_PPIC80,3239
+		L_QPIC,::L_QPIC81,3284
+		L_RPIC,::L_RPIC82,3329
+		L_SPIC,::L_SPIC83,3374
+		L_TPIC,::L_TPIC84,3419
+		L_UPIC,::L_UPIC85,3464
+		L_VPIC,::L_VPIC86,3509
+		L_WPIC,::L_WPIC87,3554
+		L_XPIC,::L_XPIC88,3599
+		L_YPIC,::L_YPIC89,3644
+		L_ZPIC,::L_ZPIC90,3689
+		L_EXPOINTPIC,::L_EXPOINTPIC91,3734
+		L_APOSTROPHEPIC,::L_APOSTROPHEPIC92,3779
+		L_GUY2PIC,::L_GUY2PIC93,3824
+		L_BJWINSPIC,::L_BJWINSPIC94,3869
+		STATUSBARPIC,::STATUSBARPIC95,3914
+		TITLEPIC,::TITLEPIC96,3959
+		PG13PIC,::PG13PIC97,4004
+		CREDITSPIC,::CREDITSPIC98,4049
+		HIGHSCORESPIC,::HIGHSCORESPIC99,4094
+		KNIFEPIC,::KNIFEPIC101,4155
+		GUNPIC,::GUNPIC102,4200
+		MACHINEGUNPIC,::MACHINEGUNPIC103,4245
+		GATLINGGUNPIC,::GATLINGGUNPIC104,4290
+		NOKEYPIC,::NOKEYPIC105,4335
+		GOLDKEYPIC,::GOLDKEYPIC106,4380
+		SILVERKEYPIC,::SILVERKEYPIC107,4425
+		N_BLANKPIC,::N_BLANKPIC108,4470
+		N_0PIC,::N_0PIC109,4515
+		N_1PIC,::N_1PIC110,4560
+		N_2PIC,::N_2PIC111,4606
+		N_3PIC,::N_3PIC112,4652
+		N_4PIC,::N_4PIC113,4698
+		N_5PIC,::N_5PIC114,4744
+		N_6PIC,::N_6PIC115,4790
+		N_7PIC,::N_7PIC116,4836
+		N_8PIC,::N_8PIC117,4882
+		N_9PIC,::N_9PIC118,4928
+		FACE1APIC,::FACE1APIC119,4974
+		FACE1BPIC,::FACE1BPIC120,5020
+		FACE1CPIC,::FACE1CPIC121,5066
+		FACE2APIC,::FACE2APIC122,5112
+		FACE2BPIC,::FACE2BPIC123,5158
+		FACE2CPIC,::FACE2CPIC124,5204
+		FACE3APIC,::FACE3APIC125,5250
+		FACE3BPIC,::FACE3BPIC126,5296
+		FACE3CPIC,::FACE3CPIC127,5342
+		FACE4APIC,::FACE4APIC128,5388
+		FACE4BPIC,::FACE4BPIC129,5434
+		FACE4CPIC,::FACE4CPIC130,5480
+		FACE5APIC,::FACE5APIC131,5526
+		FACE5BPIC,::FACE5BPIC132,5572
+		FACE5CPIC,::FACE5CPIC133,5618
+		FACE6APIC,::FACE6APIC134,5664
+		FACE6BPIC,::FACE6BPIC135,5710
+		FACE6CPIC,::FACE6CPIC136,5756
+		FACE7APIC,::FACE7APIC137,5802
+		FACE7BPIC,::FACE7BPIC138,5848
+		FACE7CPIC,::FACE7CPIC139,5894
+		FACE8APIC,::FACE8APIC140,5940
+		GOTGATLINGPIC,::GOTGATLINGPIC141,5986
+		MUTANTBJPIC,::MUTANTBJPIC142,6032
+		PAUSEDPIC,::PAUSEDPIC143,6078
+		GETPSYCHEDPIC,::GETPSYCHEDPIC144,6124
+		ORDERSCREEN=::ORDERSCREEN148,6173
+		ERRORSCREEN,::ERRORSCREEN149,6192
+		T_HELPART,::T_HELPART150,6238
+		T_DEMO0,::T_DEMO0151,6284
+		T_DEMO1,::T_DEMO1152,6330
+		T_DEMO2,::T_DEMO2153,6376
+		T_DEMO3,::T_DEMO3154,6422
+		T_ENDART1,::T_ENDART1155,6468
+		T_ENDART2,::T_ENDART2156,6514
+		T_ENDART3,::T_ENDART3157,6560
+		T_ENDART4,::T_ENDART4158,6606
+		T_ENDART5,::T_ENDART5159,6652
+		T_ENDART6,::T_ENDART6160,6698
+		ENUMEND::ENUMEND161,6744
+	     } graphicnums;162,6754
+#define README_LUMP_START	167,6796
+#define README_LUMP_END	168,6825
+#define CONTROLS_LUMP_START	170,6854
+#define CONTROLS_LUMP_END	171,6886
+#define LEVELEND_LUMP_START	173,6917
+#define LEVELEND_LUMP_END	174,6949
+#define LATCHPICS_LUMP_START	176,6980
+#define LATCHPICS_LUMP_END	177,7013
+#define NUMCHUNKS 183,7081
+#define NUMFONT 184,7106
+#define NUMFONTM 185,7129
+#define NUMPICS 186,7152
+#define NUMPICM 187,7177
+#define NUMSPRITES 188,7200
+#define NUMTILE8 189,7223
+#define NUMTILE8M 190,7247
+#define NUMTILE16 191,7270
+#define NUMTILE16M 192,7293
+#define NUMTILE32 193,7316
+#define NUMTILE32M 194,7339
+#define NUMEXTERNS 195,7362
+#define STRUCTPIC 199,7423
+#define STARTFONT 201,7447
+#define STARTFONTM 202,7470
+#define STARTPICS 203,7493
+#define STARTPICM 204,7516
+#define STARTSPRITES 205,7541
+#define STARTTILE8 206,7566
+#define STARTTILE8M 207,7591
+#define STARTTILE16 208,7616
+#define STARTTILE16M 209,7641
+#define STARTTILE32 210,7666
+#define STARTTILE32M 211,7691
+#define STARTEXTERNS 212,7716
+
+ID_VH.C,1096
+#define	SCREENWIDTH	5,35
+#define CHARWIDTH	6,59
+#define TILEWIDTH	7,80
+#define GRPLANES	8,101
+#define BYTEPIXELS	9,121
+#define SCREENXMASK	11,144
+#define SCREENXPLUS	12,170
+#define SCREENXDIV	13,195
+#define VIEWWIDTH	15,220
+#define PIXTOBLOCK	17,243
+#define UNCACHEGRCHUNK(19,299
+byte	update[update21,390
+pictabletype *pictable;pictable25,506
+int	px,28,532
+int	px,py;28,532
+byte	fontcolor,29,543
+byte	fontcolor,backcolor;29,543
+int	fontnumber;30,569
+int bufferwidth,31,585
+int bufferwidth,bufferheight;31,585
+void VW_DrawPropString 40,810
+void VW_DrawColorPropString 99,1812
+void VL_MungePic 176,3054
+void VWL_MeasureString 212,3661
+void	VW_MeasurePropString 220,3877
+void	VW_MeasureMPropString 225,4034
+int VW_MarkUpdateBlock 252,4605
+void VWB_DrawTile8 297,5306
+void VWB_DrawTile8M 303,5421
+void VWB_DrawPic 310,5577
+void VWB_DrawPropString	326,5884
+void VWB_Bar 335,6024
+void VWB_Plot 341,6177
+void VWB_Hlin 347,6279
+void VWB_Vlin 353,6396
+void VW_UpdateScreen 359,6513
+void LatchDrawPic 382,6851
+void LoadLatchMem 404,7282
+boolean FizzleFade 481,8568
+
+WL_MAIN.C,1977
+#define FOCALLENGTH 32,572
+#define VIEWGLOBAL 33,645
+#define VIEWWIDTH 35,727
+#define VIEWHEIGHT 36,798
+char            str[str46,1016
+char            str[80],str2[str246,1016
+int				tedlevelnum;47,1050
+boolean         tedlevel;48,1070
+boolean         nospr;49,1096
+boolean         IsA386;50,1119
+int                     dirangle[dirangle51,1143
+fixed           focallength;57,1302
+unsigned        screenofs;58,1331
+int             viewwidth;59,1358
+int             viewheight;60,1385
+int             centerx;61,1413
+int             shootdelta;62,1438
+fixed           scale,63,1530
+fixed           scale,maxslope;63,1530
+long            heightnumerator;64,1562
+int                     minheightdiv;65,1595
+boolean         startgame,70,1672
+boolean         startgame,loadedgame,70,1672
+boolean         startgame,loadedgame,virtualreality;70,1672
+int             mouseadjustment;71,1725
+char	configname[configname73,1759
+int _argc;83,1979
+char **_argv;_argv84,1990
+void ReadConfig(94,2071
+void WriteConfig(199,4073
+void NewGame 282,5731
+void DiskFlopAnim(299,6176
+long DoChecksum(310,6335
+boolean SaveTheGame(329,6557
+boolean LoadTheGame(451,10183
+void ShutdownId 567,13577
+const   float   radtoint 594,13983
+void BuildTables 596,14035
+void CalcProjection 651,15008
+void SetupWalls 716,16379
+void SignonScreen 737,16664
+void FinishSignon 779,17356
+boolean MS_CheckParm 835,18106
+static  int     wolfdigimap[wolfdigimap865,18613
+void InitDigiMap 978,21858
+CP_iteminfo	MusicItems=990,22016
+CP_itemtype MusicMenu[MusicMenu991,22061
+CP_iteminfo MusicItems=1015,22538
+CP_itemtype far MusicMenu[MusicMenu1016,22586
+void DoJukebox(1031,22914
+void InitGame 1164,25237
+	displayofs 1259,26727
+	bufferofs 1260,26753
+boolean SetViewSize 1281,27014
+void ShowViewSize 1312,27660
+void NewViewSize 1328,27903
+void Quit 1346,28155
+static  char *ParmStrings[ParmStrings1411,29088
+void    DemoLoop 1413,29155
+int main 1587,31647
+
+WOLFVER.H,73
+#define ARTSEXTERN2,16
+#define DEMOSEXTERN3,35
+#define CARMACIZED6,94
+
+conio21/conio2.h,1199
+#define _CONIO2_H_14,352
+    BLACK,30,573
+    BLUE,31,613
+    GREEN,32,652
+    CYAN,33,692
+    RED,34,731
+    MAGENTA,35,769
+    BROWN,36,811
+    LIGHTGRAY,37,851
+    DARKGRAY,38,896
+    LIGHTBLUE,39,940
+    LIGHTGREEN,40,985
+    LIGHTCYAN,41,1031
+    LIGHTRED,42,1076
+    LIGHTMAGENTA,43,1120
+    YELLOW,44,1168
+    WHITE 45,1209
+} COLORS;46,1249
+#define cgets 53,1361
+#define cprintf 54,1384
+#define cputs 55,1409
+#define cscanf 56,1432
+    #define cgetws 59,1472
+    #define getwch 60,1501
+    #define getwche 61,1530
+    #define putwch 62,1560
+    #define ungetwch 63,1589
+    #define cputws 64,1620
+    #define cwprintf 65,1649
+    #define cwscanf 66,1680
+  #define gettext 77,1954
+#define ScreenClear 80,1995
+#define _NOCURSOR 87,2110
+#define _SOLIDCURSOR 88,2156
+#define _NORMALCURSOR 89,2218
+struct text_info 97,2399
+    unsigned char curx;98,2418
+    unsigned char cury;99,2479
+    unsigned short attribute;100,2540
+    unsigned short normattr;101,2604
+    unsigned char screenwidth;107,3046
+    unsigned char screenheight;108,3100
+struct char_info 116,3244
+    wchar_t letter;118,3278
+    char letter;120,3335
+    unsigned short attr;122,3393
+
+conio21/conio.c,713
+static int __BACKGROUND 24,481
+static int __FOREGROUND 25,514
+static struct text_info __text_info 26,551
+static int __CONIO_TOP 32,675
+static int __CONIO_LEFT 33,703
+__fill_text_info 36,745
+gettextinfo 51,1299
+inittextinfo 58,1396
+clrscr 67,1582
+clreol 88,2114
+delline 107,2675
+insline 136,3487
+movetext 164,4298
+_conio_gettext 175,4665
+puttext 206,5466
+gotoxy(236,6243
+cputsxy 246,6411
+putchxy 253,6492
+_setcursortype 260,6569
+textattr 276,6836
+normvideo 284,7000
+textbackground 290,7064
+textcolor 299,7227
+wherex 308,7384
+wherey 316,7461
+getpass 323,7540
+highvideo 358,8327
+lowvideo 364,8416
+delay 370,8505
+switchbackground 376,8545
+flashbackground 394,9102
+clearkeybuf 409,9516
+
+conio21/conio_test.c,17
+int main(12,198
+
+SPANISH.H,2287
+#define  QUITSUR 1,0
+#define  CURGAME 4,80
+#define  GAMESVD 8,189
+#define  ENDGAMESTR 12,291
+#define   STR_NG 16,411
+#define   STR_SD 17,445
+#define   STR_CL 18,474
+#define   STR_LG 19,504
+#define   STR_SG 20,539
+#define   STR_CV 21,575
+#define   STR_VS 22,611
+#define  STR_EG 23,647
+#define   STR_BD 24,679
+#define  STR_QT 25,718
+#define  STR_LOADING 27,747
+#define  STR_SAVING 28,780
+#define  STR_GAME 30,815
+#define  STR_DEMO 31,852
+#define  STR_LGC 32,890
+#define  STR_EMPTY 33,942
+#define  STR_CALIB 34,975
+#define  STR_JOYST 35,1011
+#define  STR_MOVEJOY 36,1047
+#define  STR_MOVEJOY2 39,1141
+#define  STR_ESCEXIT 42,1240
+#define  STR_NONE 43,1282
+#define   STR_PC 44,1311
+#define   STR_ALSB 45,1350
+#define   STR_DISNEY 46,1397
+#define   STR_SB 47,1441
+#define   STR_MOUSEEN 49,1483
+#define   STR_JOYEN 50,1530
+#define   STR_PORT2 51,1572
+#define   STR_GAMEPAD 52,1618
+#define   STR_SENS 53,1674
+#define   STR_CUSTOM 54,1715
+#define   STR_DADDY 55,1762
+#define   STR_HURTME 56,1804
+#define   STR_BRINGEM 57,1843
+#define   STR_DEATH 58,1882
+#define   STR_MOUSEADJ 60,1925
+#define  STR_SLOW 61,1978
+#define  STR_FAST 62,2005
+#define   STR_CRUN 64,2035
+#define  STR_COPEN 65,2063
+#define  STR_CFIRE 66,2095
+#define  STR_CSTRAFE 67,2129
+#define   STR_LEFT 69,2168
+#define   STR_RIGHT 70,2205
+#define   STR_FRWD 71,2235
+#define   STR_BKWD 72,2266
+#define   STR_THINK 73,2294
+#define   STR_SIZE1 75,2326
+#define   STR_SIZE2 76,2373
+#define   STR_SIZE3 77,2414
+#define   STR_YOUWIN 79,2455
+#define   STR_TOTALTIME 81,2492
+#define   STR_RATKILL 83,2533
+#define   STR_RATSECRET 84,2576
+#define   STR_RATTREASURE 85,2617
+#define   STR_BONUS 87,2661
+#define   STR_TIME 88,2689
+#define   STR_PAR 89,2722
+#define   STR_RAT2KILL 91,2753
+#define   STR_RAT2SECRET 92,2814
+#define   STR_RAT2TREASURE 93,2857
+#define   STR_DEFEATED 95,2901
+#define   STR_CHEATER1 97,2940
+#define   STR_CHEATER2 98,2990
+#define   STR_CHEATER3 99,3039
+#define   STR_CHEATER4 100,3092
+#define   STR_CHEATER5 101,3144
+#define   STR_NOSPACE1 103,3193
+#define   STR_NOSPACE2 104,3246
+#define   STR_SAVECHT1 106,3305
+#define   STR_SAVECHT2 107,3365
+#define   STR_SAVECHT3 108,3414
+#define  STR_SAVECHT4 109,3463
+#define   STR_SEEAGAIN 111,3511
+
+ID_CA.H,309
+#define NUMMAPS	4,90
+#define MAPPLANES	5,110
+#define UNCACHEGRCHUNK(7,131
+	long		planestart[::planestart13,318
+	unsigned	planelength[::planelength14,340
+	unsigned	width,::width15,366
+	unsigned	width,height;::height15,366
+	char		name[::name16,390
+} maptype;17,407
+#define CA_MarkGrChunk(94,2464
+
+GFXE_SOD.H,721
+		ENUMEND::ENUMEND12,172
+	     } graphicnums;13,182
+#define NUMCHUNKS 22,259
+#define NUMFONT 23,284
+#define NUMFONTM 24,307
+#define NUMPICS 25,330
+#define NUMPICM 26,353
+#define NUMSPRITES 27,376
+#define NUMTILE8 28,399
+#define NUMTILE8M 29,422
+#define NUMTILE16 30,445
+#define NUMTILE16M 31,470
+#define NUMTILE32 32,495
+#define NUMTILE32M 33,518
+#define NUMEXTERNS 34,541
+#define STARTFONT 38,601
+#define STARTFONTM 39,624
+#define STARTPICS 40,647
+#define STARTPICM 41,670
+#define STARTSPRITES 42,693
+#define STARTTILE8 43,716
+#define STARTTILE8M 44,739
+#define STARTTILE16 45,762
+#define STARTTILE16M 46,785
+#define STARTTILE32 47,810
+#define STARTTILE32M 48,835
+#define STARTEXTERNS 49,860
+
+CONTIGSC.C,929
+#define OP_RETF	6,52
+t_compscale far *scaledirectory[scaledirectory16,255
+long			fullscalefarcall[fullscalefarcall17,306
+int			maxscale,19,350
+int			maxscale,maxscaleshl2;19,350
+byte far	*scalermemory;scalermemory21,380
+byte _seg	*endscalermemory;endscalermemory22,404
+long		freescalermemory;23,432
+int			stepbytwo;36,693
+void far BadScale 48,842
+long SetupScaling 62,981
+unsigned BuildCompScale 154,3004
+byte	mask1,246,4550
+byte	mask1,mask2,246,4550
+byte	mask1,mask2,mask3;246,4550
+void near ScaleLine 249,4576
+static	long		longtemp;419,9257
+void ScaleShape 421,9281
+void SimpleScaleShape 625,13027
+byte	mapmasks1[mapmasks1700,14373
+byte	mapmasks2[mapmasks2706,14508
+byte	mapmasks3[mapmasks3712,14644
+unsigned	wordmasks[wordmasks719,14777
+int			slinex,729,15281
+int			slinex,slinewidth;729,15281
+unsigned	far *linecmds;linecmds730,15306
+long		linescale;731,15330
+unsigned	maskword;732,15347
+
+ID_IN.H,5252
+#define	__ID_IN__9,114
+#define	__DEBUG_InputMgr__12,150
+#define	MaxPlayers	15,185
+#define	MaxKbds	16,206
+#define	MaxJoys	17,225
+#define	NumCodes	18,244
+typedef	byte		ScanCode;20,266
+#define	sc_None	21,290
+#define	sc_Bad	22,310
+#define	sc_Return	23,332
+#define	sc_Enter	24,356
+#define	sc_Escape	25,384
+#define	sc_Space	26,408
+#define	sc_BackSpace	27,431
+#define	sc_Tab	28,457
+#define	sc_Alt	29,479
+#define	sc_Control	30,501
+#define	sc_CapsLock	31,526
+#define	sc_LShift	32,552
+#define	sc_RShift	33,576
+#define	sc_UpArrow	34,600
+#define	sc_DownArrow	35,625
+#define	sc_LeftArrow	36,651
+#define	sc_RightArrow	37,677
+#define	sc_Insert	38,704
+#define	sc_Delete	39,728
+#define	sc_Home	40,752
+#define	sc_End	41,775
+#define	sc_PgUp	42,797
+#define	sc_PgDn	43,820
+#define	sc_F1	44,843
+#define	sc_F2	45,864
+#define	sc_F3	46,885
+#define	sc_F4	47,906
+#define	sc_F5	48,927
+#define	sc_F6	49,948
+#define	sc_F7	50,969
+#define	sc_F8	51,990
+#define	sc_F9	52,1011
+#define	sc_F10	53,1032
+#define	sc_F11	54,1054
+#define	sc_F12	55,1076
+#define	sc_1	57,1099
+#define	sc_2	58,1119
+#define	sc_3	59,1139
+#define	sc_4	60,1159
+#define	sc_5	61,1179
+#define	sc_6	62,1199
+#define	sc_7	63,1219
+#define	sc_8	64,1239
+#define	sc_9	65,1259
+#define	sc_0	66,1279
+#define	sc_A	68,1300
+#define	sc_B	69,1320
+#define	sc_C	70,1340
+#define	sc_D	71,1360
+#define	sc_E	72,1380
+#define	sc_F	73,1400
+#define	sc_G	74,1420
+#define	sc_H	75,1440
+#define	sc_I	76,1460
+#define	sc_J	77,1480
+#define	sc_K	78,1500
+#define	sc_L	79,1520
+#define	sc_M	80,1540
+#define	sc_N	81,1560
+#define	sc_O	82,1580
+#define	sc_P	83,1600
+#define	sc_Q	84,1620
+#define	sc_R	85,1640
+#define	sc_S	86,1660
+#define	sc_T	87,1680
+#define	sc_U	88,1700
+#define	sc_V	89,1720
+#define	sc_W	90,1740
+#define	sc_X	91,1760
+#define	sc_Y	92,1780
+#define	sc_Z	93,1800
+#define	key_None	95,1821
+#define	key_Return	96,1841
+#define	key_Enter	97,1866
+#define	key_Escape	98,1896
+#define	key_Space	99,1921
+#define	key_BackSpace	100,1945
+#define	key_Tab	101,1972
+#define	key_Delete	102,1995
+#define	MReset	105,2045
+#define	MButtons	106,2063
+#define	MDelta	107,2082
+#define	MouseInt	109,2102
+#define	Mouse(110,2124
+						demo_Off,::demo_Off113,2232
+						demo_Off,demo_Record,::demo_Record113,2232
+						demo_Off,demo_Record,demo_Playback,::demo_Playback113,2232
+						demo_Off,demo_Record,demo_Playback,demo_PlayDone::demo_PlayDone113,2232
+					} Demo;114,2287
+						ctrl_Keyboard,::ctrl_Keyboard116,2316
+							ctrl_Keyboard1 ::ctrl_Keyboard1117,2337
+							ctrl_Keyboard1 = ctrl_Keyboard,::ctrl_Keyboard117,2337
+							ctrl_Keyboard1 = ctrl_Keyboard,ctrl_Keyboard2,::ctrl_Keyboard2117,2337
+						ctrl_Joystick,::ctrl_Joystick118,2391
+							ctrl_Joystick1 ::ctrl_Joystick1119,2412
+							ctrl_Joystick1 = ctrl_Joystick,::ctrl_Joystick119,2412
+							ctrl_Joystick1 = ctrl_Joystick,ctrl_Joystick2,::ctrl_Joystick2119,2412
+						ctrl_Mouse::ctrl_Mouse120,2466
+					} ControlType;121,2483
+						motion_Left ::motion_Left123,2519
+						motion_Left = -1,motion_Up ::motion_Up123,2519
+						motion_None ::motion_None124,2558
+						motion_Right ::motion_Right125,2581
+						motion_Right = 1,motion_Down ::motion_Down125,2581
+					} Motion;126,2620
+						dir_North,::dir_North128,2651
+						dir_North,dir_NorthEast,::dir_NorthEast128,2651
+						dir_East,::dir_East129,2682
+						dir_East,dir_SouthEast,::dir_SouthEast129,2682
+						dir_South,::dir_South130,2712
+						dir_South,dir_SouthWest,::dir_SouthWest130,2712
+						dir_West,::dir_West131,2743
+						dir_West,dir_NorthWest,::dir_NorthWest131,2743
+						dir_None::dir_None132,2773
+					} Direction;133,2788
+						boolean		button0,::button0135,2824
+						boolean		button0,button1,::button1135,2824
+						boolean		button0,button1,button2,::button2135,2824
+						boolean		button0,button1,button2,button3;::button3135,2824
+						int			x,::x136,2872
+						int			x,y;::y136,2872
+						Motion		xaxis,::xaxis137,2889
+						Motion		xaxis,yaxis;::yaxis137,2889
+						Direction	dir;::dir138,2916
+					} CursorInfo;139,2937
+typedef	CursorInfo	ControlInfo;140,2956
+						ScanCode	button0,::button0142,3006
+						ScanCode	button0,button1,::button1142,3006
+									upleft,::upleft143,3038
+									upleft,		up,::up143,3038
+									upleft,		up,		upright,::upright143,3038
+									left,::left144,3070
+									left,				right,::right144,3070
+									downleft,::downleft145,3095
+									downleft,	down,::down145,3095
+									downleft,	down,	downright;::downright145,3095
+					} KeyboardDef;146,3131
+						word		joyMinX,::joyMinX148,3169
+						word		joyMinX,joyMinY,::joyMinY148,3169
+									threshMinX,::threshMinX149,3198
+									threshMinX,threshMinY,::threshMinY149,3198
+									threshMaxX,::threshMaxX150,3230
+									threshMaxX,threshMaxY,::threshMaxY150,3230
+									joyMaxX,::joyMaxX151,3262
+									joyMaxX,joyMaxY,::joyMaxY151,3262
+									joyMultXL,::joyMultXL152,3288
+									joyMultXL,joyMultYL,::joyMultYL152,3288
+									joyMultXH,::joyMultXH153,3318
+									joyMultXH,joyMultYH;::joyMultYH153,3318
+					} JoystickDef;154,3348
+#define	IN_KeyDown(171,3745
+#define	IN_ClearKey(172,3789
+
+WOLFHACK.C,353
+#define	MAXVIEWHEIGHT	5,36
+int		halfheight 14,229
+fixed	psin,19,330
+fixed	psin, pcos;19,330
+fixed FixedMul 21,349
+int		mr_rowofs;27,412
+int		mr_count;28,428
+int		mr_xstep;29,443
+int		mr_ystep;30,458
+int		mr_xfrac;31,473
+int		mr_yfrac;32,488
+int		mr_dest;33,503
+void DrawSpans 45,632
+void SetPlaneViewSize 98,1604
+void DrawPlanes 142,2218
+
+AUDIOWL6.H,4555
+#define NUMSOUNDS	8,167
+#define NUMSNDCHUNKS	9,189
+		HITWALLSND,::HITWALLSND15,262
+		SELECTWPNSND,::SELECTWPNSND16,294
+		SELECTITEMSND,::SELECTITEMSND17,326
+		HEARTBEATSND,::HEARTBEATSND18,358
+		MOVEGUN2SND,::MOVEGUN2SND19,390
+		MOVEGUN1SND,::MOVEGUN1SND20,422
+		NOWAYSND,::NOWAYSND21,454
+		NAZIHITPLAYERSND,::NAZIHITPLAYERSND22,486
+		SCHABBSTHROWSND,::SCHABBSTHROWSND23,518
+		PLAYERDEATHSND,::PLAYERDEATHSND24,550
+		DOGDEATHSND,::DOGDEATHSND25,582
+		ATKGATLINGSND,::ATKGATLINGSND26,615
+		GETKEYSND,::GETKEYSND27,648
+		NOITEMSND,::NOITEMSND28,681
+		WALK1SND,::WALK1SND29,714
+		WALK2SND,::WALK2SND30,747
+		TAKEDAMAGESND,::TAKEDAMAGESND31,780
+		GAMEOVERSND,::GAMEOVERSND32,813
+		OPENDOORSND,::OPENDOORSND33,846
+		CLOSEDOORSND,::CLOSEDOORSND34,879
+		DONOTHINGSND,::DONOTHINGSND35,912
+		HALTSND,::HALTSND36,945
+		DEATHSCREAM2SND,::DEATHSCREAM2SND37,978
+		ATKKNIFESND,::ATKKNIFESND38,1011
+		ATKPISTOLSND,::ATKPISTOLSND39,1044
+		DEATHSCREAM3SND,::DEATHSCREAM3SND40,1077
+		ATKMACHINEGUNSND,::ATKMACHINEGUNSND41,1110
+		HITENEMYSND,::HITENEMYSND42,1143
+		SHOOTDOORSND,::SHOOTDOORSND43,1176
+		DEATHSCREAM1SND,::DEATHSCREAM1SND44,1209
+		GETMACHINESND,::GETMACHINESND45,1242
+		GETAMMOSND,::GETAMMOSND46,1275
+		SHOOTSND,::SHOOTSND47,1308
+		HEALTH1SND,::HEALTH1SND48,1341
+		HEALTH2SND,::HEALTH2SND49,1374
+		BONUS1SND,::BONUS1SND50,1407
+		BONUS2SND,::BONUS2SND51,1440
+		BONUS3SND,::BONUS3SND52,1473
+		GETGATLINGSND,::GETGATLINGSND53,1506
+		ESCPRESSEDSND,::ESCPRESSEDSND54,1539
+		LEVELDONESND,::LEVELDONESND55,1572
+		DOGBARKSND,::DOGBARKSND56,1605
+		ENDBONUS1SND,::ENDBONUS1SND57,1638
+		ENDBONUS2SND,::ENDBONUS2SND58,1671
+		BONUS1UPSND,::BONUS1UPSND59,1704
+		BONUS4SND,::BONUS4SND60,1737
+		PUSHWALLSND,::PUSHWALLSND61,1770
+		NOBONUSSND,::NOBONUSSND62,1803
+		PERCENT100SND,::PERCENT100SND63,1836
+		BOSSACTIVESND,::BOSSACTIVESND64,1869
+		MUTTISND,::MUTTISND65,1902
+		SCHUTZADSND,::SCHUTZADSND66,1935
+		AHHHGSND,::AHHHGSND67,1968
+		DIESND,::DIESND68,2001
+		EVASND,::EVASND69,2034
+		GUTENTAGSND,::GUTENTAGSND70,2067
+		LEBENSND,::LEBENSND71,2100
+		SCHEISTSND,::SCHEISTSND72,2133
+		NAZIFIRESND,::NAZIFIRESND73,2166
+		BOSSFIRESND,::BOSSFIRESND74,2199
+		SSFIRESND,::SSFIRESND75,2232
+		SLURPIESND,::SLURPIESND76,2265
+		TOT_HUNDSND,::TOT_HUNDSND77,2298
+		MEINGOTTSND,::MEINGOTTSND78,2331
+		SCHABBSHASND,::SCHABBSHASND79,2364
+		HITLERHASND,::HITLERHASND80,2397
+		SPIONSND,::SPIONSND81,2430
+		NEINSOVASSND,::NEINSOVASSND82,2463
+		DOGATTACKSND,::DOGATTACKSND83,2496
+		FLAMETHROWERSND,::FLAMETHROWERSND84,2529
+		MECHSTEPSND,::MECHSTEPSND85,2562
+		GOOBSSND,::GOOBSSND86,2595
+		YEAHSND,::YEAHSND87,2628
+		DEATHSCREAM4SND,::DEATHSCREAM4SND88,2661
+		DEATHSCREAM5SND,::DEATHSCREAM5SND89,2694
+		DEATHSCREAM6SND,::DEATHSCREAM6SND90,2727
+		DEATHSCREAM7SND,::DEATHSCREAM7SND91,2760
+		DEATHSCREAM8SND,::DEATHSCREAM8SND92,2793
+		DEATHSCREAM9SND,::DEATHSCREAM9SND93,2826
+		DONNERSND,::DONNERSND94,2859
+		EINESND,::EINESND95,2892
+		ERLAUBENSND,::ERLAUBENSND96,2925
+		KEINSND,::KEINSND97,2958
+		MEINSND,::MEINSND98,2991
+		ROSESND,::ROSESND99,3024
+		MISSILEFIRESND,::MISSILEFIRESND100,3057
+		MISSILEHITSND,::MISSILEHITSND101,3090
+		LASTSOUND::LASTSOUND102,3123
+	     } soundnames;103,3135
+#define STARTPCSOUNDS	108,3178
+#define STARTADLIBSOUNDS	109,3203
+#define STARTDIGISOUNDS	110,3231
+#define STARTMUSIC	111,3260
+		CORNER_MUS,::CORNER_MUS117,3331
+		DUNGEON_MUS,::DUNGEON_MUS118,3363
+		WARMARCH_MUS,::WARMARCH_MUS119,3395
+		GETTHEM_MUS,::GETTHEM_MUS120,3427
+		HEADACHE_MUS,::HEADACHE_MUS121,3459
+		HITLWLTZ_MUS,::HITLWLTZ_MUS122,3491
+		INTROCW3_MUS,::INTROCW3_MUS123,3523
+		NAZI_NOR_MUS,::NAZI_NOR_MUS124,3555
+		NAZI_OMI_MUS,::NAZI_OMI_MUS125,3587
+		POW_MUS,::POW_MUS126,3619
+		SALUTE_MUS,::SALUTE_MUS127,3651
+		SEARCHN_MUS,::SEARCHN_MUS128,3684
+		SUSPENSE_MUS,::SUSPENSE_MUS129,3717
+		VICTORS_MUS,::VICTORS_MUS130,3750
+		WONDERIN_MUS,::WONDERIN_MUS131,3783
+		FUNKYOU_MUS,::FUNKYOU_MUS132,3816
+		ENDLEVEL_MUS,::ENDLEVEL_MUS133,3849
+		GOINGAFT_MUS,::GOINGAFT_MUS134,3882
+		PREGNANT_MUS,::PREGNANT_MUS135,3915
+		ULTIMATE_MUS,::ULTIMATE_MUS136,3948
+		NAZI_RAP_MUS,::NAZI_RAP_MUS137,3981
+		ZEROHOUR_MUS,::ZEROHOUR_MUS138,4014
+		TWELFTH_MUS,::TWELFTH_MUS139,4047
+		ROSTER_MUS,::ROSTER_MUS140,4080
+		URAHERO_MUS,::URAHERO_MUS141,4113
+		VICMARCH_MUS,::VICMARCH_MUS142,4146
+		PACMAN_MUS,::PACMAN_MUS143,4179
+		LASTMUSIC::LASTMUSIC144,4212
+	     } musicnames;145,4224
+
+ID_PM.C,2310
+	boolean			MainPresent;11,156
+	memptr			MainMemPages[MainMemPages12,180
+	PMBlockAttr		MainMemUsed[MainMemUsed13,218
+	int				MainPagesAvail;14,259
+	boolean			EMSPresent;17,310
+	word			EMSAvail,18,333
+	word			EMSAvail,EMSPagesAvail,18,333
+	word			EMSAvail,EMSPagesAvail,EMSHandle,18,333
+					EMSPageFrame,19,375
+					EMSPageFrame,EMSPhysicalPage;19,375
+	EMSListStruct	EMSList[EMSList20,410
+	boolean			XMSPresent;23,476
+	word			XMSAvail,24,499
+	word			XMSAvail,XMSPagesAvail,24,499
+	word			XMSAvail,XMSPagesAvail,XMSHandle;24,499
+	longword		XMSDriver;25,541
+	int				XMSProtectPage 26,563
+	char			PageFileName[PageFileName29,620
+	int				PageFile 30,659
+	word			ChunksInFile;31,682
+	word			PMSpriteStart,32,704
+	word			PMSpriteStart,PMSoundStart;32,704
+	boolean			PMStarted,35,768
+					PMPanicMode,36,790
+					PMThrashing;37,808
+	word			XMSPagesUsed,38,826
+					EMSPagesUsed,39,848
+					MainPagesUsed,40,867
+					PMNumBlocks;41,887
+	long			PMFrameCount;42,905
+	PageListStruct	far *PMPages,PMPages43,927
+					_seg *PMSegPages;PMSegPages44,957
+static	char		*ParmStrings[ParmStrings46,981
+PML_MapEMS(58,1298
+	char	EMMDriverName[EMMDriverName79,1782
+PML_StartupEMS(82,1828
+PML_ShutdownEMS(172,3525
+PML_StartupXMS(197,4134
+PML_XMSCopy(244,5160
+		longword	length;::length249,5259
+		word		source_handle;::source_handle250,5278
+		longword	source_offset;::source_offset251,5301
+		word		target_handle;::target_handle252,5327
+		longword	target_offset;::target_offset253,5350
+#define	PML_CopyToXMS(276,5827
+#define	PML_CopyFromXMS(277,5886
+PML_CopyToXMS(284,6088
+PML_CopyFromXMS(294,6324
+PML_ShutdownXMS(304,6475
+PM_SetMainMemPurge(327,7022
+PM_CheckMainMem(350,7926
+PML_StartupMainMem(419,9639
+PML_ShutdownMainMem(448,10171
+PML_ReadFromFile(469,10642
+PML_OpenPageFile(485,11061
+PML_ClosePageFile(535,12521
+PML_GetEMSAddress(562,13179
+PML_GetEMSAddress(608,14131
+PM_GetPageAddress(628,14587
+PML_GiveLRUPage(646,15005
+PML_GiveLRUXMSPage(678,15667
+PML_PutPageInXMS(705,16109
+PML_TransferPageSpace(735,16783
+PML_GetAPageBuffer(780,18092
+PML_GetPageFromXMS(832,19527
+PML_LoadPage(859,20202
+PM_GetPage(877,20637
+PM_SetPageLock(934,21895
+PM_Preload(948,22296
+PM_NextFrame(1073,24841
+PM_Reset(1114,25529
+PM_Startup(1142,26016
+PM_Shutdown(1188,26609
+
+BUDIOWL6.H,4555
+#define NUMSOUNDS	8,167
+#define NUMSNDCHUNKS	9,189
+		HITWALLSND,::HITWALLSND15,262
+		SELECTWPNSND,::SELECTWPNSND16,294
+		SELECTITEMSND,::SELECTITEMSND17,326
+		HEARTBEATSND,::HEARTBEATSND18,358
+		MOVEGUN2SND,::MOVEGUN2SND19,390
+		MOVEGUN1SND,::MOVEGUN1SND20,422
+		NOWAYSND,::NOWAYSND21,454
+		NAZIHITPLAYERSND,::NAZIHITPLAYERSND22,486
+		SCHABBSTHROWSND,::SCHABBSTHROWSND23,518
+		PLAYERDEATHSND,::PLAYERDEATHSND24,550
+		DOGDEATHSND,::DOGDEATHSND25,582
+		ATKGATLINGSND,::ATKGATLINGSND26,615
+		GETKEYSND,::GETKEYSND27,648
+		NOITEMSND,::NOITEMSND28,681
+		WALK1SND,::WALK1SND29,714
+		WALK2SND,::WALK2SND30,747
+		TAKEDAMAGESND,::TAKEDAMAGESND31,780
+		GAMEOVERSND,::GAMEOVERSND32,813
+		OPENDOORSND,::OPENDOORSND33,846
+		CLOSEDOORSND,::CLOSEDOORSND34,879
+		DONOTHINGSND,::DONOTHINGSND35,912
+		HALTSND,::HALTSND36,945
+		DEATHSCREAM2SND,::DEATHSCREAM2SND37,978
+		ATKKNIFESND,::ATKKNIFESND38,1011
+		ATKPISTOLSND,::ATKPISTOLSND39,1044
+		DEATHSCREAM3SND,::DEATHSCREAM3SND40,1077
+		ATKMACHINEGUNSND,::ATKMACHINEGUNSND41,1110
+		HITENEMYSND,::HITENEMYSND42,1143
+		SHOOTDOORSND,::SHOOTDOORSND43,1176
+		DEATHSCREAM1SND,::DEATHSCREAM1SND44,1209
+		GETMACHINESND,::GETMACHINESND45,1242
+		GETAMMOSND,::GETAMMOSND46,1275
+		SHOOTSND,::SHOOTSND47,1308
+		HEALTH1SND,::HEALTH1SND48,1341
+		HEALTH2SND,::HEALTH2SND49,1374
+		BONUS1SND,::BONUS1SND50,1407
+		BONUS2SND,::BONUS2SND51,1440
+		BONUS3SND,::BONUS3SND52,1473
+		GETGATLINGSND,::GETGATLINGSND53,1506
+		ESCPRESSEDSND,::ESCPRESSEDSND54,1539
+		LEVELDONESND,::LEVELDONESND55,1572
+		DOGBARKSND,::DOGBARKSND56,1605
+		ENDBONUS1SND,::ENDBONUS1SND57,1638
+		ENDBONUS2SND,::ENDBONUS2SND58,1671
+		BONUS1UPSND,::BONUS1UPSND59,1704
+		BONUS4SND,::BONUS4SND60,1737
+		PUSHWALLSND,::PUSHWALLSND61,1770
+		NOBONUSSND,::NOBONUSSND62,1803
+		PERCENT100SND,::PERCENT100SND63,1836
+		BOSSACTIVESND,::BOSSACTIVESND64,1869
+		MUTTISND,::MUTTISND65,1902
+		SCHUTZADSND,::SCHUTZADSND66,1935
+		AHHHGSND,::AHHHGSND67,1968
+		DIESND,::DIESND68,2001
+		EVASND,::EVASND69,2034
+		GUTENTAGSND,::GUTENTAGSND70,2067
+		LEBENSND,::LEBENSND71,2100
+		SCHEISTSND,::SCHEISTSND72,2133
+		NAZIFIRESND,::NAZIFIRESND73,2166
+		BOSSFIRESND,::BOSSFIRESND74,2199
+		SSFIRESND,::SSFIRESND75,2232
+		SLURPIESND,::SLURPIESND76,2265
+		TOT_HUNDSND,::TOT_HUNDSND77,2298
+		MEINGOTTSND,::MEINGOTTSND78,2331
+		SCHABBSHASND,::SCHABBSHASND79,2364
+		HITLERHASND,::HITLERHASND80,2397
+		SPIONSND,::SPIONSND81,2430
+		NEINSOVASSND,::NEINSOVASSND82,2463
+		DOGATTACKSND,::DOGATTACKSND83,2496
+		FLAMETHROWERSND,::FLAMETHROWERSND84,2529
+		MECHSTEPSND,::MECHSTEPSND85,2562
+		GOOBSSND,::GOOBSSND86,2595
+		YEAHSND,::YEAHSND87,2628
+		DEATHSCREAM4SND,::DEATHSCREAM4SND88,2661
+		DEATHSCREAM5SND,::DEATHSCREAM5SND89,2694
+		DEATHSCREAM6SND,::DEATHSCREAM6SND90,2727
+		DEATHSCREAM7SND,::DEATHSCREAM7SND91,2760
+		DEATHSCREAM8SND,::DEATHSCREAM8SND92,2793
+		DEATHSCREAM9SND,::DEATHSCREAM9SND93,2826
+		DONNERSND,::DONNERSND94,2859
+		EINESND,::EINESND95,2892
+		ERLAUBENSND,::ERLAUBENSND96,2925
+		KEINSND,::KEINSND97,2958
+		MEINSND,::MEINSND98,2991
+		ROSESND,::ROSESND99,3024
+		MISSILEFIRESND,::MISSILEFIRESND100,3057
+		MISSILEHITSND,::MISSILEHITSND101,3090
+		LASTSOUND::LASTSOUND102,3123
+	     } soundnames;103,3135
+#define STARTPCSOUNDS	108,3178
+#define STARTADLIBSOUNDS	109,3203
+#define STARTDIGISOUNDS	110,3231
+#define STARTMUSIC	111,3260
+		CORNER_MUS,::CORNER_MUS117,3331
+		DUNGEON_MUS,::DUNGEON_MUS118,3363
+		WARMARCH_MUS,::WARMARCH_MUS119,3395
+		GETTHEM_MUS,::GETTHEM_MUS120,3427
+		HEADACHE_MUS,::HEADACHE_MUS121,3459
+		HITLWLTZ_MUS,::HITLWLTZ_MUS122,3491
+		INTROCW3_MUS,::INTROCW3_MUS123,3523
+		NAZI_NOR_MUS,::NAZI_NOR_MUS124,3555
+		NAZI_OMI_MUS,::NAZI_OMI_MUS125,3587
+		POW_MUS,::POW_MUS126,3619
+		SALUTE_MUS,::SALUTE_MUS127,3651
+		SEARCHN_MUS,::SEARCHN_MUS128,3684
+		SUSPENSE_MUS,::SUSPENSE_MUS129,3717
+		VICTORS_MUS,::VICTORS_MUS130,3750
+		WONDERIN_MUS,::WONDERIN_MUS131,3783
+		FUNKYOU_MUS,::FUNKYOU_MUS132,3816
+		ENDLEVEL_MUS,::ENDLEVEL_MUS133,3849
+		GOINGAFT_MUS,::GOINGAFT_MUS134,3882
+		PREGNANT_MUS,::PREGNANT_MUS135,3915
+		ULTIMATE_MUS,::ULTIMATE_MUS136,3948
+		NAZI_RAP_MUS,::NAZI_RAP_MUS137,3981
+		ZEROHOUR_MUS,::ZEROHOUR_MUS138,4014
+		TWELFTH_MUS,::TWELFTH_MUS139,4047
+		ROSTER_MUS,::ROSTER_MUS140,4080
+		URAHERO_MUS,::URAHERO_MUS141,4113
+		VICMARCH_MUS,::VICMARCH_MUS142,4146
+		PACMAN_MUS,::PACMAN_MUS143,4179
+		LASTMUSIC::LASTMUSIC144,4212
+	     } musicnames;145,4224
+
+DETECT.C,51
+SDL_CheckSB(8,265
+SDL_DetectSoundBlaster(59,1500
+
+OLDSCALE.C,841
+#define OP_RETF	6,52
+t_compscale _seg *scaledirectory[scaledirectory16,255
+long			fullscalefarcall[fullscalefarcall17,307
+int			maxscale,19,351
+int			maxscale,maxscaleshl2;19,351
+t_compscale 	_seg *work;work29,561
+int			stepbytwo;32,644
+void far BadScale 44,793
+void SetupScaling 58,932
+unsigned BuildCompScale 155,2882
+byte	mask1,250,4518
+byte	mask1,mask2,250,4518
+byte	mask1,mask2,mask3;250,4518
+void near ScaleLine 253,4544
+static	long		longtemp;423,9225
+void ScaleShape 425,9249
+void SimpleScaleShape 629,12998
+byte	mapmasks1[mapmasks1704,14347
+byte	mapmasks2[mapmasks2710,14482
+byte	mapmasks3[mapmasks3716,14618
+unsigned	wordmasks[wordmasks723,14751
+int			slinex,733,15255
+int			slinex,slinewidth;733,15255
+unsigned	far *linecmds;linecmds734,15280
+long		linescale;735,15304
+unsigned	maskword;736,15321
+
+ID_MM.H,1213
+#define __ID_CA__5,31
+#define SAVENEARHEAP	7,50
+#define SAVEFARHEAP	8,112
+#define	BUFFERSIZE	10,168
+#define MAXBLOCKS	12,239
+#define	EMS_INT	17,276
+#define	EMS_STATUS	19,300
+#define	EMS_GETFRAME	20,325
+#define	EMS_GETPAGES	21,351
+#define	EMS_ALLOCPAGES	22,377
+#define	EMS_MAPPAGE	23,405
+#define	EMS_FREEPAGES	24,431
+#define	EMS_VERSION	25,458
+#define	XMS_INT	29,497
+#define	XMS_CALL(30,520
+#define	XMS_VERSION	33,591
+#define	XMS_ALLOCHMA	35,618
+#define	XMS_FREEHMA	36,644
+#define	XMS_GENABLEA20	38,671
+#define	XMS_GDISABLEA20	39,699
+#define	XMS_LENABLEA20	40,728
+#define	XMS_LDISABLEA20	41,756
+#define	XMS_QUERYA20	42,785
+#define	XMS_QUERYFREE	44,812
+#define	XMS_ALLOC	45,839
+#define	XMS_FREE	46,863
+#define	XMS_MOVE	47,886
+#define	XMS_LOCK	48,909
+#define	XMS_UNLOCK	49,932
+#define	XMS_GETINFO	50,957
+#define	XMS_RESIZE	51,983
+#define	XMS_ALLOCUMB	53,1009
+#define	XMS_FREEUMB	54,1035
+typedef void* memptr;58,1140
+	long	nearheap,::nearheap62,1180
+	long	nearheap,farheap,::farheap62,1180
+	long	nearheap,farheap,EMSmem,::EMSmem62,1180
+	long	nearheap,farheap,EMSmem,XMSmem,::XMSmem62,1180
+	long	nearheap,farheap,EMSmem,XMSmem,mainmem;::mainmem62,1180
+} mminfotype;63,1226
+
+PICLIST.H,978
+		H_BJPIC=::H_BJPIC10,185
+		H_CASTLEPIC,::H_CASTLEPIC11,198
+		H_KEYBOARDPIC,::H_KEYBOARDPIC12,234
+		H_JOYPIC,::H_JOYPIC13,270
+		H_MOUSEPIC,::H_MOUSEPIC14,306
+		H_BOTHPIC,::H_BOTHPIC15,342
+		H_GAMEPADPIC,::H_GAMEPADPIC16,378
+		H_HEALPIC,::H_HEALPIC17,414
+		H_TREASUREPIC,::H_TREASUREPIC18,451
+		H_GUNPIC,::H_GUNPIC19,488
+		H_KEYPIC,::H_KEYPIC20,525
+		H_BLAZEPIC,::H_BLAZEPIC21,562
+		H_WEAPON1234PIC,::H_WEAPON1234PIC22,599
+		H_WOLFLOGOPIC,::H_WOLFLOGOPIC23,636
+		H_VISAPIC,::H_VISAPIC24,673
+		H_MCPIC,::H_MCPIC25,710
+		H_IDLOGOPIC,::H_IDLOGOPIC26,747
+		H_FAXPIC,::H_FAXPIC27,784
+		H_GALACTIXPIC,::H_GALACTIXPIC28,821
+		H_FGODMOMPIC,::H_FGODMOMPIC29,858
+		H_AUSTRALIAPIC,::H_AUSTRALIAPIC30,895
+		H_CANADAPIC,::H_CANADAPIC31,932
+		H_UKPIC,::H_UKPIC32,969
+		H_TOPWINDOWPIC,::H_TOPWINDOWPIC33,1006
+		H_LEFTWINDOWPIC,::H_LEFTWINDOWPIC34,1043
+		H_RIGHTWINDOWPIC,::H_RIGHTWINDOWPIC35,1080
+		H_BOTTOMINFOPIC,::H_BOTTOMINFOPIC36,1117
+
+ID_US_1.C,1181
+		char		*abortprogram;::abortprogram37,1020
+		boolean		NoWait;::NoWait38,1043
+		word		PrintX,::PrintX39,1062
+		word		PrintX,PrintY;::PrintY39,1062
+		word		WindowX,::WindowX40,1085
+		word		WindowX,WindowY,::WindowY40,1085
+		word		WindowX,WindowY,WindowW,::WindowW40,1085
+		word		WindowX,WindowY,WindowW,WindowH;::WindowH40,1085
+#define	ConfigVersion	43,1149
+static	char		*ParmStrings[::ParmStrings45,1174
+					*ParmStrings2[ParmStrings246,1227
+static	boolean		US_Started;47,1269
+		boolean		Button0,49,1298
+		boolean		Button0,Button1,49,1298
+					CursorBad;50,1326
+		int			CursorX,51,1342
+		int			CursorX,CursorY;51,1342
+		SaveGame	Games[Games56,1497
+		HighScore	Scores[Scores57,1529
+USL_HardError(81,2125
+US_Startup(172,3766
+US_Shutdown(224,4679
+US_CheckParm(240,5121
+US_SetPrintRoutines(278,5886
+US_Print(291,6273
+US_PrintUnsigned(328,6809
+US_PrintSigned(341,7119
+USL_PrintInCenter(354,7453
+US_PrintCentered(374,7907
+US_CPrintLine(393,8360
+US_CPrint(414,8830
+US_ClearWindow(443,9268
+US_DrawWindow(456,9613
+US_CenterWindow(492,10452
+US_SaveWindow(504,10806
+US_RestoreWindow(522,11205
+USL_XORICursor(541,11620
+US_LineInput(577,12547
+
+WL_TEXT.C,1191
+#define BACKCOLOR	28,718
+#define WORDLIMIT	31,744
+#define FONTHEIGHT	32,766
+#define	TOPMARGIN	33,789
+#define BOTTOMMARGIN	34,811
+#define LEFTMARGIN	35,835
+#define RIGHTMARGIN	36,858
+#define PICMARGIN	37,882
+#define TEXTROWS	38,903
+#define	SPACEWIDTH	39,963
+#define SCREENPIXWIDTH	40,985
+#define SCREENMID	41,1012
+int			pagenum,51,1239
+int			pagenum,numpages;51,1239
+unsigned	leftmargin[leftmargin53,1264
+unsigned	leftmargin[TEXTROWS],rightmargin[rightmargin53,1264
+char		far *text;text54,1317
+unsigned	rowon;55,1334
+int			picx,57,1351
+int			picx,picy,57,1351
+int			picx,picy,picnum,57,1351
+int			picx,picy,picnum,picdelay;57,1351
+boolean		layoutdone;58,1384
+void RipToEOL 71,1565
+int	ParseNumber 86,1713
+void	ParsePicCommand 125,2196
+void	ParseTimedCommand 134,2309
+void	TimedPicCommand 155,2616
+void HandleCommand 186,2946
+void NewLine 289,4952
+void HandleCtrls 329,5396
+void HandleWord 352,5604
+void PageLayout 412,6542
+void BackPage 518,8140
+void CacheLayoutGraphics 543,8548
+void ShowArticle 599,9546
+int 	endextern 730,11731
+int		helpextern 732,11773
+char helpfilename[helpfilename735,11816
+void HelpScreens 747,11966
+void EndText 800,12645
+
+WL_ACT2.C,16581
+#define PROJECTILESIZE	14,239
+#define BJRUNSPEED	16,271
+#define BJJUMPSPEED	17,295
+dirtype dirtable[dirtable39,701
+int	starthitpoints[starthitpoints42,797
+statetype s_rocket	181,3136
+statetype s_smoke1	182,3213
+statetype s_smoke2	183,3279
+statetype s_smoke3	184,3345
+statetype s_smoke4	185,3411
+statetype s_boom1	187,3473
+statetype s_boom2	188,3536
+statetype s_boom3	189,3599
+statetype s_hrocket	203,3897
+statetype s_hsmoke1	204,3977
+statetype s_hsmoke2	205,4046
+statetype s_hsmoke3	206,4115
+statetype s_hsmoke4	207,4184
+statetype s_hboom1	209,4248
+statetype s_hboom2	210,4314
+statetype s_hboom3	211,4380
+void A_Smoke 233,4756
+#define PROJSIZE	264,5195
+boolean ProjectileTryMove 266,5220
+void T_Projectile 302,5714
+statetype s_grdstand	418,7876
+statetype s_grdpath1 420,7947
+statetype s_grdpath1s 421,8020
+statetype s_grdpath2 422,8090
+statetype s_grdpath3 423,8162
+statetype s_grdpath3s 424,8235
+statetype s_grdpath4 425,8305
+statetype s_grdpain 427,8378
+statetype s_grdpain1 428,8447
+statetype s_grdshoot1 430,8518
+statetype s_grdshoot2 431,8593
+statetype s_grdshoot3 432,8671
+statetype s_grdchase1 434,8747
+statetype s_grdchase1s 435,8823
+statetype s_grdchase2 436,8895
+statetype s_grdchase3 437,8969
+statetype s_grdchase3s 438,9045
+statetype s_grdchase4 439,9117
+statetype s_grddie1	441,9192
+statetype s_grddie2	442,9271
+statetype s_grddie3	443,9341
+statetype s_grddie4	444,9411
+statetype s_blinkychase1 460,9768
+statetype s_blinkychase2 461,9852
+statetype s_inkychase1 463,9937
+statetype s_inkychase2 464,10016
+statetype s_pinkychase1 466,10096
+statetype s_pinkychase2 467,10177
+statetype s_clydechase1 469,10259
+statetype s_clydechase2 470,10340
+statetype s_dogpath1 503,11092
+statetype s_dogpath1s 504,11165
+statetype s_dogpath2 505,11235
+statetype s_dogpath3 506,11307
+statetype s_dogpath3s 507,11380
+statetype s_dogpath4 508,11450
+statetype s_dogjump1 510,11523
+statetype s_dogjump2 511,11595
+statetype s_dogjump3 512,11669
+statetype s_dogjump4 513,11741
+statetype s_dogjump5 514,11813
+statetype s_dogchase1 516,11886
+statetype s_dogchase1s 517,11965
+statetype s_dogchase2 518,12037
+statetype s_dogchase3 519,12114
+statetype s_dogchase3s 520,12193
+statetype s_dogchase4 521,12265
+statetype s_dogdie1	523,12343
+statetype s_dogdie2	524,12422
+statetype s_dogdie3	525,12492
+statetype s_dogdead	526,12562
+statetype s_ofcstand	565,13393
+statetype s_ofcpath1 567,13464
+statetype s_ofcpath1s 568,13537
+statetype s_ofcpath2 569,13607
+statetype s_ofcpath3 570,13679
+statetype s_ofcpath3s 571,13752
+statetype s_ofcpath4 572,13822
+statetype s_ofcpain 574,13895
+statetype s_ofcpain1 575,13964
+statetype s_ofcshoot1 577,14035
+statetype s_ofcshoot2 578,14109
+statetype s_ofcshoot3 579,14187
+statetype s_ofcchase1 581,14263
+statetype s_ofcchase1s 582,14339
+statetype s_ofcchase2 583,14411
+statetype s_ofcchase3 584,14485
+statetype s_ofcchase3s 585,14561
+statetype s_ofcchase4 586,14633
+statetype s_ofcdie1	588,14708
+statetype s_ofcdie2	589,14787
+statetype s_ofcdie3	590,14857
+statetype s_ofcdie4	591,14927
+statetype s_ofcdie5	592,14997
+statetype s_mutstand	631,15825
+statetype s_mutpath1 633,15896
+statetype s_mutpath1s 634,15969
+statetype s_mutpath2 635,16039
+statetype s_mutpath3 636,16111
+statetype s_mutpath3s 637,16184
+statetype s_mutpath4 638,16254
+statetype s_mutpain 640,16327
+statetype s_mutpain1 641,16396
+statetype s_mutshoot1 643,16467
+statetype s_mutshoot2 644,16544
+statetype s_mutshoot3 645,16619
+statetype s_mutshoot4 646,16697
+statetype s_mutchase1 648,16773
+statetype s_mutchase1s 649,16849
+statetype s_mutchase2 650,16921
+statetype s_mutchase3 651,16995
+statetype s_mutchase3s 652,17071
+statetype s_mutchase4 653,17143
+statetype s_mutdie1	655,17218
+statetype s_mutdie2	656,17296
+statetype s_mutdie3	657,17365
+statetype s_mutdie4	658,17434
+statetype s_mutdie5	659,17503
+statetype s_ssstand	700,18390
+statetype s_sspath1 702,18458
+statetype s_sspath1s 703,18528
+statetype s_sspath2 704,18595
+statetype s_sspath3 705,18664
+statetype s_sspath3s 706,18734
+statetype s_sspath4 707,18801
+statetype s_sspain 709,18871
+statetype s_sspain1 710,18938
+statetype s_ssshoot1 712,19006
+statetype s_ssshoot2 713,19078
+statetype s_ssshoot3 714,19153
+statetype s_ssshoot4 715,19225
+statetype s_ssshoot5 716,19300
+statetype s_ssshoot6 717,19372
+statetype s_ssshoot7 718,19447
+statetype s_ssshoot8 719,19520
+statetype s_ssshoot9 720,19596
+statetype s_sschase1 722,19670
+statetype s_sschase1s 723,19743
+statetype s_sschase2 724,19812
+statetype s_sschase3 725,19883
+statetype s_sschase3s 726,19956
+statetype s_sschase4 727,20025
+statetype s_ssdie1	729,20097
+statetype s_ssdie2	730,20173
+statetype s_ssdie3	731,20240
+statetype s_ssdie4	732,20307
+statetype s_bossstand	763,20989
+statetype s_bosschase1 765,21063
+statetype s_bosschase1s	766,21141
+statetype s_bosschase2 767,21214
+statetype s_bosschase3 768,21290
+statetype s_bosschase3s	769,21368
+statetype s_bosschase4 770,21441
+statetype s_bossdie1	772,21518
+statetype s_bossdie2	773,21598
+statetype s_bossdie3	774,21669
+statetype s_bossdie4	775,21740
+statetype s_bossshoot1 777,21811
+statetype s_bossshoot2 778,21889
+statetype s_bossshoot3 779,21970
+statetype s_bossshoot4 780,22051
+statetype s_bossshoot5 781,22132
+statetype s_bossshoot6 782,22213
+statetype s_bossshoot7 783,22294
+statetype s_bossshoot8 784,22375
+statetype s_gretelstand	814,23096
+statetype s_gretelchase1 816,23176
+statetype s_gretelchase1s	817,23260
+statetype s_gretelchase2 818,23339
+statetype s_gretelchase3 819,23421
+statetype s_gretelchase3s	820,23505
+statetype s_gretelchase4 821,23584
+statetype s_greteldie1	823,23667
+statetype s_greteldie2	824,23753
+statetype s_greteldie3	825,23830
+statetype s_greteldie4	826,23907
+statetype s_gretelshoot1 828,23984
+statetype s_gretelshoot2 829,24068
+statetype s_gretelshoot3 830,24155
+statetype s_gretelshoot4 831,24242
+statetype s_gretelshoot5 832,24329
+statetype s_gretelshoot6 833,24416
+statetype s_gretelshoot7 834,24503
+statetype s_gretelshoot8 835,24590
+void SpawnStand 847,24739
+void SpawnDeadGuard 919,26024
+void SpawnBoss 936,26208
+void SpawnGretel 959,26593
+void SpawnPatrol 983,26993
+void A_DeathScream 1061,28301
+statetype s_transstand	1212,31108
+statetype s_transchase1 1214,31185
+statetype s_transchase1s	1215,31266
+statetype s_transchase2 1216,31342
+statetype s_transchase3 1217,31421
+statetype s_transchase3s	1218,31502
+statetype s_transchase4 1219,31578
+statetype s_transdie0	1221,31658
+statetype s_transdie01	1222,31739
+statetype s_transdie1	1223,31811
+statetype s_transdie2	1224,31885
+statetype s_transdie3	1225,31959
+statetype s_transdie4	1226,32033
+statetype s_transshoot1 1228,32107
+statetype s_transshoot2 1229,32188
+statetype s_transshoot3 1230,32272
+statetype s_transshoot4 1231,32356
+statetype s_transshoot5 1232,32440
+statetype s_transshoot6 1233,32524
+statetype s_transshoot7 1234,32608
+statetype s_transshoot8 1235,32692
+void SpawnTrans 1246,32831
+statetype s_uberstand	1293,33887
+statetype s_uberchase1 1295,33961
+statetype s_uberchase1s	1296,34039
+statetype s_uberchase2 1297,34112
+statetype s_uberchase3 1298,34188
+statetype s_uberchase3s	1299,34266
+statetype s_uberchase4 1300,34339
+statetype s_uberdie0	1302,34416
+statetype s_uberdie01	1303,34494
+statetype s_uberdie1	1304,34563
+statetype s_uberdie2	1305,34634
+statetype s_uberdie3	1306,34705
+statetype s_uberdie4	1307,34776
+statetype s_uberdie5	1308,34847
+statetype s_ubershoot1 1310,34918
+statetype s_ubershoot2 1311,34996
+statetype s_ubershoot3 1312,35078
+statetype s_ubershoot4 1313,35160
+statetype s_ubershoot5 1314,35242
+statetype s_ubershoot6 1315,35324
+statetype s_ubershoot7 1316,35406
+void SpawnUber 1327,35541
+void T_UShoot 1351,35957
+statetype s_willstand	1392,36761
+statetype s_willchase1 1394,36835
+statetype s_willchase1s	1395,36912
+statetype s_willchase2 1396,36985
+statetype s_willchase3 1397,37060
+statetype s_willchase3s	1398,37137
+statetype s_willchase4 1399,37210
+statetype s_willdeathcam	1401,37286
+statetype s_willdie1	1403,37359
+statetype s_willdie2	1404,37436
+statetype s_willdie3	1405,37505
+statetype s_willdie4	1406,37576
+statetype s_willdie5	1407,37647
+statetype s_willdie6	1408,37718
+statetype s_willshoot1 1410,37790
+statetype s_willshoot2 1411,37868
+statetype s_willshoot3 1412,37950
+statetype s_willshoot4 1413,38031
+statetype s_willshoot5 1414,38112
+statetype s_willshoot6 1415,38193
+void SpawnWill 1426,38331
+void T_Will 1450,38746
+statetype s_deathstand	1565,40900
+statetype s_deathchase1 1567,40977
+statetype s_deathchase1s	1568,41057
+statetype s_deathchase2 1569,41133
+statetype s_deathchase3 1570,41211
+statetype s_deathchase3s	1571,41291
+statetype s_deathchase4 1572,41367
+statetype s_deathdeathcam	1574,41446
+statetype s_deathdie1	1576,41522
+statetype s_deathdie2	1577,41602
+statetype s_deathdie3	1578,41674
+statetype s_deathdie4	1579,41748
+statetype s_deathdie5	1580,41822
+statetype s_deathdie6	1581,41896
+statetype s_deathdie7	1582,41970
+statetype s_deathdie8	1583,42044
+statetype s_deathdie9	1584,42118
+statetype s_deathshoot1 1586,42192
+statetype s_deathshoot2 1587,42273
+statetype s_deathshoot3 1588,42358
+statetype s_deathshoot4 1589,42442
+statetype s_deathshoot5 1590,42527
+void SpawnDeath 1601,42669
+void T_Launch 1624,43089
+statetype s_angelstand	1736,45361
+statetype s_angelchase1 1738,45438
+statetype s_angelchase1s	1739,45518
+statetype s_angelchase2 1740,45594
+statetype s_angelchase3 1741,45672
+statetype s_angelchase3s	1742,45752
+statetype s_angelchase4 1743,45828
+statetype s_angeldie1	1745,45907
+statetype s_angeldie11	1746,45988
+statetype s_angeldie2	1747,46060
+statetype s_angeldie3	1748,46139
+statetype s_angeldie4	1749,46213
+statetype s_angeldie5	1750,46287
+statetype s_angeldie6	1751,46361
+statetype s_angeldie7	1752,46435
+statetype s_angeldie8	1753,46509
+statetype s_angeldie9	1754,46583
+statetype s_angelshoot1 1756,46664
+statetype s_angelshoot2 1757,46754
+statetype s_angelshoot3 1758,46839
+statetype s_angeltired 1760,46927
+statetype s_angeltired2	1761,47014
+statetype s_angeltired3	1762,47094
+statetype s_angeltired4	1763,47181
+statetype s_angeltired5	1764,47261
+statetype s_angeltired6	1765,47348
+statetype s_angeltired7	1766,47428
+statetype s_spark1 1768,47516
+statetype s_spark2 1769,47588
+statetype s_spark3 1770,47660
+statetype s_spark4 1771,47732
+void A_Slurpie 1775,47823
+void A_Breathing 1781,47901
+void SpawnAngel 1794,48023
+void A_Victory 1820,48468
+void A_StartAttack 1834,48594
+void A_Relaunch 1848,48709
+statetype s_spectrewait1	1889,49398
+statetype s_spectrewait2	1890,49481
+statetype s_spectrewait3	1891,49564
+statetype s_spectrewait4	1892,49647
+statetype s_spectrechase1	1894,49731
+statetype s_spectrechase2	1895,49817
+statetype s_spectrechase3	1896,49903
+statetype s_spectrechase4	1897,49989
+statetype s_spectredie1	1899,50076
+statetype s_spectredie2	1900,50154
+statetype s_spectredie3	1901,50232
+statetype s_spectredie4	1902,50310
+statetype s_spectrewake	1903,50389
+void SpawnSpectre 1913,50531
+void A_Dormant 1934,50911
+void SpawnGhosts 1994,51966
+statetype s_schabbstand	2061,53277
+statetype s_schabbchase1 2063,53357
+statetype s_schabbchase1s	2064,53442
+statetype s_schabbchase2 2065,53521
+statetype s_schabbchase3 2066,53604
+statetype s_schabbchase3s	2067,53689
+statetype s_schabbchase4 2068,53768
+statetype s_schabbdeathcam	2070,53852
+statetype s_schabbdie1	2072,53931
+statetype s_schabbdie2	2073,54015
+statetype s_schabbdie3	2074,54090
+statetype s_schabbdie4	2075,54167
+statetype s_schabbdie5	2076,54244
+statetype s_schabbdie6	2077,54321
+statetype s_schabbshoot1 2079,54410
+statetype s_schabbshoot2 2080,54494
+statetype s_needle1 2082,54588
+statetype s_needle2 2083,54661
+statetype s_needle3 2084,54734
+statetype s_needle4 2085,54807
+statetype s_giftstand	2122,55581
+statetype s_giftchase1 2124,55655
+statetype s_giftchase1s	2125,55732
+statetype s_giftchase2 2126,55805
+statetype s_giftchase3 2127,55880
+statetype s_giftchase3s	2128,55957
+statetype s_giftchase4 2129,56030
+statetype s_giftdeathcam	2131,56106
+statetype s_giftdie1	2133,56179
+statetype s_giftdie2	2134,56256
+statetype s_giftdie3	2135,56325
+statetype s_giftdie4	2136,56396
+statetype s_giftdie5	2137,56467
+statetype s_giftdie6	2138,56538
+statetype s_giftshoot1 2140,56621
+statetype s_giftshoot2 2141,56699
+statetype s_fatstand	2178,57509
+statetype s_fatchase1 2180,57580
+statetype s_fatchase1s	2181,57653
+statetype s_fatchase2 2182,57723
+statetype s_fatchase3 2183,57794
+statetype s_fatchase3s	2184,57867
+statetype s_fatchase4 2185,57937
+statetype s_fatdeathcam	2187,58009
+statetype s_fatdie1	2189,58079
+statetype s_fatdie2	2190,58153
+statetype s_fatdie3	2191,58219
+statetype s_fatdie4	2192,58287
+statetype s_fatdie5	2193,58355
+statetype s_fatdie6	2194,58423
+statetype s_fatshoot1 2196,58503
+statetype s_fatshoot2 2197,58578
+statetype s_fatshoot3 2198,58660
+statetype s_fatshoot4 2199,58738
+statetype s_fatshoot5 2200,58816
+statetype s_fatshoot6 2201,58894
+void SpawnSchabbs 2212,59032
+void SpawnGift 2241,59517
+void SpawnFat 2270,59989
+void T_SchabbThrow 2299,60464
+void T_GiftThrow 2339,61105
+void T_Schabb 2380,61740
+void T_Gift 2472,63137
+void T_Fat 2564,64529
+statetype s_fakestand	2688,66786
+statetype s_fakechase1 2690,66860
+statetype s_fakechase1s	2691,66937
+statetype s_fakechase2 2692,67010
+statetype s_fakechase3 2693,67085
+statetype s_fakechase3s	2694,67162
+statetype s_fakechase4 2695,67235
+statetype s_fakedie1	2697,67311
+statetype s_fakedie2	2698,67391
+statetype s_fakedie3	2699,67462
+statetype s_fakedie4	2700,67533
+statetype s_fakedie5	2701,67604
+statetype s_fakedie6	2702,67675
+statetype s_fakeshoot1 2704,67746
+statetype s_fakeshoot2 2705,67828
+statetype s_fakeshoot3 2706,67910
+statetype s_fakeshoot4 2707,67992
+statetype s_fakeshoot5 2708,68074
+statetype s_fakeshoot6 2709,68156
+statetype s_fakeshoot7 2710,68238
+statetype s_fakeshoot8 2711,68320
+statetype s_fakeshoot9 2712,68402
+statetype s_fire1 2714,68479
+statetype s_fire2 2715,68548
+statetype s_mechastand	2767,69892
+statetype s_mechachase1 2769,69969
+statetype s_mechachase1s	2770,70058
+statetype s_mechachase2 2771,70134
+statetype s_mechachase3 2772,70213
+statetype s_mechachase3s	2773,70302
+statetype s_mechachase4 2774,70378
+statetype s_mechadie1	2776,70458
+statetype s_mechadie2	2777,70541
+statetype s_mechadie3	2778,70615
+statetype s_mechadie4	2779,70698
+statetype s_mechashoot1 2781,70772
+statetype s_mechashoot2 2782,70853
+statetype s_mechashoot3 2783,70937
+statetype s_mechashoot4 2784,71021
+statetype s_mechashoot5 2785,71105
+statetype s_mechashoot6 2786,71189
+statetype s_hitlerchase1 2789,71275
+statetype s_hitlerchase1s	2790,71358
+statetype s_hitlerchase2 2791,71437
+statetype s_hitlerchase3 2792,71519
+statetype s_hitlerchase3s	2793,71602
+statetype s_hitlerchase4 2794,71681
+statetype s_hitlerdeathcam	2796,71764
+statetype s_hitlerdie1	2798,71844
+statetype s_hitlerdie2	2799,71927
+statetype s_hitlerdie3	2800,72002
+statetype s_hitlerdie4	2801,72084
+statetype s_hitlerdie5	2802,72161
+statetype s_hitlerdie6	2803,72238
+statetype s_hitlerdie7	2804,72315
+statetype s_hitlerdie8	2805,72392
+statetype s_hitlerdie9	2806,72469
+statetype s_hitlerdie10	2807,72547
+statetype s_hitlershoot1 2809,72638
+statetype s_hitlershoot2 2810,72722
+statetype s_hitlershoot3 2811,72809
+statetype s_hitlershoot4 2812,72896
+statetype s_hitlershoot5 2813,72983
+statetype s_hitlershoot6 2814,73070
+void SpawnFakeHitler 2826,73221
+void SpawnHitler 2856,73707
+void A_HitlerMorph 2886,74199
+void A_MechaSound 2912,74735
+void A_Slurpie 2920,74863
+void T_FakeFire 2933,74984
+void T_Fake 2974,75616
+void T_Stand 3047,76679
+void T_Chase 3069,76965
+void T_Ghosts 3207,79303
+void T_DogChase 3257,79987
+void SelectPathDir 3340,81166
+void T_Path 3367,81450
+void T_Shoot 3444,82709
+void T_Bite 3530,84155
+statetype s_bjrun1 3596,85215
+statetype s_bjrun1s	3597,85283
+statetype s_bjrun2 3598,85347
+statetype s_bjrun3 3599,85413
+statetype s_bjrun3s	3600,85481
+statetype s_bjrun4 3601,85545
+statetype s_bjjump1	3604,85613
+statetype s_bjjump2	3605,85685
+statetype s_bjjump3	3606,85761
+statetype s_bjjump4	3607,85833
+statetype s_deathcam 3610,85908
+void SpawnBJVictory 3621,86021
+void T_BJRun 3643,86317
+void T_BJJump 3681,86759
+void T_BJYell 3698,86907
+void T_BJDone 3713,87051
+boolean	CheckPosition 3731,87276
+void	A_StartDeathCam 3765,87750
+
+MUNGE.C,24
+void VL_MungePic 10,62
+
+F_SPEAR.H,1682
+#define ENDSTR1	1,0
+#define ENDSTR2	2,83
+#define ENDSTR3	3,164
+#define ENDSTR4	4,257
+#define ENDSTR5	5,322
+#define ENDSTR6	6,400
+#define ENDSTR7	7,484
+#define ENDSTR8	8,556
+#define ENDSTR9	9,643
+#define STR_ENDGAME1	11,726
+#define STR_ENDGAME2	12,790
+#define STR_ENDGAME3	13,848
+#define STR_ENDGAME4	14,916
+#define STR_COPY1	16,969
+#define STR_COPY2	17,1032
+#define STR_COPY3	19,1073
+#define STR_COPY4	20,1138
+#define STR_COPY5	22,1209
+#define STR_COPY6	23,1272
+#define STR_COPY7	25,1337
+#define STR_COPY8	26,1401
+#define STR_COPY9	28,1441
+#define STR_COPY10	30,1493
+#define STR_COPY11	31,1555
+#define STR_COPY12	33,1594
+#define STR_COPY13	35,1645
+#define STR_COPY14	37,1682
+#define STR_COPY15	39,1734
+#define STR_COPY16	41,1791
+#define STR_COPY17	43,1844
+#define STR_COPY18	44,1881
+#define STR_COPY19	46,1926
+#define STR_COPY20	47,1963
+#define STR_COPY21	49,2007
+#define STR_COPY22	50,2049
+#define STR_NOPE1	52,2092
+#define STR_NOPE2	53,2148
+#define STR_NOPE3	54,2197
+#define STR_NOPE4	55,2264
+#define STR_NOPE5	56,2328
+#define STR_NOPE6	57,2410
+#define STR_NOPE7	58,2483
+#define STR_NOPE8	59,2560
+#define STR_NOPE9	60,2605
+#define STR_MISC1	62,2691
+#define STR_MISC2	63,2746
+#define STR_MISC3	65,2795
+#define STR_MISC4	66,2847
+#define STR_MISC5	68,2889
+#define STR_MISC6	69,2943
+#define STR_MISC7	71,2992
+#define STR_MISC8	72,3045
+#define STR_MISC9	73,3099
+#define STR_STAR	75,3132
+#define STR_DEBRIEF	76,3156
+#define STR_ENEMY1	77,3202
+#define STR_ENEMY2	78,3246
+#define STR_CHECKMAN	80,3293
+#define STR_MAN1	81,3334
+#define STR_MAN2	82,3371
+#define STR_MAN3	83,3410
+#define STR_MAN4	84,3438
+#define STR_ID1	86,3462
+
+GFXE_WL1.H,5868
+		H_BJPIC=::H_BJPIC10,185
+		H_CASTLEPIC,::H_CASTLEPIC11,198
+		H_KEYBOARDPIC,::H_KEYBOARDPIC12,234
+		H_JOYPIC,::H_JOYPIC13,270
+		H_MOUSEPIC,::H_MOUSEPIC14,306
+		H_BOTHPIC,::H_BOTHPIC15,342
+		H_GAMEPADPIC,::H_GAMEPADPIC16,378
+		H_HEALPIC,::H_HEALPIC17,414
+		H_TREASUREPIC,::H_TREASUREPIC18,451
+		H_GUNPIC,::H_GUNPIC19,488
+		H_KEYPIC,::H_KEYPIC20,525
+		H_BLAZEPIC,::H_BLAZEPIC21,562
+		H_WEAPON1234PIC,::H_WEAPON1234PIC22,599
+		H_WOLFLOGOPIC,::H_WOLFLOGOPIC23,636
+		H_VISAPIC,::H_VISAPIC24,673
+		H_MCPIC,::H_MCPIC25,710
+		H_IDLOGOPIC,::H_IDLOGOPIC26,747
+		H_FAXPIC,::H_FAXPIC27,784
+		H_GALACTIXPIC,::H_GALACTIXPIC28,821
+		H_FGODMOMPIC,::H_FGODMOMPIC29,858
+		H_AUSTRALIAPIC,::H_AUSTRALIAPIC30,895
+		H_CANADAPIC,::H_CANADAPIC31,932
+		H_UKPIC,::H_UKPIC32,969
+		C_OPTIONSPIC,::C_OPTIONSPIC34,1022
+		C_CURSOR1PIC,::C_CURSOR1PIC35,1059
+		C_CURSOR2PIC,::C_CURSOR2PIC36,1096
+		C_NOTSELECTEDPIC,::C_NOTSELECTEDPIC37,1133
+		C_SELECTEDPIC,::C_SELECTEDPIC38,1170
+		C_FXTITLEPIC,::C_FXTITLEPIC39,1207
+		C_DIGITITLEPIC,::C_DIGITITLEPIC40,1244
+		C_MUSICTITLEPIC,::C_MUSICTITLEPIC41,1281
+		C_MOUSELBACKPIC,::C_MOUSELBACKPIC42,1318
+		C_BABYMODEPIC,::C_BABYMODEPIC43,1355
+		C_EASYPIC,::C_EASYPIC44,1392
+		C_NORMALPIC,::C_NORMALPIC45,1429
+		C_HARDPIC,::C_HARDPIC46,1466
+		C_LOADSAVEDISKPIC,::C_LOADSAVEDISKPIC47,1503
+		C_DISKLOADING1PIC,::C_DISKLOADING1PIC48,1540
+		C_DISKLOADING2PIC,::C_DISKLOADING2PIC49,1577
+		C_CONTROLPIC,::C_CONTROLPIC50,1614
+		C_CUSTOMIZEPIC,::C_CUSTOMIZEPIC51,1651
+		C_LOADGAMEPIC,::C_LOADGAMEPIC52,1688
+		C_SAVEGAMEPIC,::C_SAVEGAMEPIC53,1725
+		C_EPISODE1PIC,::C_EPISODE1PIC54,1762
+		C_EPISODE2PIC,::C_EPISODE2PIC55,1799
+		C_EPISODE3PIC,::C_EPISODE3PIC56,1836
+		C_EPISODE4PIC,::C_EPISODE4PIC57,1873
+		C_EPISODE5PIC,::C_EPISODE5PIC58,1910
+		C_EPISODE6PIC,::C_EPISODE6PIC59,1947
+		C_CODEPIC,::C_CODEPIC60,1984
+		L_GUYPIC,::L_GUYPIC62,2037
+		L_COLONPIC,::L_COLONPIC63,2074
+		L_NUM0PIC,::L_NUM0PIC64,2111
+		L_NUM1PIC,::L_NUM1PIC65,2148
+		L_NUM2PIC,::L_NUM2PIC66,2185
+		L_NUM3PIC,::L_NUM3PIC67,2222
+		L_NUM4PIC,::L_NUM4PIC68,2259
+		L_NUM5PIC,::L_NUM5PIC69,2296
+		L_NUM6PIC,::L_NUM6PIC70,2333
+		L_NUM7PIC,::L_NUM7PIC71,2370
+		L_NUM8PIC,::L_NUM8PIC72,2407
+		L_NUM9PIC,::L_NUM9PIC73,2444
+		L_PERCENTPIC,::L_PERCENTPIC74,2481
+		L_APIC,::L_APIC75,2518
+		L_BPIC,::L_BPIC76,2555
+		L_CPIC,::L_CPIC77,2592
+		L_DPIC,::L_DPIC78,2629
+		L_EPIC,::L_EPIC79,2666
+		L_FPIC,::L_FPIC80,2703
+		L_GPIC,::L_GPIC81,2740
+		L_HPIC,::L_HPIC82,2777
+		L_IPIC,::L_IPIC83,2814
+		L_JPIC,::L_JPIC84,2851
+		L_KPIC,::L_KPIC85,2888
+		L_LPIC,::L_LPIC86,2925
+		L_MPIC,::L_MPIC87,2962
+		L_NPIC,::L_NPIC88,2999
+		L_OPIC,::L_OPIC89,3036
+		L_PPIC,::L_PPIC90,3073
+		L_QPIC,::L_QPIC91,3110
+		L_RPIC,::L_RPIC92,3147
+		L_SPIC,::L_SPIC93,3184
+		L_TPIC,::L_TPIC94,3221
+		L_UPIC,::L_UPIC95,3258
+		L_VPIC,::L_VPIC96,3295
+		L_WPIC,::L_WPIC97,3332
+		L_XPIC,::L_XPIC98,3369
+		L_YPIC,::L_YPIC99,3406
+		L_ZPIC,::L_ZPIC100,3443
+		L_GUY2PIC,::L_GUY2PIC101,3480
+		L_BJWINSPIC,::L_BJWINSPIC102,3517
+		STATUSBARPIC,::STATUSBARPIC103,3554
+		TITLEPIC,::TITLEPIC104,3591
+		PG13PIC,::PG13PIC105,3628
+		CREDITSPIC,::CREDITSPIC106,3665
+		HIGHSCORESPIC,::HIGHSCORESPIC107,3702
+		KNIFEPIC,::KNIFEPIC109,3755
+		GUNPIC,::GUNPIC110,3792
+		MACHINEGUNPIC,::MACHINEGUNPIC111,3830
+		GATLINGGUNPIC,::GATLINGGUNPIC112,3868
+		NOKEYPIC,::NOKEYPIC113,3906
+		GOLDKEYPIC,::GOLDKEYPIC114,3944
+		SILVERKEYPIC,::SILVERKEYPIC115,3982
+		N_BLANKPIC,::N_BLANKPIC116,4020
+		N_0PIC,::N_0PIC117,4058
+		N_1PIC,::N_1PIC118,4096
+		N_2PIC,::N_2PIC119,4134
+		N_3PIC,::N_3PIC120,4172
+		N_4PIC,::N_4PIC121,4210
+		N_5PIC,::N_5PIC122,4248
+		N_6PIC,::N_6PIC123,4286
+		N_7PIC,::N_7PIC124,4324
+		N_8PIC,::N_8PIC125,4362
+		N_9PIC,::N_9PIC126,4400
+		FACE1APIC,::FACE1APIC127,4438
+		FACE1BPIC,::FACE1BPIC128,4476
+		FACE1CPIC,::FACE1CPIC129,4514
+		FACE2APIC,::FACE2APIC130,4552
+		FACE2BPIC,::FACE2BPIC131,4590
+		FACE2CPIC,::FACE2CPIC132,4628
+		FACE3APIC,::FACE3APIC133,4666
+		FACE3BPIC,::FACE3BPIC134,4704
+		FACE3CPIC,::FACE3CPIC135,4742
+		FACE4APIC,::FACE4APIC136,4780
+		FACE4BPIC,::FACE4BPIC137,4818
+		FACE4CPIC,::FACE4CPIC138,4856
+		FACE5APIC,::FACE5APIC139,4894
+		FACE5BPIC,::FACE5BPIC140,4932
+		FACE5CPIC,::FACE5CPIC141,4970
+		FACE6APIC,::FACE6APIC142,5008
+		FACE6BPIC,::FACE6BPIC143,5046
+		FACE6CPIC,::FACE6CPIC144,5084
+		FACE7APIC,::FACE7APIC145,5122
+		FACE7BPIC,::FACE7BPIC146,5160
+		FACE7CPIC,::FACE7CPIC147,5198
+		FACE8APIC,::FACE8APIC148,5236
+		GOTGATLINGPIC,::GOTGATLINGPIC149,5274
+		PAUSEDPIC,::PAUSEDPIC150,5312
+		GETPSYCHEDPIC,::GETPSYCHEDPIC151,5350
+		ORDERSCREEN=::ORDERSCREEN155,5391
+		ENUMEND::ENUMEND156,5410
+	     } graphicnums;157,5420
+#define README_LUMP_START	162,5462
+#define README_LUMP_END	163,5491
+#define CONTROLS_LUMP_START	165,5521
+#define CONTROLS_LUMP_END	166,5553
+#define LEVELEND_LUMP_START	168,5584
+#define LEVELEND_LUMP_END	169,5616
+#define LATCHPICS_LUMP_START	171,5647
+#define LATCHPICS_LUMP_END	172,5680
+#define NUMCHUNKS 178,5748
+#define NUMFONT 179,5773
+#define NUMFONTM 180,5796
+#define NUMPICS 181,5819
+#define NUMPICM 182,5844
+#define NUMSPRITES 183,5867
+#define NUMTILE8 184,5890
+#define NUMTILE8M 185,5914
+#define NUMTILE16 186,5937
+#define NUMTILE16M 187,5962
+#define NUMTILE32 188,5987
+#define NUMTILE32M 189,6010
+#define NUMEXTERNS 190,6033
+#define STRUCTPIC 194,6093
+#define STARTFONT 196,6117
+#define STARTFONTM 197,6140
+#define STARTPICS 198,6163
+#define STARTPICM 199,6186
+#define STARTSPRITES 200,6211
+#define STARTTILE8 201,6236
+#define STARTTILE8M 202,6261
+#define STARTTILE16 203,6286
+#define STARTTILE16M 204,6311
+#define STARTTILE32 205,6336
+#define STARTTILE32M 206,6361
+#define STARTEXTERNS 207,6386
+
+SDMVER.H,114
+#define SPEAR1,0
+#define SPEARDEMO2,14
+#define ARTSEXTERN3,32
+#define DEMOSEXTERN4,51
+#define CARMACIZED5,71
+
+GFXE_WL6.H,721
+		ENUMEND::ENUMEND12,172
+	     } graphicnums;13,182
+#define NUMCHUNKS 22,259
+#define NUMFONT 23,284
+#define NUMFONTM 24,307
+#define NUMPICS 25,330
+#define NUMPICM 26,353
+#define NUMSPRITES 27,376
+#define NUMTILE8 28,399
+#define NUMTILE8M 29,422
+#define NUMTILE16 30,445
+#define NUMTILE16M 31,470
+#define NUMTILE32 32,495
+#define NUMTILE32M 33,518
+#define NUMEXTERNS 34,541
+#define STARTFONT 38,601
+#define STARTFONTM 39,624
+#define STARTPICS 40,647
+#define STARTPICM 41,670
+#define STARTSPRITES 42,693
+#define STARTTILE8 43,716
+#define STARTTILE8M 44,739
+#define STARTTILE16 45,762
+#define STARTTILE16M 46,785
+#define STARTTILE32 47,810
+#define STARTTILE32M 48,835
+#define STARTEXTERNS 49,860
+
+GFXV_WL1.H,5832
+		H_BJPIC=::H_BJPIC10,185
+		H_CASTLEPIC,::H_CASTLEPIC11,198
+		H_KEYBOARDPIC,::H_KEYBOARDPIC12,234
+		H_JOYPIC,::H_JOYPIC13,270
+		H_HEALPIC,::H_HEALPIC14,306
+		H_TREASUREPIC,::H_TREASUREPIC15,342
+		H_GUNPIC,::H_GUNPIC16,378
+		H_KEYPIC,::H_KEYPIC17,414
+		H_BLAZEPIC,::H_BLAZEPIC18,451
+		H_WEAPON1234PIC,::H_WEAPON1234PIC19,488
+		H_WOLFLOGOPIC,::H_WOLFLOGOPIC20,525
+		H_VISAPIC,::H_VISAPIC21,562
+		H_MCPIC,::H_MCPIC22,599
+		H_IDLOGOPIC,::H_IDLOGOPIC23,636
+		H_TOPWINDOWPIC,::H_TOPWINDOWPIC24,673
+		H_LEFTWINDOWPIC,::H_LEFTWINDOWPIC25,710
+		H_RIGHTWINDOWPIC,::H_RIGHTWINDOWPIC26,747
+		H_BOTTOMINFOPIC,::H_BOTTOMINFOPIC27,784
+		C_OPTIONSPIC,::C_OPTIONSPIC29,837
+		C_CURSOR1PIC,::C_CURSOR1PIC30,874
+		C_CURSOR2PIC,::C_CURSOR2PIC31,911
+		C_NOTSELECTEDPIC,::C_NOTSELECTEDPIC32,948
+		C_SELECTEDPIC,::C_SELECTEDPIC33,985
+		C_FXTITLEPIC,::C_FXTITLEPIC34,1022
+		C_DIGITITLEPIC,::C_DIGITITLEPIC35,1059
+		C_MUSICTITLEPIC,::C_MUSICTITLEPIC36,1096
+		C_MOUSELBACKPIC,::C_MOUSELBACKPIC37,1133
+		C_BABYMODEPIC,::C_BABYMODEPIC38,1170
+		C_EASYPIC,::C_EASYPIC39,1207
+		C_NORMALPIC,::C_NORMALPIC40,1244
+		C_HARDPIC,::C_HARDPIC41,1281
+		C_LOADSAVEDISKPIC,::C_LOADSAVEDISKPIC42,1318
+		C_DISKLOADING1PIC,::C_DISKLOADING1PIC43,1355
+		C_DISKLOADING2PIC,::C_DISKLOADING2PIC44,1392
+		C_CONTROLPIC,::C_CONTROLPIC45,1429
+		C_CUSTOMIZEPIC,::C_CUSTOMIZEPIC46,1466
+		C_LOADGAMEPIC,::C_LOADGAMEPIC47,1503
+		C_SAVEGAMEPIC,::C_SAVEGAMEPIC48,1540
+		C_EPISODE1PIC,::C_EPISODE1PIC49,1577
+		C_EPISODE2PIC,::C_EPISODE2PIC50,1614
+		C_EPISODE3PIC,::C_EPISODE3PIC51,1651
+		C_EPISODE4PIC,::C_EPISODE4PIC52,1688
+		C_EPISODE5PIC,::C_EPISODE5PIC53,1725
+		C_EPISODE6PIC,::C_EPISODE6PIC54,1762
+		C_CODEPIC,::C_CODEPIC55,1799
+		L_GUYPIC,::L_GUYPIC57,1852
+		L_COLONPIC,::L_COLONPIC58,1889
+		L_NUM0PIC,::L_NUM0PIC59,1926
+		L_NUM1PIC,::L_NUM1PIC60,1963
+		L_NUM2PIC,::L_NUM2PIC61,2000
+		L_NUM3PIC,::L_NUM3PIC62,2037
+		L_NUM4PIC,::L_NUM4PIC63,2074
+		L_NUM5PIC,::L_NUM5PIC64,2111
+		L_NUM6PIC,::L_NUM6PIC65,2148
+		L_NUM7PIC,::L_NUM7PIC66,2185
+		L_NUM8PIC,::L_NUM8PIC67,2222
+		L_NUM9PIC,::L_NUM9PIC68,2259
+		L_PERCENTPIC,::L_PERCENTPIC69,2296
+		L_APIC,::L_APIC70,2333
+		L_BPIC,::L_BPIC71,2370
+		L_CPIC,::L_CPIC72,2407
+		L_DPIC,::L_DPIC73,2444
+		L_EPIC,::L_EPIC74,2481
+		L_FPIC,::L_FPIC75,2518
+		L_GPIC,::L_GPIC76,2555
+		L_HPIC,::L_HPIC77,2592
+		L_IPIC,::L_IPIC78,2629
+		L_JPIC,::L_JPIC79,2666
+		L_KPIC,::L_KPIC80,2703
+		L_LPIC,::L_LPIC81,2740
+		L_MPIC,::L_MPIC82,2777
+		L_NPIC,::L_NPIC83,2814
+		L_OPIC,::L_OPIC84,2851
+		L_PPIC,::L_PPIC85,2888
+		L_QPIC,::L_QPIC86,2925
+		L_RPIC,::L_RPIC87,2962
+		L_SPIC,::L_SPIC88,2999
+		L_TPIC,::L_TPIC89,3036
+		L_UPIC,::L_UPIC90,3073
+		L_VPIC,::L_VPIC91,3110
+		L_WPIC,::L_WPIC92,3147
+		L_XPIC,::L_XPIC93,3184
+		L_YPIC,::L_YPIC94,3221
+		L_ZPIC,::L_ZPIC95,3258
+		L_EXPOINTPIC,::L_EXPOINTPIC96,3295
+		L_GUY2PIC,::L_GUY2PIC97,3332
+		L_BJWINSPIC,::L_BJWINSPIC98,3369
+		STATUSBARPIC,::STATUSBARPIC99,3406
+		TITLEPIC,::TITLEPIC100,3443
+		PG13PIC,::PG13PIC101,3480
+		CREDITSPIC,::CREDITSPIC102,3517
+		HIGHSCORESPIC,::HIGHSCORESPIC103,3554
+		KNIFEPIC,::KNIFEPIC105,3607
+		GUNPIC,::GUNPIC106,3644
+		MACHINEGUNPIC,::MACHINEGUNPIC107,3681
+		GATLINGGUNPIC,::GATLINGGUNPIC108,3718
+		NOKEYPIC,::NOKEYPIC109,3755
+		GOLDKEYPIC,::GOLDKEYPIC110,3792
+		SILVERKEYPIC,::SILVERKEYPIC111,3830
+		N_BLANKPIC,::N_BLANKPIC112,3868
+		N_0PIC,::N_0PIC113,3906
+		N_1PIC,::N_1PIC114,3944
+		N_2PIC,::N_2PIC115,3982
+		N_3PIC,::N_3PIC116,4020
+		N_4PIC,::N_4PIC117,4058
+		N_5PIC,::N_5PIC118,4096
+		N_6PIC,::N_6PIC119,4134
+		N_7PIC,::N_7PIC120,4172
+		N_8PIC,::N_8PIC121,4210
+		N_9PIC,::N_9PIC122,4248
+		FACE1APIC,::FACE1APIC123,4286
+		FACE1BPIC,::FACE1BPIC124,4324
+		FACE1CPIC,::FACE1CPIC125,4362
+		FACE2APIC,::FACE2APIC126,4400
+		FACE2BPIC,::FACE2BPIC127,4438
+		FACE2CPIC,::FACE2CPIC128,4476
+		FACE3APIC,::FACE3APIC129,4514
+		FACE3BPIC,::FACE3BPIC130,4552
+		FACE3CPIC,::FACE3CPIC131,4590
+		FACE4APIC,::FACE4APIC132,4628
+		FACE4BPIC,::FACE4BPIC133,4666
+		FACE4CPIC,::FACE4CPIC134,4704
+		FACE5APIC,::FACE5APIC135,4742
+		FACE5BPIC,::FACE5BPIC136,4780
+		FACE5CPIC,::FACE5CPIC137,4818
+		FACE6APIC,::FACE6APIC138,4856
+		FACE6BPIC,::FACE6BPIC139,4894
+		FACE6CPIC,::FACE6CPIC140,4932
+		FACE7APIC,::FACE7APIC141,4970
+		FACE7BPIC,::FACE7BPIC142,5008
+		FACE7CPIC,::FACE7CPIC143,5046
+		FACE8APIC,::FACE8APIC144,5084
+		GOTGATLINGPIC,::GOTGATLINGPIC145,5122
+		MUTANTBJPIC,::MUTANTBJPIC146,5160
+		PAUSEDPIC,::PAUSEDPIC147,5198
+		GETPSYCHEDPIC,::GETPSYCHEDPIC148,5236
+		ORDERSCREEN=::ORDERSCREEN152,5277
+		ERRORSCREEN,::ERRORSCREEN153,5296
+		ENUMEND::ENUMEND154,5334
+	     } graphicnums;155,5344
+#define README_LUMP_START	160,5386
+#define README_LUMP_END	161,5415
+#define CONTROLS_LUMP_START	163,5445
+#define CONTROLS_LUMP_END	164,5477
+#define LEVELEND_LUMP_START	166,5508
+#define LEVELEND_LUMP_END	167,5540
+#define LATCHPICS_LUMP_START	169,5571
+#define LATCHPICS_LUMP_END	170,5604
+#define NUMCHUNKS 176,5672
+#define NUMFONT 177,5697
+#define NUMFONTM 178,5720
+#define NUMPICS 179,5743
+#define NUMPICM 180,5768
+#define NUMSPRITES 181,5791
+#define NUMTILE8 182,5814
+#define NUMTILE8M 183,5838
+#define NUMTILE16 184,5861
+#define NUMTILE16M 185,5886
+#define NUMTILE32 186,5911
+#define NUMTILE32M 187,5934
+#define NUMEXTERNS 188,5957
+#define STRUCTPIC 192,6017
+#define STARTFONT 194,6041
+#define STARTFONTM 195,6064
+#define STARTPICS 196,6087
+#define STARTPICM 197,6110
+#define STARTSPRITES 198,6135
+#define STARTTILE8 199,6160
+#define STARTTILE8M 200,6185
+#define STARTTILE16 201,6210
+#define STARTTILE16M 202,6235
+#define STARTTILE32 203,6260
+#define STARTTILE32M 204,6285
+#define STARTEXTERNS 205,6310
+
+WL_STATE.C,545
+dirtype opposite[opposite24,431
+dirtype diagonal[diagonal27,526
+void SpawnNewObj 81,2033
+void NewState 113,2654
+#define CHECKDIAG(154,3643
+#define CHECKSIDE(166,4122
+boolean TryWalk 181,4698
+void SelectDodgeDir 359,7575
+void SelectChaseDir 475,9294
+void SelectRunDir 585,10779
+void MoveObj 659,11912
+void DropItem 778,13704
+void KillActor 815,14165
+void DamageActor 964,16937
+boolean CheckLine 1037,18169
+#define MINSIGHT	1185,20419
+boolean CheckSight 1187,20446
+void FirstSighting 1253,21419
+boolean SightPlayer 1404,24690
+
+SPANVER.H,95
+#define SPANISH2,16
+#define ARTSEXTERN3,32
+#define DEMOSEXTERN4,51
+#define CARMACIZED7,110
+
+SODVER.H,91
+#define SPEAR1,0
+#define ARTSEXTERN2,14
+#define DEMOSEXTERN3,33
+#define CARMACIZED4,53
+
+GFXV_SDM.H,5946
+		C_BACKDROPPIC=::C_BACKDROPPIC10,185
+		C_MOUSELBACKPIC,::C_MOUSELBACKPIC11,204
+		C_CURSOR1PIC,::C_CURSOR1PIC12,248
+		C_CURSOR2PIC,::C_CURSOR2PIC13,292
+		C_NOTSELECTEDPIC,::C_NOTSELECTEDPIC14,336
+		C_SELECTEDPIC,::C_SELECTEDPIC15,380
+		C_CUSTOMIZEPIC,::C_CUSTOMIZEPIC17,440
+		C_JOY1PIC,::C_JOY1PIC18,484
+		C_JOY2PIC,::C_JOY2PIC19,529
+		C_MOUSEPIC,::C_MOUSEPIC20,574
+		C_JOYSTICKPIC,::C_JOYSTICKPIC21,619
+		C_KEYBOARDPIC,::C_KEYBOARDPIC22,664
+		C_CONTROLPIC,::C_CONTROLPIC23,709
+		C_OPTIONSPIC,::C_OPTIONSPIC25,770
+		C_FXTITLEPIC,::C_FXTITLEPIC27,831
+		C_DIGITITLEPIC,::C_DIGITITLEPIC28,876
+		C_MUSICTITLEPIC,::C_MUSICTITLEPIC29,921
+		C_HOWTOUGHPIC,::C_HOWTOUGHPIC31,982
+		C_BABYMODEPIC,::C_BABYMODEPIC32,1027
+		C_EASYPIC,::C_EASYPIC33,1072
+		C_NORMALPIC,::C_NORMALPIC34,1117
+		C_HARDPIC,::C_HARDPIC35,1162
+		C_DISKLOADING1PIC,::C_DISKLOADING1PIC37,1223
+		C_DISKLOADING2PIC,::C_DISKLOADING2PIC38,1268
+		C_LOADGAMEPIC,::C_LOADGAMEPIC39,1313
+		C_SAVEGAMEPIC,::C_SAVEGAMEPIC40,1358
+		HIGHSCORESPIC,::HIGHSCORESPIC42,1419
+		C_WONSPEARPIC,::C_WONSPEARPIC43,1464
+		L_GUYPIC,::L_GUYPIC45,1525
+		L_COLONPIC,::L_COLONPIC46,1570
+		L_NUM0PIC,::L_NUM0PIC47,1615
+		L_NUM1PIC,::L_NUM1PIC48,1660
+		L_NUM2PIC,::L_NUM2PIC49,1705
+		L_NUM3PIC,::L_NUM3PIC50,1750
+		L_NUM4PIC,::L_NUM4PIC51,1795
+		L_NUM5PIC,::L_NUM5PIC52,1840
+		L_NUM6PIC,::L_NUM6PIC53,1885
+		L_NUM7PIC,::L_NUM7PIC54,1930
+		L_NUM8PIC,::L_NUM8PIC55,1975
+		L_NUM9PIC,::L_NUM9PIC56,2020
+		L_PERCENTPIC,::L_PERCENTPIC57,2065
+		L_APIC,::L_APIC58,2110
+		L_BPIC,::L_BPIC59,2155
+		L_CPIC,::L_CPIC60,2200
+		L_DPIC,::L_DPIC61,2245
+		L_EPIC,::L_EPIC62,2290
+		L_FPIC,::L_FPIC63,2335
+		L_GPIC,::L_GPIC64,2380
+		L_HPIC,::L_HPIC65,2425
+		L_IPIC,::L_IPIC66,2470
+		L_JPIC,::L_JPIC67,2515
+		L_KPIC,::L_KPIC68,2560
+		L_LPIC,::L_LPIC69,2605
+		L_MPIC,::L_MPIC70,2650
+		L_NPIC,::L_NPIC71,2695
+		L_OPIC,::L_OPIC72,2740
+		L_PPIC,::L_PPIC73,2785
+		L_QPIC,::L_QPIC74,2830
+		L_RPIC,::L_RPIC75,2875
+		L_SPIC,::L_SPIC76,2920
+		L_TPIC,::L_TPIC77,2965
+		L_UPIC,::L_UPIC78,3010
+		L_VPIC,::L_VPIC79,3055
+		L_WPIC,::L_WPIC80,3100
+		L_XPIC,::L_XPIC81,3145
+		L_YPIC,::L_YPIC82,3190
+		L_ZPIC,::L_ZPIC83,3235
+		L_EXPOINTPIC,::L_EXPOINTPIC84,3280
+		L_APOSTROPHEPIC,::L_APOSTROPHEPIC85,3325
+		L_GUY2PIC,::L_GUY2PIC86,3370
+		L_BJWINSPIC,::L_BJWINSPIC87,3415
+		TITLE1PIC,::TITLE1PIC89,3476
+		TITLE2PIC,::TITLE2PIC90,3521
+		STATUSBARPIC,::STATUSBARPIC91,3566
+		PG13PIC,::PG13PIC92,3611
+		CREDITSPIC,::CREDITSPIC93,3656
+		KNIFEPIC,::KNIFEPIC95,3717
+		GUNPIC,::GUNPIC96,3762
+		MACHINEGUNPIC,::MACHINEGUNPIC97,3807
+		GATLINGGUNPIC,::GATLINGGUNPIC98,3852
+		NOKEYPIC,::NOKEYPIC99,3897
+		GOLDKEYPIC,::GOLDKEYPIC100,3942
+		SILVERKEYPIC,::SILVERKEYPIC101,3987
+		N_BLANKPIC,::N_BLANKPIC102,4032
+		N_0PIC,::N_0PIC103,4077
+		N_1PIC,::N_1PIC104,4122
+		N_2PIC,::N_2PIC105,4167
+		N_3PIC,::N_3PIC106,4212
+		N_4PIC,::N_4PIC107,4257
+		N_5PIC,::N_5PIC108,4302
+		N_6PIC,::N_6PIC109,4347
+		N_7PIC,::N_7PIC110,4392
+		N_8PIC,::N_8PIC111,4437
+		N_9PIC,::N_9PIC112,4482
+		FACE1APIC,::FACE1APIC113,4527
+		FACE1BPIC,::FACE1BPIC114,4572
+		FACE1CPIC,::FACE1CPIC115,4617
+		FACE2APIC,::FACE2APIC116,4662
+		FACE2BPIC,::FACE2BPIC117,4708
+		FACE2CPIC,::FACE2CPIC118,4754
+		FACE3APIC,::FACE3APIC119,4800
+		FACE3BPIC,::FACE3BPIC120,4846
+		FACE3CPIC,::FACE3CPIC121,4892
+		FACE4APIC,::FACE4APIC122,4938
+		FACE4BPIC,::FACE4BPIC123,4984
+		FACE4CPIC,::FACE4CPIC124,5030
+		FACE5APIC,::FACE5APIC125,5076
+		FACE5BPIC,::FACE5BPIC126,5122
+		FACE5CPIC,::FACE5CPIC127,5168
+		FACE6APIC,::FACE6APIC128,5214
+		FACE6BPIC,::FACE6BPIC129,5260
+		FACE6CPIC,::FACE6CPIC130,5306
+		FACE7APIC,::FACE7APIC131,5352
+		FACE7BPIC,::FACE7BPIC132,5398
+		FACE7CPIC,::FACE7CPIC133,5444
+		FACE8APIC,::FACE8APIC134,5490
+		GOTGATLINGPIC,::GOTGATLINGPIC135,5536
+		GODMODEFACE1PIC,::GODMODEFACE1PIC136,5582
+		GODMODEFACE2PIC,::GODMODEFACE2PIC137,5628
+		GODMODEFACE3PIC,::GODMODEFACE3PIC138,5674
+		BJWAITING1PIC,::BJWAITING1PIC139,5720
+		BJWAITING2PIC,::BJWAITING2PIC140,5766
+		BJOUCHPIC,::BJOUCHPIC141,5812
+		PAUSEDPIC,::PAUSEDPIC142,5858
+		GETPSYCHEDPIC,::GETPSYCHEDPIC143,5904
+		ORDERSCREEN=::ORDERSCREEN147,5953
+		ERRORSCREEN,::ERRORSCREEN148,5972
+		TITLEPALETTE,::TITLEPALETTE149,6018
+		T_DEMO0,::T_DEMO0150,6064
+		ENUMEND::ENUMEND151,6110
+	     } graphicnums;152,6120
+#define BACKDROP_LUMP_START	157,6162
+#define BACKDROP_LUMP_END	158,6193
+#define CONTROL_LUMP_START	160,6223
+#define CONTROL_LUMP_END	161,6253
+#define OPTIONS_LUMP_START	163,6283
+#define OPTIONS_LUMP_END	164,6314
+#define SOUND_LUMP_START	166,6344
+#define SOUND_LUMP_END	167,6373
+#define NEWGAME_LUMP_START	169,6402
+#define NEWGAME_LUMP_END	170,6433
+#define LOADSAVE_LUMP_START	172,6463
+#define LOADSAVE_LUMP_END	173,6495
+#define HIGHSCORES_LUMP_START	175,6526
+#define HIGHSCORES_LUMP_END	176,6560
+#define LEVELEND_LUMP_START	178,6593
+#define LEVELEND_LUMP_END	179,6625
+#define TITLESCREEN_LUMP_START	181,6656
+#define TITLESCREEN_LUMP_END	182,6691
+#define LATCHPICS_LUMP_START	184,6725
+#define LATCHPICS_LUMP_END	185,6758
+#define NUMCHUNKS 191,6826
+#define NUMFONT 192,6851
+#define NUMFONTM 193,6874
+#define NUMPICS 194,6897
+#define NUMPICM 195,6922
+#define NUMSPRITES 196,6945
+#define NUMTILE8 197,6968
+#define NUMTILE8M 198,6992
+#define NUMTILE16 199,7015
+#define NUMTILE16M 200,7038
+#define NUMTILE32 201,7061
+#define NUMTILE32M 202,7084
+#define NUMEXTERNS 203,7107
+#define STRUCTPIC 207,7167
+#define STARTFONT 209,7191
+#define STARTFONTM 210,7214
+#define STARTPICS 211,7237
+#define STARTPICM 212,7260
+#define STARTSPRITES 213,7285
+#define STARTTILE8 214,7310
+#define STARTTILE8M 215,7335
+#define STARTTILE16 216,7360
+#define STARTTILE16M 217,7385
+#define STARTTILE32 218,7410
+#define STARTTILE32M 219,7435
+#define STARTEXTERNS 220,7460
+
+ID_VL.H,1721
+#define MS_Quit	5,35
+#define SC_INDEX	12,163
+#define SC_RESET	13,188
+#define SC_CLOCK	14,209
+#define SC_MAPMASK	15,230
+#define SC_CHARMAP	16,253
+#define SC_MEMMODE	17,276
+#define CRTC_INDEX	19,300
+#define CRTC_H_TOTAL	20,327
+#define CRTC_H_DISPEND	21,351
+#define CRTC_H_BLANK	22,377
+#define CRTC_H_ENDBLANK	23,401
+#define CRTC_H_RETRACE	24,428
+#define CRTC_H_ENDRETRACE 25,454
+#define CRTC_V_TOTAL	26,483
+#define CRTC_OVERFLOW	27,507
+#define CRTC_ROWSCAN	28,532
+#define CRTC_MAXSCANLINE 29,556
+#define CRTC_CURSORSTART 30,584
+#define CRTC_CURSOREND	31,613
+#define CRTC_STARTHIGH	32,640
+#define CRTC_STARTLOW	33,667
+#define CRTC_CURSORHIGH	34,693
+#define CRTC_CURSORLOW	35,721
+#define CRTC_V_RETRACE	36,748
+#define CRTC_V_ENDRETRACE 37,775
+#define CRTC_V_DISPEND	38,805
+#define CRTC_OFFSET	39,832
+#define CRTC_UNDERLINE	40,857
+#define CRTC_V_BLANK	41,884
+#define CRTC_V_ENDBLANK	42,909
+#define CRTC_MODE	43,937
+#define CRTC_LINECOMPARE 44,960
+#define GC_INDEX	47,991
+#define GC_SETRESET	48,1016
+#define GC_ENABLESETRESET 49,1040
+#define GC_COLORCOMPARE	50,1069
+#define GC_DATAROTATE	51,1096
+#define GC_READMAP	52,1121
+#define GC_MODE	53,1144
+#define GC_MISCELLANEOUS 54,1165
+#define GC_COLORDONTCARE 55,1193
+#define GC_BITMASK	56,1221
+#define ATR_INDEX	58,1245
+#define ATR_MODE	59,1271
+#define ATR_OVERSCAN	60,1293
+#define ATR_COLORPLANEENABLE 61,1318
+#define ATR_PELPAN	62,1350
+#define ATR_COLORSELECT	63,1374
+#define	STATUS_REGISTER_1 65,1403
+#define PEL_WRITE_ADR	67,1439
+#define PEL_READ_ADR	68,1468
+#define PEL_DATA	69,1496
+#define SCREENSEG	74,1602
+#define SCREENWIDTH	76,1629
+#define MAXSCANLINES	77,1688
+#define CHARWIDTH	79,1741
+#define TILEWIDTH	80,1762
+
+WL_PLAY.C,3143
+#define sc_Question	15,240
+boolean		madenoise;25,455
+exit_t		playstate;27,515
+int			DebugOk;29,535
+objtype 	objlist[objlist31,551
+objtype 	objlist[MAXACTORS],*newobj,newobj31,551
+objtype 	objlist[MAXACTORS],*newobj,*obj,obj31,551
+objtype 	objlist[MAXACTORS],*newobj,*obj,*player,player31,551
+objtype 	objlist[MAXACTORS],*newobj,*obj,*player,*lastobj,lastobj31,551
+			*objfreelist,objfreelist32,610
+			*objfreelist,*killerobj;killerobj32,610
+unsigned	farmapylookup[farmapylookup34,639
+byte		*nearmapylookup[nearmapylookup35,672
+boolean		singlestep,37,705
+boolean		singlestep,godmode,37,705
+boolean		singlestep,godmode,noclip;37,705
+int			extravbls;38,741
+byte		tilemap[tilemap40,759
+byte		spotvis[spotvis41,812
+objtype		*actorat[actorat42,845
+unsigned	mapwidth,47,918
+unsigned	mapwidth,mapheight,47,918
+unsigned	mapwidth,mapheight,tics;47,918
+boolean		compatability;48,952
+byte		*updateptr;updateptr49,976
+unsigned	mapwidthtable[mapwidthtable50,994
+unsigned	uwidthtable[uwidthtable51,1022
+unsigned	blockstarts[blockstarts52,1056
+byte		update[update53,1101
+boolean		mouseenabled,58,1150
+boolean		mouseenabled,joystickenabled,58,1150
+boolean		mouseenabled,joystickenabled,joypadenabled,58,1150
+boolean		mouseenabled,joystickenabled,joypadenabled,joystickprogressive;58,1150
+int			joystickport;59,1223
+int			dirscan[dirscan60,1243
+int			buttonscan[buttonscan61,1316
+int			buttonmouse[buttonmouse63,1410
+int			buttonjoy[buttonjoy64,1473
+int			viewsize;66,1530
+boolean		buttonheld[buttonheld68,1547
+boolean		demorecord,70,1581
+boolean		demorecord,demoplayback;70,1581
+char		*demoptr,demoptr71,1615
+char		*demoptr, *lastdemoptr;lastdemoptr71,1615
+memptr		demobuffer;72,1645
+int			controlx,77,1693
+int			controlx,controly;77,1693
+boolean		buttonstate[buttonstate78,1753
+objtype dummyobj;102,2249
+int songs[songs107,2308
+#define BASEMOVE	246,4372
+#define RUNMOVE	247,4393
+#define BASETURN	248,4414
+#define RUNTURN	249,4435
+#define JOYSCALE	251,4457
+void PollKeyboardButtons 261,4551
+void PollMouseButtons 279,4754
+void PollJoystickButtons 303,5072
+void PollKeyboardMove 341,5637
+void PollMouseMove 376,6295
+void PollJoystickMove 401,6610
+void PollControls 461,7733
+#define MAXX	600,10123
+#define MAXY	601,10140
+void	CenterWindow(603,10158
+void CheckKeys 620,10418
+int	objcount;879,15365
+void InitActorList 881,15380
+void GetNewActor 925,16140
+void RemoveObj 957,16735
+void StopMusic(1005,17451
+void StartMusic(1029,17828
+#define NUMREDSHIFTS	1060,18484
+#define REDSTEPS	1061,18507
+#define NUMWHITESHIFTS	1063,18528
+#define WHITESTEPS	1064,18553
+#define WHITETICS	1065,18576
+byte	far redshifts[redshifts1068,18599
+byte	far whiteshifts[whiteshifts1069,18638
+int		damagecount,1071,18680
+int		damagecount,bonuscount;1071,18680
+boolean	palshifted;1072,18709
+void InitRedShifts 1084,18828
+void ClearPaletteShifts 1135,19757
+void StartBonusFlash 1149,19898
+void StartDamageFlash 1163,20070
+void UpdatePaletteShifts 1177,20212
+void FinishPaletteShifts 1238,21068
+void DoActor 1266,21443
+long funnyticount;1371,22873
+void PlayLoop 1374,22894
+
+MAPSWL1.H,1329
+		WOLF1_MAP1_MAP,::WOLF1_MAP1_MAP11,148
+		WOLF1_MAP2_MAP,::WOLF1_MAP2_MAP12,180
+		WOLF1_MAP3_MAP,::WOLF1_MAP3_MAP13,212
+		WOLF1_MAP4_MAP,::WOLF1_MAP4_MAP14,244
+		WOLF1_MAP5_MAP,::WOLF1_MAP5_MAP15,276
+		WOLF1_MAP6_MAP,::WOLF1_MAP6_MAP16,308
+		WOLF1_MAP7_MAP,::WOLF1_MAP7_MAP17,340
+		WOLF1_MAP8_MAP,::WOLF1_MAP8_MAP18,372
+		WOLF1_BOSS_MAP,::WOLF1_BOSS_MAP19,404
+		WOLF1_SECRET_MAP,::WOLF1_SECRET_MAP20,436
+		WOLF2_MAP1_MAP,::WOLF2_MAP1_MAP21,468
+		WOLF2_MAP2_MAP,::WOLF2_MAP2_MAP22,501
+		WOLF2_MAP3_MAP,::WOLF2_MAP3_MAP23,534
+		WOLF2_MAP4_MAP,::WOLF2_MAP4_MAP24,567
+		WOLF2_MAP5_MAP,::WOLF2_MAP5_MAP25,600
+		WOLF2_MAP6_MAP,::WOLF2_MAP6_MAP26,633
+		WOLF2_MAP7_MAP,::WOLF2_MAP7_MAP27,666
+		WOLF2_MAP8_MAP,::WOLF2_MAP8_MAP28,699
+		WOLF2_BOSS_MAP,::WOLF2_BOSS_MAP29,732
+		WOLF2_SECRET_MAP,::WOLF2_SECRET_MAP30,765
+		WOLF3_MAP1_MAP,::WOLF3_MAP1_MAP31,798
+		WOLF3_MAP2_MAP,::WOLF3_MAP2_MAP32,831
+		WOLF3_MAP3_MAP,::WOLF3_MAP3_MAP33,864
+		WOLF3_MAP4_MAP,::WOLF3_MAP4_MAP34,897
+		WOLF3_MAP5_MAP,::WOLF3_MAP5_MAP35,930
+		WOLF3_MAP6_MAP,::WOLF3_MAP6_MAP36,963
+		WOLF3_MAP7_MAP,::WOLF3_MAP7_MAP37,996
+		WOLF3_MAP8_MAP,::WOLF3_MAP8_MAP38,1029
+		WOLF3_BOSS_MAP,::WOLF3_BOSS_MAP39,1062
+		WOLF3_SECRET_MAP,::WOLF3_SECRET_MAP40,1095
+		LASTMAP::LASTMAP41,1128
+	     } mapnames;42,1138
+
+WL_DRAW.C,2618
+#define DOORWALL	19,349
+#define ACTORSIZE	21,385
+unsigned screenloc[screenloc33,619
+unsigned screenloc[screenloc35,657
+unsigned freelatch 37,723
+long 	lasttimecount;39,756
+long 	frameon;40,777
+unsigned	wallheight[wallheight42,793
+fixed	tileglobal	44,829
+fixed	mindist	45,860
+int			pixelangle[pixelangle51,909
+fixed 		far sintable[ANGLES+ANGLES/4],far *costable costable53,978
+fixed	viewx,58,1081
+fixed	viewx,viewy;58,1081
+int		viewangle;59,1121
+fixed	viewsin,60,1137
+fixed	viewsin,viewcos;60,1137
+int		lastside;79,1451
+long	lastintercept;80,1488
+int		lasttilehit;81,1508
+int			focaltx,87,1559
+int			focaltx,focalty,87,1559
+int			focaltx,focalty,viewtx,87,1559
+int			focaltx,focalty,viewtx,viewty;87,1559
+int			midangle,89,1597
+int			midangle,angle;89,1597
+unsigned	xpartial,90,1619
+unsigned	xpartial,ypartial;90,1619
+unsigned	xpartialup,91,1647
+unsigned	xpartialup,xpartialdown,91,1647
+unsigned	xpartialup,xpartialdown,ypartialup,91,1647
+unsigned	xpartialup,xpartialdown,ypartialup,ypartialdown;91,1647
+unsigned	xinttile,92,1705
+unsigned	xinttile,yinttile;92,1705
+unsigned	tilehit;94,1734
+unsigned	pixx;95,1752
+int		xtile,97,1768
+int		xtile,ytile;97,1768
+int		xtilestep,98,1786
+int		xtilestep,ytilestep;98,1786
+long	xintercept,99,1812
+long	xintercept,yintercept;99,1812
+long	xstep,100,1840
+long	xstep,ystep;100,1840
+int		horizwall[horizwall102,1859
+int		horizwall[MAXWALLTILES],vertwall[vertwall102,1859
+fixed FixedByFrac 141,2680
+void TransformActor 210,3838
+boolean TransformTile 287,5371
+int	CalcHeight 359,6740
+long		postsource;396,7354
+unsigned	postx;397,7372
+unsigned	postwidth;398,7388
+void	near ScalePost 400,7409
+void  FarScalePost 460,8843
+void HitVertWall 477,9117
+void HitHorizWall 550,10474
+void HitHorizDoor 620,11783
+void HitVertDoor 688,13020
+void HitHorizPWall 759,14304
+void HitVertPWall 823,15339
+void ClearScreen 889,16491
+unsigned vgaCeiling[vgaCeiling946,17546
+void VGAClearScreen 970,18256
+int	CalcRotate 1024,19150
+#define MAXVISABLE	1061,19904
+	int	viewx,::viewx1065,19944
+		viewheight,::viewheight1066,19956
+		shapenum;::shapenum1067,19970
+} visobj_t;1068,19982
+visobj_t	vislist[vislist1070,19995
+visobj_t	vislist[MAXVISABLE],*visptr,visptr1070,19995
+visobj_t	vislist[MAXVISABLE],*visptr,*visstep,visstep1070,19995
+visobj_t	vislist[MAXVISABLE],*visptr,*visstep,*farthest;farthest1070,19995
+void DrawScaleds 1072,20053
+int	weaponscale[weaponscale1198,22708
+void DrawPlayerWeapon 1201,22810
+void CalcTics 1236,23432
+void	FixOfs 1281,24199
+void WallRefresh 1298,24436
+void	ThreeDRefresh 1336,25313
+
+ID_IN.C,1949
+#define	KeyInt	23,476
+#define	MReset	28,547
+#define	MButtons	29,565
+#define	MDelta	30,584
+#define	MouseInt	32,604
+#define	Mouse(33,626
+#define	JoyScaleMax	38,703
+#define	JoyScaleShift	39,730
+#define	MaxJoyValue	40,754
+boolean			MousePresent;53,1001
+boolean			JoysPresent[JoysPresent54,1025
+boolean			JoyPadPresent;55,1057
+		boolean		Keyboard[Keyboard59,1105
+		boolean		Paused;60,1136
+		char		LastASCII;61,1155
+		ScanCode	LastScan;62,1174
+		KeyboardDef	KbdDefs 64,1196
+		JoystickDef	JoyDefs[JoyDefs65,1273
+		ControlType	Controls[Controls66,1305
+		longword	MouseDownCount;68,1342
+		Demo		DemoMode 70,1370
+		byte _seg	*DemoBuffer;DemoBuffer71,1399
+		word		DemoOffset,72,1424
+		word		DemoOffset,DemoSize;72,1424
+static	byte        far ASCIINames[ASCIINames81,1639
+					far ShiftNames[ShiftNames93,2359
+					far SpecialNames[SpecialNames105,3065
+static	boolean		IN_Started;119,3775
+static	boolean		CapsLock;120,3803
+static	ScanCode	CurCode,121,3829
+static	ScanCode	CurCode,LastCode;121,3829
+static	Direction	DirTable[DirTable123,3864
+static	char			*ParmStrings[ParmStrings133,4157
+INL_KeyService(143,4482
+INL_GetMouseDelta(218,5927
+INL_GetMouseButtons(232,6263
+IN_GetJoyAbs(247,6599
+void INL_GetJoyDelta(324,8407
+INL_GetJoyButtons(390,9628
+IN_GetJoyButtonsDB(408,10122
+INL_StartKbd(430,10614
+INL_ShutKbd(446,10998
+INL_StartMouse(459,11349
+INL_ShutMouse(490,11901
+INL_SetJoyScale(498,12017
+IN_SetupJoy(516,12621
+INL_StartJoy(547,13378
+INL_ShutJoy(572,13835
+IN_Startup(584,14095
+IN_Default(622,14801
+IN_Shutdown(641,15265
+IN_SetKeyHook(663,15715
+IN_ClearKeysDown(674,15984
+IN_ReadControl(691,16385
+IN_SetControlType(822,19243
+IN_WaitForKey(835,19633
+IN_WaitForASCII(852,20008
+boolean	btnstate[btnstate869,20411
+void IN_StartAck(871,20433
+boolean IN_CheckAck 891,20744
+void IN_Ack 918,21101
+boolean IN_UserInput(935,21560
+byte	IN_MouseButtons 959,21912
+byte	IN_JoyButtons 979,22089
+
+ID_PM.H,1119
+#define	EMSPageSize	7,134
+#define	EMSPageSizeSeg	8,161
+#define	EMSPageSizeKB	9,203
+#define	EMSFrameCount	10,245
+#define	PMPageSize	11,269
+#define	PMPageSizeSeg	12,294
+#define	PMPageSizeKB	13,334
+#define	PMEMSSubPage	14,374
+#define	PMMinMainMem	16,423
+#define	PMMaxMainMem	17,488
+#define	PMThrashThreshold	19,554
+#define	PMUnThrashThreshold	20,627
+			pml_Unlocked,::pml_Unlocked24,735
+			pml_Locked::pml_Locked25,752
+		} PMLockType;26,766
+			pmba_Unused ::pmba_Unused30,800
+			pmba_Used ::pmba_Used31,820
+			pmba_Allocated ::pmba_Allocated32,838
+		} PMBlockAttr;33,860
+			longword	offset;::offset37,897
+			word		length;::length38,947
+			int			xmsPage;::xmsPage40,989
+			PMLockType	locked;::locked42,1074
+			int			emsPage;::emsPage43,1134
+			int			mainPage;::mainPage44,1196
+			longword	lastHit;::lastHit46,1255
+		} PageListStruct;47,1304
+			int			baseEMSPage;::baseEMSPage51,1344
+			longword	lastHit;::lastHit52,1403
+		} EMSListStruct;53,1453
+#define	PM_GetSoundPage(62,1659
+#define	PM_GetSpritePage(63,1717
+#define	PM_LockMainMem(65,1778
+#define	PM_UnlockMainMem(66,1825
+
+AUDIOSOD.H,4327
+#define NUMSOUNDS	8,167
+#define NUMSNDCHUNKS	9,189
+		HITWALLSND,::HITWALLSND15,262
+		MISSILEHITSND,::MISSILEHITSND16,294
+		SELECTITEMSND,::SELECTITEMSND17,326
+		GHOSTSIGHTSND,::GHOSTSIGHTSND18,358
+		MOVEGUN2SND,::MOVEGUN2SND19,390
+		MOVEGUN1SND,::MOVEGUN1SND20,422
+		NOWAYSND,::NOWAYSND21,454
+		NAZIHITPLAYERSND,::NAZIHITPLAYERSND22,486
+		MISSILEFIRESND,::MISSILEFIRESND23,518
+		PLAYERDEATHSND,::PLAYERDEATHSND24,550
+		DOGDEATHSND,::DOGDEATHSND25,582
+		ATKGATLINGSND,::ATKGATLINGSND26,615
+		GETKEYSND,::GETKEYSND27,648
+		NOITEMSND,::NOITEMSND28,681
+		WALK1SND,::WALK1SND29,714
+		WALK2SND,::WALK2SND30,747
+		TAKEDAMAGESND,::TAKEDAMAGESND31,780
+		GAMEOVERSND,::GAMEOVERSND32,813
+		OPENDOORSND,::OPENDOORSND33,846
+		CLOSEDOORSND,::CLOSEDOORSND34,879
+		DONOTHINGSND,::DONOTHINGSND35,912
+		HALTSND,::HALTSND36,945
+		DEATHSCREAM2SND,::DEATHSCREAM2SND37,978
+		ATKKNIFESND,::ATKKNIFESND38,1011
+		ATKPISTOLSND,::ATKPISTOLSND39,1044
+		DEATHSCREAM3SND,::DEATHSCREAM3SND40,1077
+		ATKMACHINEGUNSND,::ATKMACHINEGUNSND41,1110
+		HITENEMYSND,::HITENEMYSND42,1143
+		SHOOTDOORSND,::SHOOTDOORSND43,1176
+		DEATHSCREAM1SND,::DEATHSCREAM1SND44,1209
+		GETMACHINESND,::GETMACHINESND45,1242
+		GETAMMOSND,::GETAMMOSND46,1275
+		SHOOTSND,::SHOOTSND47,1308
+		HEALTH1SND,::HEALTH1SND48,1341
+		HEALTH2SND,::HEALTH2SND49,1374
+		BONUS1SND,::BONUS1SND50,1407
+		BONUS2SND,::BONUS2SND51,1440
+		BONUS3SND,::BONUS3SND52,1473
+		GETGATLINGSND,::GETGATLINGSND53,1506
+		ESCPRESSEDSND,::ESCPRESSEDSND54,1539
+		LEVELDONESND,::LEVELDONESND55,1572
+		DOGBARKSND,::DOGBARKSND56,1605
+		ENDBONUS1SND,::ENDBONUS1SND57,1638
+		ENDBONUS2SND,::ENDBONUS2SND58,1671
+		BONUS1UPSND,::BONUS1UPSND59,1704
+		BONUS4SND,::BONUS4SND60,1737
+		PUSHWALLSND,::PUSHWALLSND61,1770
+		NOBONUSSND,::NOBONUSSND62,1803
+		PERCENT100SND,::PERCENT100SND63,1836
+		BOSSACTIVESND,::BOSSACTIVESND64,1869
+		DEATHSCREAM4SND,::DEATHSCREAM4SND65,1902
+		SCHUTZADSND,::SCHUTZADSND66,1935
+		AHHHGSND,::AHHHGSND67,1968
+		DEATHSCREAM5SND,::DEATHSCREAM5SND68,2001
+		DEATHSCREAM7SND,::DEATHSCREAM7SND69,2034
+		DEATHSCREAM8SND,::DEATHSCREAM8SND70,2067
+		LEBENSND,::LEBENSND71,2100
+		DEATHSCREAM6SND,::DEATHSCREAM6SND72,2133
+		NAZIFIRESND,::NAZIFIRESND73,2166
+		BOSSFIRESND,::BOSSFIRESND74,2199
+		SSFIRESND,::SSFIRESND75,2232
+		SLURPIESND,::SLURPIESND76,2265
+		GHOSTFADESND,::GHOSTFADESND77,2298
+		DEATHSCREAM9SND,::DEATHSCREAM9SND78,2331
+		GETAMMOBOXSND,::GETAMMOBOXSND79,2364
+		ANGELSIGHTSND,::ANGELSIGHTSND80,2397
+		SPIONSND,::SPIONSND81,2430
+		NEINSOVASSND,::NEINSOVASSND82,2463
+		DOGATTACKSND,::DOGATTACKSND83,2496
+		ANGELFIRESND,::ANGELFIRESND84,2529
+		TRANSSIGHTSND,::TRANSSIGHTSND85,2562
+		TRANSDEATHSND,::TRANSDEATHSND86,2595
+		WILHELMSIGHTSND,::WILHELMSIGHTSND87,2628
+		WILHELMDEATHSND,::WILHELMDEATHSND88,2661
+		UBERDEATHSND,::UBERDEATHSND89,2694
+		KNIGHTSIGHTSND,::KNIGHTSIGHTSND90,2727
+		KNIGHTDEATHSND,::KNIGHTDEATHSND91,2760
+		ANGELDEATHSND,::ANGELDEATHSND92,2793
+		KNIGHTMISSILESND,::KNIGHTMISSILESND93,2826
+		GETSPEARSND,::GETSPEARSND94,2859
+		ANGELTIREDSND,::ANGELTIREDSND95,2892
+		LASTSOUND::LASTSOUND96,2925
+	     } soundnames;97,2937
+#define STARTPCSOUNDS	102,2980
+#define STARTADLIBSOUNDS	103,3005
+#define STARTDIGISOUNDS	104,3033
+#define STARTMUSIC	105,3062
+		XFUNKIE_MUS,::XFUNKIE_MUS111,3133
+		DUNGEON_MUS,::DUNGEON_MUS112,3165
+		XDEATH_MUS,::XDEATH_MUS113,3197
+		GETTHEM_MUS,::GETTHEM_MUS114,3229
+		XTIPTOE_MUS,::XTIPTOE_MUS115,3261
+		GOINGAFT_MUS,::GOINGAFT_MUS116,3293
+		URAHERO_MUS,::URAHERO_MUS117,3325
+		XTHEEND_MUS,::XTHEEND_MUS118,3357
+		NAZI_OMI_MUS,::NAZI_OMI_MUS119,3389
+		POW_MUS,::POW_MUS120,3421
+		TWELFTH_MUS,::TWELFTH_MUS121,3453
+		SEARCHN_MUS,::SEARCHN_MUS122,3486
+		SUSPENSE_MUS,::SUSPENSE_MUS123,3519
+		ZEROHOUR_MUS,::ZEROHOUR_MUS124,3552
+		WONDERIN_MUS,::WONDERIN_MUS125,3585
+		ULTIMATE_MUS,::ULTIMATE_MUS126,3618
+		ENDLEVEL_MUS,::ENDLEVEL_MUS127,3651
+		XEVIL_MUS,::XEVIL_MUS128,3684
+		XJAZNAZI_MUS,::XJAZNAZI_MUS129,3717
+		COPYPRO_MUS,::COPYPRO_MUS130,3750
+		XAWARD_MUS,::XAWARD_MUS131,3783
+		XPUTIT_MUS,::XPUTIT_MUS132,3816
+		XGETYOU_MUS,::XGETYOU_MUS133,3849
+		XTOWER2_MUS,::XTOWER2_MUS134,3882
+		LASTMUSIC::LASTMUSIC135,3915
+	     } musicnames;136,3927
+
+ID_VH.H,1453
+#define WHITE	4,13
+#define BLACK	5,70
+#define FIRSTCOLOR	6,88
+#define SECONDCOLOR	7,110
+#define F_WHITE	8,134
+#define F_BLACK	9,155
+#define F_FIRSTCOLOR	10,175
+#define F_SECONDCOLOR	11,198
+#define MAXSHIFTS	15,303
+  int	width,::width19,341
+	height,::height20,354
+	orgx,::orgx21,363
+	orgx,orgy,::orgy21,363
+	xl,::xl22,375
+	xl,yl,::yl22,375
+	xl,yl,xh,::xh22,375
+	xl,yl,xh,yh,::yh22,375
+	shifts;::shifts23,389
+} spritetabletype;24,398
+	unsigned	sourceoffset[::sourceoffset28,435
+	unsigned	planesize[::planesize29,470
+	unsigned	width[::width30,502
+	byte		data[::data31,530
+} spritetype;32,545
+	int width,::width36,623
+	int width,height;::height36,623
+} pictabletype;37,642
+	int height;::height42,677
+	int location[::location43,690
+	char width[::width44,710
+} fontstruct;45,728
+#define VW_Startup	96,1997
+#define VW_Shutdown	97,2028
+#define VW_SetCRTC	98,2061
+#define VW_SetScreen	99,2092
+#define VW_Bar	100,2126
+#define VW_Plot	101,2150
+#define VW_Hlin(102,2176
+#define VW_Vlin(103,2226
+#define VW_DrawPic	104,2276
+#define VW_SetSplitScreen	105,2307
+#define VW_SetLineWidth	106,2351
+#define VW_ColorBorder	107,2392
+#define VW_WaitVBL	108,2430
+#define VW_FadeIn(109,2461
+#define VW_FadeOut(110,2512
+#define VW_ScreenToScreen	111,2561
+#define VW_SetDefaultColors	112,2605
+#define MS_Quit	119,2843
+#define LatchDrawChar(122,2868
+#define LatchDrawTile(123,2943
+#define NUMLATCHPICS	131,3235
+
+WOLFJVER.H,93
+#define JAPAN2,16
+#define ARTSEXTERN3,30
+#define DEMOSEXTERN4,49
+#define CARMACIZED7,108
+
+WL_SCALE.C,872
+#define OP_RETF	6,52
+t_compscale _seg *scaledirectory[scaledirectory16,255
+long			fullscalefarcall[fullscalefarcall17,307
+int			maxscale,19,351
+int			maxscale,maxscaleshl2;19,351
+boolean	insetupscaling;21,381
+t_compscale 	_seg *work;work31,586
+int			stepbytwo;34,669
+void far BadScale 46,818
+void SetupScaling 60,957
+unsigned BuildCompScale 153,2868
+byte	mask1,246,4478
+byte	mask1,mask2,246,4478
+byte	mask1,mask2,mask3;246,4478
+void near ScaleLine 249,4504
+static	long		longtemp;419,9185
+void ScaleShape 421,9209
+void SimpleScaleShape 625,12958
+byte	mapmasks1[mapmasks1700,14307
+byte	mapmasks2[mapmasks2706,14442
+byte	mapmasks3[mapmasks3712,14578
+unsigned	wordmasks[wordmasks719,14711
+int			slinex,729,15215
+int			slinex,slinewidth;729,15215
+unsigned	far *linecmds;linecmds730,15240
+long		linescale;731,15264
+unsigned	maskword;732,15281
+
+WLFJ1VER.H,134
+#define JAPAN2,16
+#define JAPDEMO3,30
+#define UPLOAD4,46
+#define ARTSEXTERN5,61
+#define DEMOSEXTERN6,80
+#define CARMACIZED9,139
+
+WL_MENU.C,4381
+#define STARTITEM	16,305
+#define STARTITEM	20,355
+#define STARTITEM	23,388
+char far endStrings[endStrings27,430
+	MainItems=53,1104
+	SndItems=54,1148
+	LSItems=55,1180
+	CtlItems=56,1212
+	CusItems=57,1245
+	NewEitems=58,1278
+	NewItems=59,1310
+MainMenu[MainMenu63,1375
+far SndMenu[SndMenu103,1952
+far CtlMenu[CtlMenu134,2308
+far NewEmenu[NewEmenu156,2620
+far NewMenu[NewMenu229,3678
+far LSMenu[LSMenu244,3842
+far CusMenu[CusMenu258,3971
+int color_hlite[color_hlite273,4092
+   color_norml[color_norml280,4169
+int EpisodeSelect[EpisodeSelect287,4244
+int SaveGamesAvail[SaveGamesAvail290,4272
+int SaveGamesAvail[10],StartGame,290,4272
+int SaveGamesAvail[10],StartGame,SoundStatus=290,4272
+char SaveGameNames[SaveGameNames291,4330
+char SaveGameNames[10][32],SaveName[SaveName291,4330
+					*ScanNames[ScanNames300,4574
+					far ExtScanCodes[ExtScanCodes311,5215
+					*ExtScanNames[ExtScanNames318,5471
+void US_ControlPanel(332,5969
+void DrawMainMenu(539,9327
+void CP_ReadThis(610,10818
+void BossKey(627,11122
+int CP_CheckQuick(650,11569
+int CP_EndGame(864,15659
+void CP_ViewScores(893,16207
+void CP_NewGame(926,16801
+void DrawNewEpisode(1050,18701
+void DrawNewGame(1087,19322
+void DrawNewGameDiff(1124,19921
+void CP_Sound(1135,20167
+void DrawSoundMenu(1252,22008
+void DrawLSAction(1343,23802
+	#define LSA_X	1345,23833
+	#define LSA_Y	1346,23851
+	#define LSA_W	1347,23869
+	#define LSA_H	1348,23888
+int CP_LoadGame(1373,24403
+void TrackWhichGame(1468,25845
+void DrawLoadSaveScreen(1483,26050
+	#define DISKX	1485,26090
+	#define DISKY	1486,26109
+void PrintLSEntry(1516,26602
+int CP_SaveGame(1538,27109
+int CalibrateJoystick(1663,29475
+	#define CALX	1665,29505
+	#define CALY	1666,29522
+	#define CALW	1667,29539
+	#define CALH	1668,29557
+void CP_Control(1761,31444
+	#define CTL_SPC	1763,31468
+	enum {MOUSEENABLE,::MOUSEENABLE1764,31488
+	enum {MOUSEENABLE,JOYENABLE,::JOYENABLE1764,31488
+	enum {MOUSEENABLE,JOYENABLE,USEPORT2,::USEPORT21764,31488
+	enum {MOUSEENABLE,JOYENABLE,USEPORT2,PADENABLE,::PADENABLE1764,31488
+	enum {MOUSEENABLE,JOYENABLE,USEPORT2,PADENABLE,MOUSESENS,::MOUSESENS1764,31488
+	enum {MOUSEENABLE,JOYENABLE,USEPORT2,PADENABLE,MOUSESENS,CUSTOMIZE}::CUSTOMIZE1764,31488
+void DrawMouseSens(1835,32691
+void MouseSensitivity(1884,33555
+void DrawCtlScreen(1962,35112
+enum {FIRE,::FIRE2045,36598
+enum {FIRE,STRAFE,::STRAFE2045,36598
+enum {FIRE,STRAFE,RUN,::RUN2045,36598
+enum {FIRE,STRAFE,RUN,OPEN}::OPEN2045,36598
+char mbarray[mbarray2046,36627
+	   order[order2047,36669
+void CustomControls(2050,36708
+void DefineMouseBtns(2089,37185
+void DefineJoyBtns(2100,37385
+void DefineKeyBtns(2111,37578
+void DefineKeyMove(2122,37779
+enum {FWRD,::FWRD2133,37994
+enum {FWRD,RIGHT,::RIGHT2133,37994
+enum {FWRD,RIGHT,BKWD,::BKWD2133,37994
+enum {FWRD,RIGHT,BKWD,LEFT}::LEFT2133,37994
+int moveorder[moveorder2134,38023
+void EnterCtrlData(2136,38065
+void FixupCustom(2369,41667
+void DrawCustomScreen(2425,42652
+void PrintCustMouse(2615,46081
+void DrawCustMouse(2628,46247
+void PrintCustJoy(2651,46559
+void DrawCustJoy(2664,46721
+void PrintCustKeybd(2688,47033
+void DrawCustKeybd(2694,47143
+void PrintCustKeys(2709,47340
+void DrawCustKeys(2715,47450
+void CP_ChangeView(2736,47821
+void DrawChangeView(2814,49062
+void CP_Quit(2844,49593
+void IntroScreen(2882,50170
+#define MAINCOLOR	2886,50209
+#define EMSCOLOR	2887,50232
+#define XMSCOLOR	2888,50254
+#define MAINCOLOR	2892,50284
+#define EMSCOLOR	2893,50307
+#define XMSCOLOR	2894,50329
+#define FILLCOLOR	2897,50359
+void ClearMScreen(2969,51918
+void CacheLump(2984,52216
+void UnCacheLump(2993,52330
+void DrawWindow(3008,52632
+void DrawOutline(3015,52759
+void SetupControlPanel(3029,53131
+void CleanupControlPanel(3089,54190
+int HandleMenu(3106,54558
+void EraseGun(3352,58516
+void DrawHalfStep(3367,58830
+void DrawGun(3380,59016
+void TicDelay(3405,59683
+void DrawMenu(3423,59983
+void SetTextColor(3457,60652
+void WaitKeyUp(3471,61022
+void ReadAnyControl(3489,61443
+int Confirm(3592,63038
+int GetYorN(3668,64279
+void Message(3724,65292
+static	int	lastmusic;3764,66078
+void StartCPMusic(3766,66101
+void FreeMusic 3789,66576
+IN_GetScanName(3803,66967
+void CheckPause(3821,67344
+void DrawMenuGun(3844,67765
+void DrawStripes(3860,68096
+void ShootSnd(3871,68255
+void CheckForEpisodes(3882,68486
+
+MAPSSDM.H,132
+		TUNNELS_1_MAP,::TUNNELS_1_MAP11,148
+		TUNNELS_2_MAP,::TUNNELS_2_MAP12,180
+		LASTMAP::LASTMAP13,212
+	     } mapnames;14,222
+
+ID_US.H,912
+#define	__ID_US__9,117
+#define	__DEBUG_UserMgr__12,153
+#define	MaxX	17,213
+#define	MaxY	18,230
+#define	MaxHelpLines	20,248
+#define	MaxHighName	22,274
+#define	MaxScores	23,297
+			char	name[::name26,336
+			long	score;::score27,367
+			word	completed,::completed28,382
+			word	completed,episode;::episode28,382
+		} HighScore;29,409
+#define	MaxGameName	31,425
+#define	MaxSaveGames	32,449
+			char	signature[::signature35,491
+			word	*oldtest;::oldtest36,513
+			boolean	present;::present37,531
+			char	name[::name38,551
+		} SaveGame;39,582
+#define	MaxString	41,597
+			int	x,::x45,668
+			int	x,y,::y45,668
+				w,::w46,680
+				w,h,::h46,680
+				px,::px47,689
+				px,py;::py47,689
+		} WindowRec;48,700
+			gd_Continue,::gd_Continue52,781
+			gd_Easy,::gd_Easy53,797
+			gd_Normal,::gd_Normal54,809
+			gd_Hard::gd_Hard55,823
+		} GameDiff;56,834
+#define	US_HomeWindow(86,1822
+
+WL_MENU.H,2356
+#define BORDCOLOR	6,33
+#define BORD2COLOR	7,56
+#define DEACTIVE	8,80
+#define BKGDCOLOR	9,102
+#define MenuFadeOut(12,149
+#define BORDCOLOR	16,207
+#define BORD2COLOR	17,230
+#define DEACTIVE	18,254
+#define BKGDCOLOR	19,276
+#define STRIPE	20,299
+#define MenuFadeOut(22,321
+#define READCOLOR	26,380
+#define READHCOLOR	27,403
+#define VIEWCOLOR	28,427
+#define TEXTCOLOR	29,450
+#define HIGHLIGHT	30,473
+#define MenuFadeIn(31,496
+#define MENUSONG	34,548
+#define INTROSONG	37,593
+#define INTROSONG	39,630
+#define SENSITIVE	42,668
+#define CENTER	43,689
+#define MENU_X	45,718
+#define MENU_Y	46,736
+#define MENU_W	47,754
+#define MENU_H	49,787
+#define MENU_H	51,816
+#define SM_X	54,846
+#define SM_W	55,862
+#define SM_Y1	57,880
+#define SM_H1	58,897
+#define SM_Y2	59,918
+#define SM_H2	60,943
+#define SM_Y3	61,964
+#define SM_H3	62,989
+#define CTL_X	64,1011
+#define CTL_Y	65,1028
+#define CTL_W	66,1045
+#define CTL_H	67,1063
+#define LSM_X	69,1085
+#define LSM_Y	70,1102
+#define LSM_W	71,1119
+#define LSM_H	72,1137
+#define NM_X	74,1161
+#define NM_Y	75,1177
+#define NM_W	76,1194
+#define NM_H	77,1211
+#define NE_X	79,1233
+#define NE_Y	80,1249
+#define NE_W	81,1265
+#define NE_H	82,1289
+#define CST_X	84,1314
+#define CST_Y	85,1332
+#define CST_START	86,1350
+#define CST_SPC	87,1371
+		int x,::x94,1427
+		int x,y,::y94,1427
+		int x,y,amount,::amount94,1427
+		int x,y,amount,curpos,::curpos94,1427
+		int x,y,amount,curpos,indent;::indent94,1427
+		} CP_iteminfo;95,1459
+		int active;::active98,1494
+		char string[::string99,1508
+		} CP_itemtype;101,1558
+		int allowed[::allowed104,1593
+		} CustomCtrls;105,1611
+enum {MOUSE,::MOUSE195,4114
+enum {MOUSE,JOYSTICK,::JOYSTICK195,4114
+enum {MOUSE,JOYSTICK,KEYBOARDBTNS,::KEYBOARDBTNS195,4114
+enum {MOUSE,JOYSTICK,KEYBOARDBTNS,KEYBOARDMOVE}::KEYBOARDMOVE195,4114
+	newgame,::newgame199,4190
+	soundmenu,::soundmenu200,4200
+	control,::control201,4212
+	loadgame,::loadgame202,4222
+	savegame,::savegame203,4233
+	changeview,::changeview204,4244
+	readthis,::readthis208,4290
+	viewscores,::viewscores212,4316
+	backtodemo,::backtodemo213,4329
+	quit::quit214,4342
+} menuitems;215,4348
+		int kill,::kill221,4397
+		int kill,secret,::secret221,4397
+		int kill,secret,treasure;::treasure221,4397
+		long time;::time222,4425
+		} LRstruct;223,4438
+
+AUDIOSDM.H,4327
+#define NUMSOUNDS	8,167
+#define NUMSNDCHUNKS	9,189
+		HITWALLSND,::HITWALLSND15,262
+		MISSILEHITSND,::MISSILEHITSND16,294
+		SELECTITEMSND,::SELECTITEMSND17,326
+		GHOSTSIGHTSND,::GHOSTSIGHTSND18,358
+		MOVEGUN2SND,::MOVEGUN2SND19,390
+		MOVEGUN1SND,::MOVEGUN1SND20,422
+		NOWAYSND,::NOWAYSND21,454
+		NAZIHITPLAYERSND,::NAZIHITPLAYERSND22,486
+		MISSILEFIRESND,::MISSILEFIRESND23,518
+		PLAYERDEATHSND,::PLAYERDEATHSND24,550
+		DOGDEATHSND,::DOGDEATHSND25,582
+		ATKGATLINGSND,::ATKGATLINGSND26,615
+		GETKEYSND,::GETKEYSND27,648
+		NOITEMSND,::NOITEMSND28,681
+		WALK1SND,::WALK1SND29,714
+		WALK2SND,::WALK2SND30,747
+		TAKEDAMAGESND,::TAKEDAMAGESND31,780
+		GAMEOVERSND,::GAMEOVERSND32,813
+		OPENDOORSND,::OPENDOORSND33,846
+		CLOSEDOORSND,::CLOSEDOORSND34,879
+		DONOTHINGSND,::DONOTHINGSND35,912
+		HALTSND,::HALTSND36,945
+		DEATHSCREAM2SND,::DEATHSCREAM2SND37,978
+		ATKKNIFESND,::ATKKNIFESND38,1011
+		ATKPISTOLSND,::ATKPISTOLSND39,1044
+		DEATHSCREAM3SND,::DEATHSCREAM3SND40,1077
+		ATKMACHINEGUNSND,::ATKMACHINEGUNSND41,1110
+		HITENEMYSND,::HITENEMYSND42,1143
+		SHOOTDOORSND,::SHOOTDOORSND43,1176
+		DEATHSCREAM1SND,::DEATHSCREAM1SND44,1209
+		GETMACHINESND,::GETMACHINESND45,1242
+		GETAMMOSND,::GETAMMOSND46,1275
+		SHOOTSND,::SHOOTSND47,1308
+		HEALTH1SND,::HEALTH1SND48,1341
+		HEALTH2SND,::HEALTH2SND49,1374
+		BONUS1SND,::BONUS1SND50,1407
+		BONUS2SND,::BONUS2SND51,1440
+		BONUS3SND,::BONUS3SND52,1473
+		GETGATLINGSND,::GETGATLINGSND53,1506
+		ESCPRESSEDSND,::ESCPRESSEDSND54,1539
+		LEVELDONESND,::LEVELDONESND55,1572
+		DOGBARKSND,::DOGBARKSND56,1605
+		ENDBONUS1SND,::ENDBONUS1SND57,1638
+		ENDBONUS2SND,::ENDBONUS2SND58,1671
+		BONUS1UPSND,::BONUS1UPSND59,1704
+		BONUS4SND,::BONUS4SND60,1737
+		PUSHWALLSND,::PUSHWALLSND61,1770
+		NOBONUSSND,::NOBONUSSND62,1803
+		PERCENT100SND,::PERCENT100SND63,1836
+		BOSSACTIVESND,::BOSSACTIVESND64,1869
+		DEATHSCREAM4SND,::DEATHSCREAM4SND65,1902
+		SCHUTZADSND,::SCHUTZADSND66,1935
+		AHHHGSND,::AHHHGSND67,1968
+		DEATHSCREAM5SND,::DEATHSCREAM5SND68,2001
+		DEATHSCREAM7SND,::DEATHSCREAM7SND69,2034
+		DEATHSCREAM8SND,::DEATHSCREAM8SND70,2067
+		LEBENSND,::LEBENSND71,2100
+		DEATHSCREAM6SND,::DEATHSCREAM6SND72,2133
+		NAZIFIRESND,::NAZIFIRESND73,2166
+		BOSSFIRESND,::BOSSFIRESND74,2199
+		SSFIRESND,::SSFIRESND75,2232
+		SLURPIESND,::SLURPIESND76,2265
+		GHOSTFADESND,::GHOSTFADESND77,2298
+		DEATHSCREAM9SND,::DEATHSCREAM9SND78,2331
+		GETAMMOBOXSND,::GETAMMOBOXSND79,2364
+		ANGELSIGHTSND,::ANGELSIGHTSND80,2397
+		SPIONSND,::SPIONSND81,2430
+		NEINSOVASSND,::NEINSOVASSND82,2463
+		DOGATTACKSND,::DOGATTACKSND83,2496
+		ANGELFIRESND,::ANGELFIRESND84,2529
+		TRANSSIGHTSND,::TRANSSIGHTSND85,2562
+		TRANSDEATHSND,::TRANSDEATHSND86,2595
+		WILHELMSIGHTSND,::WILHELMSIGHTSND87,2628
+		WILHELMDEATHSND,::WILHELMDEATHSND88,2661
+		UBERDEATHSND,::UBERDEATHSND89,2694
+		KNIGHTSIGHTSND,::KNIGHTSIGHTSND90,2727
+		KNIGHTDEATHSND,::KNIGHTDEATHSND91,2760
+		ANGELDEATHSND,::ANGELDEATHSND92,2793
+		KNIGHTMISSILESND,::KNIGHTMISSILESND93,2826
+		GETSPEARSND,::GETSPEARSND94,2859
+		ANGELTIREDSND,::ANGELTIREDSND95,2892
+		LASTSOUND::LASTSOUND96,2925
+	     } soundnames;97,2937
+#define STARTPCSOUNDS	102,2980
+#define STARTADLIBSOUNDS	103,3005
+#define STARTDIGISOUNDS	104,3033
+#define STARTMUSIC	105,3062
+		XFUNKIE_MUS,::XFUNKIE_MUS111,3133
+		DUNGEON_MUS,::DUNGEON_MUS112,3165
+		XDEATH_MUS,::XDEATH_MUS113,3197
+		GETTHEM_MUS,::GETTHEM_MUS114,3229
+		XTIPTOE_MUS,::XTIPTOE_MUS115,3261
+		GOINGAFT_MUS,::GOINGAFT_MUS116,3293
+		URAHERO_MUS,::URAHERO_MUS117,3325
+		XTHEEND_MUS,::XTHEEND_MUS118,3357
+		NAZI_OMI_MUS,::NAZI_OMI_MUS119,3389
+		POW_MUS,::POW_MUS120,3421
+		TWELFTH_MUS,::TWELFTH_MUS121,3453
+		SEARCHN_MUS,::SEARCHN_MUS122,3486
+		SUSPENSE_MUS,::SUSPENSE_MUS123,3519
+		ZEROHOUR_MUS,::ZEROHOUR_MUS124,3552
+		WONDERIN_MUS,::WONDERIN_MUS125,3585
+		ULTIMATE_MUS,::ULTIMATE_MUS126,3618
+		ENDLEVEL_MUS,::ENDLEVEL_MUS127,3651
+		XEVIL_MUS,::XEVIL_MUS128,3684
+		XJAZNAZI_MUS,::XJAZNAZI_MUS129,3717
+		COPYPRO_MUS,::COPYPRO_MUS130,3750
+		XAWARD_MUS,::XAWARD_MUS131,3783
+		XPUTIT_MUS,::XPUTIT_MUS132,3816
+		XGETYOU_MUS,::XGETYOU_MUS133,3849
+		XTOWER2_MUS,::XTOWER2_MUS134,3882
+		LASTMUSIC::LASTMUSIC135,3915
+	     } musicnames;136,3927
+
+MAPSWLF.H,218
+		LEVEL_ONE_MAP,::LEVEL_ONE_MAP11,148
+		LEVEL_TWO_MAP,::LEVEL_TWO_MAP12,180
+		LEVEL_THREE_MAP,::LEVEL_THREE_MAP13,212
+		LEVEL_FOUR_MAP,::LEVEL_FOUR_MAP14,244
+		LASTMAP::LASTMAP15,276
+	     } mapnames;16,286
+
+WL_DEF.H,42562
+#define YEAR	2,15
+#define MONTH	3,33
+#define DAY	4,49
+#define COLORBORDER(31,446
+#define MAPSPOT(35,611
+#define SIGN(37,679
+#define ABS(38,709
+#define LABS(39,748
+#define O_BINARY 40,788
+#define MAXACTORS	50,1052
+#define MAXSTATS	51,1112
+#define MAXDOORS	52,1172
+#define MAXWALLTILES	53,1227
+#define	ICONARROWS	59,1308
+#define PUSHABLETILE	60,1331
+#define EXITTILE	61,1355
+#define AREATILE	62,1399
+#define NUMAREAS	63,1457
+#define ELEVATORTILE	64,1478
+#define AMBUSHTILE	65,1502
+#define	ALTELEVATORTILE	66,1526
+#define NUMBERCHARS	68,1555
+#define EXTRAPOINTS	73,1599
+#define PLAYERSPEED	75,1627
+#define RUNSPEED 76,1653
+#define	SCREENSEG	78,1680
+#define SCREENBWIDE	80,1707
+#define HEIGHTRATIO	82,1732
+#define BORDERCOLOR	84,1787
+#define FLASHCOLOR	85,1809
+#define FLASHTICS	86,1830
+#define PLAYERSIZE	89,1852
+#define MINACTORDIST	90,1899
+#define NUMLATCHPICS	93,1999
+#define PI	96,2026
+#define GLOBAL1	98,2050
+#define TILEGLOBAL 99,2076
+#define PIXGLOBAL	100,2104
+#define TILESHIFT	101,2135
+#define UNSIGNEDSHIFT	102,2158
+#define ANGLES	104,2183
+#define ANGLEQUAD	105,2233
+#define FINEANGLES	106,2262
+#define ANG90	107,2286
+#define ANG180	108,2316
+#define ANG270	109,2342
+#define ANG360	110,2368
+#define VANG90	111,2394
+#define VANG180	112,2421
+#define VANG270	113,2449
+#define VANG360	114,2477
+#define MINDIST	116,2506
+#define	MAXSCALEHEIGHT	119,2535
+#define MAXVIEWWIDTH	121,2599
+#define MAPSIZE	123,2626
+#define NORTH	124,2672
+#define EAST	125,2688
+#define SOUTH	126,2703
+#define WEST	127,2719
+#define STATUSLINES	130,2736
+#define SCREENSIZE	132,2761
+#define PAGE1START	133,2799
+#define PAGE2START	134,2821
+#define PAGE3START	135,2854
+#define	FREESTART	136,2890
+#define PIXRADIUS	139,2927
+#define STARTAMMO	141,2951
+#define FL_SHOOTABLE	146,2997
+#define FL_BONUS	147,3020
+#define FL_NEVERMARK	148,3040
+#define FL_VISABLE	149,3063
+#define FL_ATTACKMODE	150,3085
+#define FL_FIRSTATTACK	151,3110
+#define FL_AMBUSH	152,3136
+#define FL_NONMARK	153,3158
+		SPR_DEMO,::SPR_DEMO161,3218
+		SPR_DEATHCAM,::SPR_DEATHCAM162,3230
+		SPR_STAT_0,::SPR_STAT_0166,3270
+		SPR_STAT_0,SPR_STAT_1,::SPR_STAT_1166,3270
+		SPR_STAT_0,SPR_STAT_1,SPR_STAT_2,::SPR_STAT_2166,3270
+		SPR_STAT_0,SPR_STAT_1,SPR_STAT_2,SPR_STAT_3,::SPR_STAT_3166,3270
+		SPR_STAT_4,::SPR_STAT_4167,3317
+		SPR_STAT_4,SPR_STAT_5,::SPR_STAT_5167,3317
+		SPR_STAT_4,SPR_STAT_5,SPR_STAT_6,::SPR_STAT_6167,3317
+		SPR_STAT_4,SPR_STAT_5,SPR_STAT_6,SPR_STAT_7,::SPR_STAT_7167,3317
+		SPR_STAT_8,::SPR_STAT_8169,3365
+		SPR_STAT_8,SPR_STAT_9,::SPR_STAT_9169,3365
+		SPR_STAT_8,SPR_STAT_9,SPR_STAT_10,::SPR_STAT_10169,3365
+		SPR_STAT_8,SPR_STAT_9,SPR_STAT_10,SPR_STAT_11,::SPR_STAT_11169,3365
+		SPR_STAT_12,::SPR_STAT_12170,3414
+		SPR_STAT_12,SPR_STAT_13,::SPR_STAT_13170,3414
+		SPR_STAT_12,SPR_STAT_13,SPR_STAT_14,::SPR_STAT_14170,3414
+		SPR_STAT_12,SPR_STAT_13,SPR_STAT_14,SPR_STAT_15,::SPR_STAT_15170,3414
+		SPR_STAT_16,::SPR_STAT_16172,3466
+		SPR_STAT_16,SPR_STAT_17,::SPR_STAT_17172,3466
+		SPR_STAT_16,SPR_STAT_17,SPR_STAT_18,::SPR_STAT_18172,3466
+		SPR_STAT_16,SPR_STAT_17,SPR_STAT_18,SPR_STAT_19,::SPR_STAT_19172,3466
+		SPR_STAT_20,::SPR_STAT_20173,3517
+		SPR_STAT_20,SPR_STAT_21,::SPR_STAT_21173,3517
+		SPR_STAT_20,SPR_STAT_21,SPR_STAT_22,::SPR_STAT_22173,3517
+		SPR_STAT_20,SPR_STAT_21,SPR_STAT_22,SPR_STAT_23,::SPR_STAT_23173,3517
+		SPR_STAT_24,::SPR_STAT_24175,3569
+		SPR_STAT_24,SPR_STAT_25,::SPR_STAT_25175,3569
+		SPR_STAT_24,SPR_STAT_25,SPR_STAT_26,::SPR_STAT_26175,3569
+		SPR_STAT_24,SPR_STAT_25,SPR_STAT_26,SPR_STAT_27,::SPR_STAT_27175,3569
+		SPR_STAT_28,::SPR_STAT_28176,3620
+		SPR_STAT_28,SPR_STAT_29,::SPR_STAT_29176,3620
+		SPR_STAT_28,SPR_STAT_29,SPR_STAT_30,::SPR_STAT_30176,3620
+		SPR_STAT_28,SPR_STAT_29,SPR_STAT_30,SPR_STAT_31,::SPR_STAT_31176,3620
+		SPR_STAT_32,::SPR_STAT_32178,3672
+		SPR_STAT_32,SPR_STAT_33,::SPR_STAT_33178,3672
+		SPR_STAT_32,SPR_STAT_33,SPR_STAT_34,::SPR_STAT_34178,3672
+		SPR_STAT_32,SPR_STAT_33,SPR_STAT_34,SPR_STAT_35,::SPR_STAT_35178,3672
+		SPR_STAT_36,::SPR_STAT_36179,3723
+		SPR_STAT_36,SPR_STAT_37,::SPR_STAT_37179,3723
+		SPR_STAT_36,SPR_STAT_37,SPR_STAT_38,::SPR_STAT_38179,3723
+		SPR_STAT_36,SPR_STAT_37,SPR_STAT_38,SPR_STAT_39,::SPR_STAT_39179,3723
+		SPR_STAT_40,::SPR_STAT_40181,3775
+		SPR_STAT_40,SPR_STAT_41,::SPR_STAT_41181,3775
+		SPR_STAT_40,SPR_STAT_41,SPR_STAT_42,::SPR_STAT_42181,3775
+		SPR_STAT_40,SPR_STAT_41,SPR_STAT_42,SPR_STAT_43,::SPR_STAT_43181,3775
+		SPR_STAT_44,::SPR_STAT_44182,3826
+		SPR_STAT_44,SPR_STAT_45,::SPR_STAT_45182,3826
+		SPR_STAT_44,SPR_STAT_45,SPR_STAT_46,::SPR_STAT_46182,3826
+		SPR_STAT_44,SPR_STAT_45,SPR_STAT_46,SPR_STAT_47,::SPR_STAT_47182,3826
+		SPR_STAT_48,::SPR_STAT_48185,3891
+		SPR_STAT_48,SPR_STAT_49,::SPR_STAT_49185,3891
+		SPR_STAT_48,SPR_STAT_49,SPR_STAT_50,::SPR_STAT_50185,3891
+		SPR_STAT_48,SPR_STAT_49,SPR_STAT_50,SPR_STAT_51,::SPR_STAT_51185,3891
+		SPR_GRD_S_1,::SPR_GRD_S_1191,3965
+		SPR_GRD_S_1,SPR_GRD_S_2,::SPR_GRD_S_2191,3965
+		SPR_GRD_S_1,SPR_GRD_S_2,SPR_GRD_S_3,::SPR_GRD_S_3191,3965
+		SPR_GRD_S_1,SPR_GRD_S_2,SPR_GRD_S_3,SPR_GRD_S_4,::SPR_GRD_S_4191,3965
+		SPR_GRD_S_5,::SPR_GRD_S_5192,4016
+		SPR_GRD_S_5,SPR_GRD_S_6,::SPR_GRD_S_6192,4016
+		SPR_GRD_S_5,SPR_GRD_S_6,SPR_GRD_S_7,::SPR_GRD_S_7192,4016
+		SPR_GRD_S_5,SPR_GRD_S_6,SPR_GRD_S_7,SPR_GRD_S_8,::SPR_GRD_S_8192,4016
+		SPR_GRD_W1_1,::SPR_GRD_W1_1194,4068
+		SPR_GRD_W1_1,SPR_GRD_W1_2,::SPR_GRD_W1_2194,4068
+		SPR_GRD_W1_1,SPR_GRD_W1_2,SPR_GRD_W1_3,::SPR_GRD_W1_3194,4068
+		SPR_GRD_W1_1,SPR_GRD_W1_2,SPR_GRD_W1_3,SPR_GRD_W1_4,::SPR_GRD_W1_4194,4068
+		SPR_GRD_W1_5,::SPR_GRD_W1_5195,4123
+		SPR_GRD_W1_5,SPR_GRD_W1_6,::SPR_GRD_W1_6195,4123
+		SPR_GRD_W1_5,SPR_GRD_W1_6,SPR_GRD_W1_7,::SPR_GRD_W1_7195,4123
+		SPR_GRD_W1_5,SPR_GRD_W1_6,SPR_GRD_W1_7,SPR_GRD_W1_8,::SPR_GRD_W1_8195,4123
+		SPR_GRD_W2_1,::SPR_GRD_W2_1197,4179
+		SPR_GRD_W2_1,SPR_GRD_W2_2,::SPR_GRD_W2_2197,4179
+		SPR_GRD_W2_1,SPR_GRD_W2_2,SPR_GRD_W2_3,::SPR_GRD_W2_3197,4179
+		SPR_GRD_W2_1,SPR_GRD_W2_2,SPR_GRD_W2_3,SPR_GRD_W2_4,::SPR_GRD_W2_4197,4179
+		SPR_GRD_W2_5,::SPR_GRD_W2_5198,4234
+		SPR_GRD_W2_5,SPR_GRD_W2_6,::SPR_GRD_W2_6198,4234
+		SPR_GRD_W2_5,SPR_GRD_W2_6,SPR_GRD_W2_7,::SPR_GRD_W2_7198,4234
+		SPR_GRD_W2_5,SPR_GRD_W2_6,SPR_GRD_W2_7,SPR_GRD_W2_8,::SPR_GRD_W2_8198,4234
+		SPR_GRD_W3_1,::SPR_GRD_W3_1200,4290
+		SPR_GRD_W3_1,SPR_GRD_W3_2,::SPR_GRD_W3_2200,4290
+		SPR_GRD_W3_1,SPR_GRD_W3_2,SPR_GRD_W3_3,::SPR_GRD_W3_3200,4290
+		SPR_GRD_W3_1,SPR_GRD_W3_2,SPR_GRD_W3_3,SPR_GRD_W3_4,::SPR_GRD_W3_4200,4290
+		SPR_GRD_W3_5,::SPR_GRD_W3_5201,4345
+		SPR_GRD_W3_5,SPR_GRD_W3_6,::SPR_GRD_W3_6201,4345
+		SPR_GRD_W3_5,SPR_GRD_W3_6,SPR_GRD_W3_7,::SPR_GRD_W3_7201,4345
+		SPR_GRD_W3_5,SPR_GRD_W3_6,SPR_GRD_W3_7,SPR_GRD_W3_8,::SPR_GRD_W3_8201,4345
+		SPR_GRD_W4_1,::SPR_GRD_W4_1203,4401
+		SPR_GRD_W4_1,SPR_GRD_W4_2,::SPR_GRD_W4_2203,4401
+		SPR_GRD_W4_1,SPR_GRD_W4_2,SPR_GRD_W4_3,::SPR_GRD_W4_3203,4401
+		SPR_GRD_W4_1,SPR_GRD_W4_2,SPR_GRD_W4_3,SPR_GRD_W4_4,::SPR_GRD_W4_4203,4401
+		SPR_GRD_W4_5,::SPR_GRD_W4_5204,4456
+		SPR_GRD_W4_5,SPR_GRD_W4_6,::SPR_GRD_W4_6204,4456
+		SPR_GRD_W4_5,SPR_GRD_W4_6,SPR_GRD_W4_7,::SPR_GRD_W4_7204,4456
+		SPR_GRD_W4_5,SPR_GRD_W4_6,SPR_GRD_W4_7,SPR_GRD_W4_8,::SPR_GRD_W4_8204,4456
+		SPR_GRD_PAIN_1,::SPR_GRD_PAIN_1206,4512
+		SPR_GRD_PAIN_1,SPR_GRD_DIE_1,::SPR_GRD_DIE_1206,4512
+		SPR_GRD_PAIN_1,SPR_GRD_DIE_1,SPR_GRD_DIE_2,::SPR_GRD_DIE_2206,4512
+		SPR_GRD_PAIN_1,SPR_GRD_DIE_1,SPR_GRD_DIE_2,SPR_GRD_DIE_3,::SPR_GRD_DIE_3206,4512
+		SPR_GRD_PAIN_2,::SPR_GRD_PAIN_2207,4572
+		SPR_GRD_PAIN_2,SPR_GRD_DEAD,::SPR_GRD_DEAD207,4572
+		SPR_GRD_SHOOT1,::SPR_GRD_SHOOT1209,4604
+		SPR_GRD_SHOOT1,SPR_GRD_SHOOT2,::SPR_GRD_SHOOT2209,4604
+		SPR_GRD_SHOOT1,SPR_GRD_SHOOT2,SPR_GRD_SHOOT3,::SPR_GRD_SHOOT3209,4604
+		SPR_DOG_W1_1,::SPR_DOG_W1_1214,4667
+		SPR_DOG_W1_1,SPR_DOG_W1_2,::SPR_DOG_W1_2214,4667
+		SPR_DOG_W1_1,SPR_DOG_W1_2,SPR_DOG_W1_3,::SPR_DOG_W1_3214,4667
+		SPR_DOG_W1_1,SPR_DOG_W1_2,SPR_DOG_W1_3,SPR_DOG_W1_4,::SPR_DOG_W1_4214,4667
+		SPR_DOG_W1_5,::SPR_DOG_W1_5215,4722
+		SPR_DOG_W1_5,SPR_DOG_W1_6,::SPR_DOG_W1_6215,4722
+		SPR_DOG_W1_5,SPR_DOG_W1_6,SPR_DOG_W1_7,::SPR_DOG_W1_7215,4722
+		SPR_DOG_W1_5,SPR_DOG_W1_6,SPR_DOG_W1_7,SPR_DOG_W1_8,::SPR_DOG_W1_8215,4722
+		SPR_DOG_W2_1,::SPR_DOG_W2_1217,4778
+		SPR_DOG_W2_1,SPR_DOG_W2_2,::SPR_DOG_W2_2217,4778
+		SPR_DOG_W2_1,SPR_DOG_W2_2,SPR_DOG_W2_3,::SPR_DOG_W2_3217,4778
+		SPR_DOG_W2_1,SPR_DOG_W2_2,SPR_DOG_W2_3,SPR_DOG_W2_4,::SPR_DOG_W2_4217,4778
+		SPR_DOG_W2_5,::SPR_DOG_W2_5218,4833
+		SPR_DOG_W2_5,SPR_DOG_W2_6,::SPR_DOG_W2_6218,4833
+		SPR_DOG_W2_5,SPR_DOG_W2_6,SPR_DOG_W2_7,::SPR_DOG_W2_7218,4833
+		SPR_DOG_W2_5,SPR_DOG_W2_6,SPR_DOG_W2_7,SPR_DOG_W2_8,::SPR_DOG_W2_8218,4833
+		SPR_DOG_W3_1,::SPR_DOG_W3_1220,4889
+		SPR_DOG_W3_1,SPR_DOG_W3_2,::SPR_DOG_W3_2220,4889
+		SPR_DOG_W3_1,SPR_DOG_W3_2,SPR_DOG_W3_3,::SPR_DOG_W3_3220,4889
+		SPR_DOG_W3_1,SPR_DOG_W3_2,SPR_DOG_W3_3,SPR_DOG_W3_4,::SPR_DOG_W3_4220,4889
+		SPR_DOG_W3_5,::SPR_DOG_W3_5221,4944
+		SPR_DOG_W3_5,SPR_DOG_W3_6,::SPR_DOG_W3_6221,4944
+		SPR_DOG_W3_5,SPR_DOG_W3_6,SPR_DOG_W3_7,::SPR_DOG_W3_7221,4944
+		SPR_DOG_W3_5,SPR_DOG_W3_6,SPR_DOG_W3_7,SPR_DOG_W3_8,::SPR_DOG_W3_8221,4944
+		SPR_DOG_W4_1,::SPR_DOG_W4_1223,5000
+		SPR_DOG_W4_1,SPR_DOG_W4_2,::SPR_DOG_W4_2223,5000
+		SPR_DOG_W4_1,SPR_DOG_W4_2,SPR_DOG_W4_3,::SPR_DOG_W4_3223,5000
+		SPR_DOG_W4_1,SPR_DOG_W4_2,SPR_DOG_W4_3,SPR_DOG_W4_4,::SPR_DOG_W4_4223,5000
+		SPR_DOG_W4_5,::SPR_DOG_W4_5224,5055
+		SPR_DOG_W4_5,SPR_DOG_W4_6,::SPR_DOG_W4_6224,5055
+		SPR_DOG_W4_5,SPR_DOG_W4_6,SPR_DOG_W4_7,::SPR_DOG_W4_7224,5055
+		SPR_DOG_W4_5,SPR_DOG_W4_6,SPR_DOG_W4_7,SPR_DOG_W4_8,::SPR_DOG_W4_8224,5055
+		SPR_DOG_DIE_1,::SPR_DOG_DIE_1226,5111
+		SPR_DOG_DIE_1,SPR_DOG_DIE_2,::SPR_DOG_DIE_2226,5111
+		SPR_DOG_DIE_1,SPR_DOG_DIE_2,SPR_DOG_DIE_3,::SPR_DOG_DIE_3226,5111
+		SPR_DOG_DIE_1,SPR_DOG_DIE_2,SPR_DOG_DIE_3,SPR_DOG_DEAD,::SPR_DOG_DEAD226,5111
+		SPR_DOG_JUMP1,::SPR_DOG_JUMP1227,5169
+		SPR_DOG_JUMP1,SPR_DOG_JUMP2,::SPR_DOG_JUMP2227,5169
+		SPR_DOG_JUMP1,SPR_DOG_JUMP2,SPR_DOG_JUMP3,::SPR_DOG_JUMP3227,5169
+		SPR_SS_S_1,::SPR_SS_S_1234,5229
+		SPR_SS_S_1,SPR_SS_S_2,::SPR_SS_S_2234,5229
+		SPR_SS_S_1,SPR_SS_S_2,SPR_SS_S_3,::SPR_SS_S_3234,5229
+		SPR_SS_S_1,SPR_SS_S_2,SPR_SS_S_3,SPR_SS_S_4,::SPR_SS_S_4234,5229
+		SPR_SS_S_5,::SPR_SS_S_5235,5276
+		SPR_SS_S_5,SPR_SS_S_6,::SPR_SS_S_6235,5276
+		SPR_SS_S_5,SPR_SS_S_6,SPR_SS_S_7,::SPR_SS_S_7235,5276
+		SPR_SS_S_5,SPR_SS_S_6,SPR_SS_S_7,SPR_SS_S_8,::SPR_SS_S_8235,5276
+		SPR_SS_W1_1,::SPR_SS_W1_1237,5324
+		SPR_SS_W1_1,SPR_SS_W1_2,::SPR_SS_W1_2237,5324
+		SPR_SS_W1_1,SPR_SS_W1_2,SPR_SS_W1_3,::SPR_SS_W1_3237,5324
+		SPR_SS_W1_1,SPR_SS_W1_2,SPR_SS_W1_3,SPR_SS_W1_4,::SPR_SS_W1_4237,5324
+		SPR_SS_W1_5,::SPR_SS_W1_5238,5375
+		SPR_SS_W1_5,SPR_SS_W1_6,::SPR_SS_W1_6238,5375
+		SPR_SS_W1_5,SPR_SS_W1_6,SPR_SS_W1_7,::SPR_SS_W1_7238,5375
+		SPR_SS_W1_5,SPR_SS_W1_6,SPR_SS_W1_7,SPR_SS_W1_8,::SPR_SS_W1_8238,5375
+		SPR_SS_W2_1,::SPR_SS_W2_1240,5427
+		SPR_SS_W2_1,SPR_SS_W2_2,::SPR_SS_W2_2240,5427
+		SPR_SS_W2_1,SPR_SS_W2_2,SPR_SS_W2_3,::SPR_SS_W2_3240,5427
+		SPR_SS_W2_1,SPR_SS_W2_2,SPR_SS_W2_3,SPR_SS_W2_4,::SPR_SS_W2_4240,5427
+		SPR_SS_W2_5,::SPR_SS_W2_5241,5478
+		SPR_SS_W2_5,SPR_SS_W2_6,::SPR_SS_W2_6241,5478
+		SPR_SS_W2_5,SPR_SS_W2_6,SPR_SS_W2_7,::SPR_SS_W2_7241,5478
+		SPR_SS_W2_5,SPR_SS_W2_6,SPR_SS_W2_7,SPR_SS_W2_8,::SPR_SS_W2_8241,5478
+		SPR_SS_W3_1,::SPR_SS_W3_1243,5530
+		SPR_SS_W3_1,SPR_SS_W3_2,::SPR_SS_W3_2243,5530
+		SPR_SS_W3_1,SPR_SS_W3_2,SPR_SS_W3_3,::SPR_SS_W3_3243,5530
+		SPR_SS_W3_1,SPR_SS_W3_2,SPR_SS_W3_3,SPR_SS_W3_4,::SPR_SS_W3_4243,5530
+		SPR_SS_W3_5,::SPR_SS_W3_5244,5581
+		SPR_SS_W3_5,SPR_SS_W3_6,::SPR_SS_W3_6244,5581
+		SPR_SS_W3_5,SPR_SS_W3_6,SPR_SS_W3_7,::SPR_SS_W3_7244,5581
+		SPR_SS_W3_5,SPR_SS_W3_6,SPR_SS_W3_7,SPR_SS_W3_8,::SPR_SS_W3_8244,5581
+		SPR_SS_W4_1,::SPR_SS_W4_1246,5633
+		SPR_SS_W4_1,SPR_SS_W4_2,::SPR_SS_W4_2246,5633
+		SPR_SS_W4_1,SPR_SS_W4_2,SPR_SS_W4_3,::SPR_SS_W4_3246,5633
+		SPR_SS_W4_1,SPR_SS_W4_2,SPR_SS_W4_3,SPR_SS_W4_4,::SPR_SS_W4_4246,5633
+		SPR_SS_W4_5,::SPR_SS_W4_5247,5684
+		SPR_SS_W4_5,SPR_SS_W4_6,::SPR_SS_W4_6247,5684
+		SPR_SS_W4_5,SPR_SS_W4_6,SPR_SS_W4_7,::SPR_SS_W4_7247,5684
+		SPR_SS_W4_5,SPR_SS_W4_6,SPR_SS_W4_7,SPR_SS_W4_8,::SPR_SS_W4_8247,5684
+		SPR_SS_PAIN_1,::SPR_SS_PAIN_1249,5736
+		SPR_SS_PAIN_1,SPR_SS_DIE_1,::SPR_SS_DIE_1249,5736
+		SPR_SS_PAIN_1,SPR_SS_DIE_1,SPR_SS_DIE_2,::SPR_SS_DIE_2249,5736
+		SPR_SS_PAIN_1,SPR_SS_DIE_1,SPR_SS_DIE_2,SPR_SS_DIE_3,::SPR_SS_DIE_3249,5736
+		SPR_SS_PAIN_2,::SPR_SS_PAIN_2250,5792
+		SPR_SS_PAIN_2,SPR_SS_DEAD,::SPR_SS_DEAD250,5792
+		SPR_SS_SHOOT1,::SPR_SS_SHOOT1252,5822
+		SPR_SS_SHOOT1,SPR_SS_SHOOT2,::SPR_SS_SHOOT2252,5822
+		SPR_SS_SHOOT1,SPR_SS_SHOOT2,SPR_SS_SHOOT3,::SPR_SS_SHOOT3252,5822
+		SPR_MUT_S_1,::SPR_MUT_S_1257,5884
+		SPR_MUT_S_1,SPR_MUT_S_2,::SPR_MUT_S_2257,5884
+		SPR_MUT_S_1,SPR_MUT_S_2,SPR_MUT_S_3,::SPR_MUT_S_3257,5884
+		SPR_MUT_S_1,SPR_MUT_S_2,SPR_MUT_S_3,SPR_MUT_S_4,::SPR_MUT_S_4257,5884
+		SPR_MUT_S_5,::SPR_MUT_S_5258,5935
+		SPR_MUT_S_5,SPR_MUT_S_6,::SPR_MUT_S_6258,5935
+		SPR_MUT_S_5,SPR_MUT_S_6,SPR_MUT_S_7,::SPR_MUT_S_7258,5935
+		SPR_MUT_S_5,SPR_MUT_S_6,SPR_MUT_S_7,SPR_MUT_S_8,::SPR_MUT_S_8258,5935
+		SPR_MUT_W1_1,::SPR_MUT_W1_1260,5987
+		SPR_MUT_W1_1,SPR_MUT_W1_2,::SPR_MUT_W1_2260,5987
+		SPR_MUT_W1_1,SPR_MUT_W1_2,SPR_MUT_W1_3,::SPR_MUT_W1_3260,5987
+		SPR_MUT_W1_1,SPR_MUT_W1_2,SPR_MUT_W1_3,SPR_MUT_W1_4,::SPR_MUT_W1_4260,5987
+		SPR_MUT_W1_5,::SPR_MUT_W1_5261,6042
+		SPR_MUT_W1_5,SPR_MUT_W1_6,::SPR_MUT_W1_6261,6042
+		SPR_MUT_W1_5,SPR_MUT_W1_6,SPR_MUT_W1_7,::SPR_MUT_W1_7261,6042
+		SPR_MUT_W1_5,SPR_MUT_W1_6,SPR_MUT_W1_7,SPR_MUT_W1_8,::SPR_MUT_W1_8261,6042
+		SPR_MUT_W2_1,::SPR_MUT_W2_1263,6098
+		SPR_MUT_W2_1,SPR_MUT_W2_2,::SPR_MUT_W2_2263,6098
+		SPR_MUT_W2_1,SPR_MUT_W2_2,SPR_MUT_W2_3,::SPR_MUT_W2_3263,6098
+		SPR_MUT_W2_1,SPR_MUT_W2_2,SPR_MUT_W2_3,SPR_MUT_W2_4,::SPR_MUT_W2_4263,6098
+		SPR_MUT_W2_5,::SPR_MUT_W2_5264,6153
+		SPR_MUT_W2_5,SPR_MUT_W2_6,::SPR_MUT_W2_6264,6153
+		SPR_MUT_W2_5,SPR_MUT_W2_6,SPR_MUT_W2_7,::SPR_MUT_W2_7264,6153
+		SPR_MUT_W2_5,SPR_MUT_W2_6,SPR_MUT_W2_7,SPR_MUT_W2_8,::SPR_MUT_W2_8264,6153
+		SPR_MUT_W3_1,::SPR_MUT_W3_1266,6209
+		SPR_MUT_W3_1,SPR_MUT_W3_2,::SPR_MUT_W3_2266,6209
+		SPR_MUT_W3_1,SPR_MUT_W3_2,SPR_MUT_W3_3,::SPR_MUT_W3_3266,6209
+		SPR_MUT_W3_1,SPR_MUT_W3_2,SPR_MUT_W3_3,SPR_MUT_W3_4,::SPR_MUT_W3_4266,6209
+		SPR_MUT_W3_5,::SPR_MUT_W3_5267,6264
+		SPR_MUT_W3_5,SPR_MUT_W3_6,::SPR_MUT_W3_6267,6264
+		SPR_MUT_W3_5,SPR_MUT_W3_6,SPR_MUT_W3_7,::SPR_MUT_W3_7267,6264
+		SPR_MUT_W3_5,SPR_MUT_W3_6,SPR_MUT_W3_7,SPR_MUT_W3_8,::SPR_MUT_W3_8267,6264
+		SPR_MUT_W4_1,::SPR_MUT_W4_1269,6320
+		SPR_MUT_W4_1,SPR_MUT_W4_2,::SPR_MUT_W4_2269,6320
+		SPR_MUT_W4_1,SPR_MUT_W4_2,SPR_MUT_W4_3,::SPR_MUT_W4_3269,6320
+		SPR_MUT_W4_1,SPR_MUT_W4_2,SPR_MUT_W4_3,SPR_MUT_W4_4,::SPR_MUT_W4_4269,6320
+		SPR_MUT_W4_5,::SPR_MUT_W4_5270,6375
+		SPR_MUT_W4_5,SPR_MUT_W4_6,::SPR_MUT_W4_6270,6375
+		SPR_MUT_W4_5,SPR_MUT_W4_6,SPR_MUT_W4_7,::SPR_MUT_W4_7270,6375
+		SPR_MUT_W4_5,SPR_MUT_W4_6,SPR_MUT_W4_7,SPR_MUT_W4_8,::SPR_MUT_W4_8270,6375
+		SPR_MUT_PAIN_1,::SPR_MUT_PAIN_1272,6431
+		SPR_MUT_PAIN_1,SPR_MUT_DIE_1,::SPR_MUT_DIE_1272,6431
+		SPR_MUT_PAIN_1,SPR_MUT_DIE_1,SPR_MUT_DIE_2,::SPR_MUT_DIE_2272,6431
+		SPR_MUT_PAIN_1,SPR_MUT_DIE_1,SPR_MUT_DIE_2,SPR_MUT_DIE_3,::SPR_MUT_DIE_3272,6431
+		SPR_MUT_PAIN_2,::SPR_MUT_PAIN_2273,6491
+		SPR_MUT_PAIN_2,SPR_MUT_DIE_4,::SPR_MUT_DIE_4273,6491
+		SPR_MUT_PAIN_2,SPR_MUT_DIE_4,SPR_MUT_DEAD,::SPR_MUT_DEAD273,6491
+		SPR_MUT_SHOOT1,::SPR_MUT_SHOOT1275,6537
+		SPR_MUT_SHOOT1,SPR_MUT_SHOOT2,::SPR_MUT_SHOOT2275,6537
+		SPR_MUT_SHOOT1,SPR_MUT_SHOOT2,SPR_MUT_SHOOT3,::SPR_MUT_SHOOT3275,6537
+		SPR_MUT_SHOOT1,SPR_MUT_SHOOT2,SPR_MUT_SHOOT3,SPR_MUT_SHOOT4,::SPR_MUT_SHOOT4275,6537
+		SPR_OFC_S_1,::SPR_OFC_S_1280,6618
+		SPR_OFC_S_1,SPR_OFC_S_2,::SPR_OFC_S_2280,6618
+		SPR_OFC_S_1,SPR_OFC_S_2,SPR_OFC_S_3,::SPR_OFC_S_3280,6618
+		SPR_OFC_S_1,SPR_OFC_S_2,SPR_OFC_S_3,SPR_OFC_S_4,::SPR_OFC_S_4280,6618
+		SPR_OFC_S_5,::SPR_OFC_S_5281,6669
+		SPR_OFC_S_5,SPR_OFC_S_6,::SPR_OFC_S_6281,6669
+		SPR_OFC_S_5,SPR_OFC_S_6,SPR_OFC_S_7,::SPR_OFC_S_7281,6669
+		SPR_OFC_S_5,SPR_OFC_S_6,SPR_OFC_S_7,SPR_OFC_S_8,::SPR_OFC_S_8281,6669
+		SPR_OFC_W1_1,::SPR_OFC_W1_1283,6721
+		SPR_OFC_W1_1,SPR_OFC_W1_2,::SPR_OFC_W1_2283,6721
+		SPR_OFC_W1_1,SPR_OFC_W1_2,SPR_OFC_W1_3,::SPR_OFC_W1_3283,6721
+		SPR_OFC_W1_1,SPR_OFC_W1_2,SPR_OFC_W1_3,SPR_OFC_W1_4,::SPR_OFC_W1_4283,6721
+		SPR_OFC_W1_5,::SPR_OFC_W1_5284,6776
+		SPR_OFC_W1_5,SPR_OFC_W1_6,::SPR_OFC_W1_6284,6776
+		SPR_OFC_W1_5,SPR_OFC_W1_6,SPR_OFC_W1_7,::SPR_OFC_W1_7284,6776
+		SPR_OFC_W1_5,SPR_OFC_W1_6,SPR_OFC_W1_7,SPR_OFC_W1_8,::SPR_OFC_W1_8284,6776
+		SPR_OFC_W2_1,::SPR_OFC_W2_1286,6832
+		SPR_OFC_W2_1,SPR_OFC_W2_2,::SPR_OFC_W2_2286,6832
+		SPR_OFC_W2_1,SPR_OFC_W2_2,SPR_OFC_W2_3,::SPR_OFC_W2_3286,6832
+		SPR_OFC_W2_1,SPR_OFC_W2_2,SPR_OFC_W2_3,SPR_OFC_W2_4,::SPR_OFC_W2_4286,6832
+		SPR_OFC_W2_5,::SPR_OFC_W2_5287,6887
+		SPR_OFC_W2_5,SPR_OFC_W2_6,::SPR_OFC_W2_6287,6887
+		SPR_OFC_W2_5,SPR_OFC_W2_6,SPR_OFC_W2_7,::SPR_OFC_W2_7287,6887
+		SPR_OFC_W2_5,SPR_OFC_W2_6,SPR_OFC_W2_7,SPR_OFC_W2_8,::SPR_OFC_W2_8287,6887
+		SPR_OFC_W3_1,::SPR_OFC_W3_1289,6943
+		SPR_OFC_W3_1,SPR_OFC_W3_2,::SPR_OFC_W3_2289,6943
+		SPR_OFC_W3_1,SPR_OFC_W3_2,SPR_OFC_W3_3,::SPR_OFC_W3_3289,6943
+		SPR_OFC_W3_1,SPR_OFC_W3_2,SPR_OFC_W3_3,SPR_OFC_W3_4,::SPR_OFC_W3_4289,6943
+		SPR_OFC_W3_5,::SPR_OFC_W3_5290,6998
+		SPR_OFC_W3_5,SPR_OFC_W3_6,::SPR_OFC_W3_6290,6998
+		SPR_OFC_W3_5,SPR_OFC_W3_6,SPR_OFC_W3_7,::SPR_OFC_W3_7290,6998
+		SPR_OFC_W3_5,SPR_OFC_W3_6,SPR_OFC_W3_7,SPR_OFC_W3_8,::SPR_OFC_W3_8290,6998
+		SPR_OFC_W4_1,::SPR_OFC_W4_1292,7054
+		SPR_OFC_W4_1,SPR_OFC_W4_2,::SPR_OFC_W4_2292,7054
+		SPR_OFC_W4_1,SPR_OFC_W4_2,SPR_OFC_W4_3,::SPR_OFC_W4_3292,7054
+		SPR_OFC_W4_1,SPR_OFC_W4_2,SPR_OFC_W4_3,SPR_OFC_W4_4,::SPR_OFC_W4_4292,7054
+		SPR_OFC_W4_5,::SPR_OFC_W4_5293,7109
+		SPR_OFC_W4_5,SPR_OFC_W4_6,::SPR_OFC_W4_6293,7109
+		SPR_OFC_W4_5,SPR_OFC_W4_6,SPR_OFC_W4_7,::SPR_OFC_W4_7293,7109
+		SPR_OFC_W4_5,SPR_OFC_W4_6,SPR_OFC_W4_7,SPR_OFC_W4_8,::SPR_OFC_W4_8293,7109
+		SPR_OFC_PAIN_1,::SPR_OFC_PAIN_1295,7165
+		SPR_OFC_PAIN_1,SPR_OFC_DIE_1,::SPR_OFC_DIE_1295,7165
+		SPR_OFC_PAIN_1,SPR_OFC_DIE_1,SPR_OFC_DIE_2,::SPR_OFC_DIE_2295,7165
+		SPR_OFC_PAIN_1,SPR_OFC_DIE_1,SPR_OFC_DIE_2,SPR_OFC_DIE_3,::SPR_OFC_DIE_3295,7165
+		SPR_OFC_PAIN_2,::SPR_OFC_PAIN_2296,7225
+		SPR_OFC_PAIN_2,SPR_OFC_DIE_4,::SPR_OFC_DIE_4296,7225
+		SPR_OFC_PAIN_2,SPR_OFC_DIE_4,SPR_OFC_DEAD,::SPR_OFC_DEAD296,7225
+		SPR_OFC_SHOOT1,::SPR_OFC_SHOOT1298,7271
+		SPR_OFC_SHOOT1,SPR_OFC_SHOOT2,::SPR_OFC_SHOOT2298,7271
+		SPR_OFC_SHOOT1,SPR_OFC_SHOOT2,SPR_OFC_SHOOT3,::SPR_OFC_SHOOT3298,7271
+		SPR_BLINKY_W1,::SPR_BLINKY_W1304,7350
+		SPR_BLINKY_W1,SPR_BLINKY_W2,::SPR_BLINKY_W2304,7350
+		SPR_BLINKY_W1,SPR_BLINKY_W2,SPR_PINKY_W1,::SPR_PINKY_W1304,7350
+		SPR_BLINKY_W1,SPR_BLINKY_W2,SPR_PINKY_W1,SPR_PINKY_W2,::SPR_PINKY_W2304,7350
+		SPR_CLYDE_W1,::SPR_CLYDE_W1305,7407
+		SPR_CLYDE_W1,SPR_CLYDE_W2,::SPR_CLYDE_W2305,7407
+		SPR_CLYDE_W1,SPR_CLYDE_W2,SPR_INKY_W1,::SPR_INKY_W1305,7407
+		SPR_CLYDE_W1,SPR_CLYDE_W2,SPR_INKY_W1,SPR_INKY_W2,::SPR_INKY_W2305,7407
+		SPR_BOSS_W1,::SPR_BOSS_W1310,7475
+		SPR_BOSS_W1,SPR_BOSS_W2,::SPR_BOSS_W2310,7475
+		SPR_BOSS_W1,SPR_BOSS_W2,SPR_BOSS_W3,::SPR_BOSS_W3310,7475
+		SPR_BOSS_W1,SPR_BOSS_W2,SPR_BOSS_W3,SPR_BOSS_W4,::SPR_BOSS_W4310,7475
+		SPR_BOSS_SHOOT1,::SPR_BOSS_SHOOT1311,7526
+		SPR_BOSS_SHOOT1,SPR_BOSS_SHOOT2,::SPR_BOSS_SHOOT2311,7526
+		SPR_BOSS_SHOOT1,SPR_BOSS_SHOOT2,SPR_BOSS_SHOOT3,::SPR_BOSS_SHOOT3311,7526
+		SPR_BOSS_SHOOT1,SPR_BOSS_SHOOT2,SPR_BOSS_SHOOT3,SPR_BOSS_DEAD,::SPR_BOSS_DEAD311,7526
+		SPR_BOSS_DIE1,::SPR_BOSS_DIE1313,7592
+		SPR_BOSS_DIE1,SPR_BOSS_DIE2,::SPR_BOSS_DIE2313,7592
+		SPR_BOSS_DIE1,SPR_BOSS_DIE2,SPR_BOSS_DIE3,::SPR_BOSS_DIE3313,7592
+		SPR_SCHABB_W1,::SPR_SCHABB_W1318,7655
+		SPR_SCHABB_W1,SPR_SCHABB_W2,::SPR_SCHABB_W2318,7655
+		SPR_SCHABB_W1,SPR_SCHABB_W2,SPR_SCHABB_W3,::SPR_SCHABB_W3318,7655
+		SPR_SCHABB_W1,SPR_SCHABB_W2,SPR_SCHABB_W3,SPR_SCHABB_W4,::SPR_SCHABB_W4318,7655
+		SPR_SCHABB_SHOOT1,::SPR_SCHABB_SHOOT1319,7714
+		SPR_SCHABB_SHOOT1,SPR_SCHABB_SHOOT2,::SPR_SCHABB_SHOOT2319,7714
+		SPR_SCHABB_DIE1,::SPR_SCHABB_DIE1321,7754
+		SPR_SCHABB_DIE1,SPR_SCHABB_DIE2,::SPR_SCHABB_DIE2321,7754
+		SPR_SCHABB_DIE1,SPR_SCHABB_DIE2,SPR_SCHABB_DIE3,::SPR_SCHABB_DIE3321,7754
+		SPR_SCHABB_DIE1,SPR_SCHABB_DIE2,SPR_SCHABB_DIE3,SPR_SCHABB_DEAD,::SPR_SCHABB_DEAD321,7754
+		SPR_HYPO1,::SPR_HYPO1322,7821
+		SPR_HYPO1,SPR_HYPO2,::SPR_HYPO2322,7821
+		SPR_HYPO1,SPR_HYPO2,SPR_HYPO3,::SPR_HYPO3322,7821
+		SPR_HYPO1,SPR_HYPO2,SPR_HYPO3,SPR_HYPO4,::SPR_HYPO4322,7821
+		SPR_FAKE_W1,::SPR_FAKE_W1327,7879
+		SPR_FAKE_W1,SPR_FAKE_W2,::SPR_FAKE_W2327,7879
+		SPR_FAKE_W1,SPR_FAKE_W2,SPR_FAKE_W3,::SPR_FAKE_W3327,7879
+		SPR_FAKE_W1,SPR_FAKE_W2,SPR_FAKE_W3,SPR_FAKE_W4,::SPR_FAKE_W4327,7879
+		SPR_FAKE_SHOOT,::SPR_FAKE_SHOOT328,7930
+		SPR_FAKE_SHOOT,SPR_FIRE1,::SPR_FIRE1328,7930
+		SPR_FAKE_SHOOT,SPR_FIRE1,SPR_FIRE2,::SPR_FIRE2328,7930
+		SPR_FAKE_DIE1,::SPR_FAKE_DIE1330,7969
+		SPR_FAKE_DIE1,SPR_FAKE_DIE2,::SPR_FAKE_DIE2330,7969
+		SPR_FAKE_DIE1,SPR_FAKE_DIE2,SPR_FAKE_DIE3,::SPR_FAKE_DIE3330,7969
+		SPR_FAKE_DIE1,SPR_FAKE_DIE2,SPR_FAKE_DIE3,SPR_FAKE_DIE4,::SPR_FAKE_DIE4330,7969
+		SPR_FAKE_DIE5,::SPR_FAKE_DIE5331,8028
+		SPR_FAKE_DIE5,SPR_FAKE_DEAD,::SPR_FAKE_DEAD331,8028
+		SPR_MECHA_W1,::SPR_MECHA_W1336,8076
+		SPR_MECHA_W1,SPR_MECHA_W2,::SPR_MECHA_W2336,8076
+		SPR_MECHA_W1,SPR_MECHA_W2,SPR_MECHA_W3,::SPR_MECHA_W3336,8076
+		SPR_MECHA_W1,SPR_MECHA_W2,SPR_MECHA_W3,SPR_MECHA_W4,::SPR_MECHA_W4336,8076
+		SPR_MECHA_SHOOT1,::SPR_MECHA_SHOOT1337,8131
+		SPR_MECHA_SHOOT1,SPR_MECHA_SHOOT2,::SPR_MECHA_SHOOT2337,8131
+		SPR_MECHA_SHOOT1,SPR_MECHA_SHOOT2,SPR_MECHA_SHOOT3,::SPR_MECHA_SHOOT3337,8131
+		SPR_MECHA_SHOOT1,SPR_MECHA_SHOOT2,SPR_MECHA_SHOOT3,SPR_MECHA_DEAD,::SPR_MECHA_DEAD337,8131
+		SPR_MECHA_DIE1,::SPR_MECHA_DIE1339,8201
+		SPR_MECHA_DIE1,SPR_MECHA_DIE2,::SPR_MECHA_DIE2339,8201
+		SPR_MECHA_DIE1,SPR_MECHA_DIE2,SPR_MECHA_DIE3,::SPR_MECHA_DIE3339,8201
+		SPR_HITLER_W1,::SPR_HITLER_W1341,8250
+		SPR_HITLER_W1,SPR_HITLER_W2,::SPR_HITLER_W2341,8250
+		SPR_HITLER_W1,SPR_HITLER_W2,SPR_HITLER_W3,::SPR_HITLER_W3341,8250
+		SPR_HITLER_W1,SPR_HITLER_W2,SPR_HITLER_W3,SPR_HITLER_W4,::SPR_HITLER_W4341,8250
+		SPR_HITLER_SHOOT1,::SPR_HITLER_SHOOT1342,8309
+		SPR_HITLER_SHOOT1,SPR_HITLER_SHOOT2,::SPR_HITLER_SHOOT2342,8309
+		SPR_HITLER_SHOOT1,SPR_HITLER_SHOOT2,SPR_HITLER_SHOOT3,::SPR_HITLER_SHOOT3342,8309
+		SPR_HITLER_SHOOT1,SPR_HITLER_SHOOT2,SPR_HITLER_SHOOT3,SPR_HITLER_DEAD,::SPR_HITLER_DEAD342,8309
+		SPR_HITLER_DIE1,::SPR_HITLER_DIE1344,8383
+		SPR_HITLER_DIE1,SPR_HITLER_DIE2,::SPR_HITLER_DIE2344,8383
+		SPR_HITLER_DIE1,SPR_HITLER_DIE2,SPR_HITLER_DIE3,::SPR_HITLER_DIE3344,8383
+		SPR_HITLER_DIE1,SPR_HITLER_DIE2,SPR_HITLER_DIE3,SPR_HITLER_DIE4,::SPR_HITLER_DIE4344,8383
+		SPR_HITLER_DIE5,::SPR_HITLER_DIE5345,8450
+		SPR_HITLER_DIE5,SPR_HITLER_DIE6,::SPR_HITLER_DIE6345,8450
+		SPR_HITLER_DIE5,SPR_HITLER_DIE6,SPR_HITLER_DIE7,::SPR_HITLER_DIE7345,8450
+		SPR_GIFT_W1,::SPR_GIFT_W1350,8522
+		SPR_GIFT_W1,SPR_GIFT_W2,::SPR_GIFT_W2350,8522
+		SPR_GIFT_W1,SPR_GIFT_W2,SPR_GIFT_W3,::SPR_GIFT_W3350,8522
+		SPR_GIFT_W1,SPR_GIFT_W2,SPR_GIFT_W3,SPR_GIFT_W4,::SPR_GIFT_W4350,8522
+		SPR_GIFT_SHOOT1,::SPR_GIFT_SHOOT1351,8573
+		SPR_GIFT_SHOOT1,SPR_GIFT_SHOOT2,::SPR_GIFT_SHOOT2351,8573
+		SPR_GIFT_DIE1,::SPR_GIFT_DIE1353,8609
+		SPR_GIFT_DIE1,SPR_GIFT_DIE2,::SPR_GIFT_DIE2353,8609
+		SPR_GIFT_DIE1,SPR_GIFT_DIE2,SPR_GIFT_DIE3,::SPR_GIFT_DIE3353,8609
+		SPR_GIFT_DIE1,SPR_GIFT_DIE2,SPR_GIFT_DIE3,SPR_GIFT_DEAD,::SPR_GIFT_DEAD353,8609
+		SPR_ROCKET_1,::SPR_ROCKET_1358,8718
+		SPR_ROCKET_1,SPR_ROCKET_2,::SPR_ROCKET_2358,8718
+		SPR_ROCKET_1,SPR_ROCKET_2,SPR_ROCKET_3,::SPR_ROCKET_3358,8718
+		SPR_ROCKET_1,SPR_ROCKET_2,SPR_ROCKET_3,SPR_ROCKET_4,::SPR_ROCKET_4358,8718
+		SPR_ROCKET_5,::SPR_ROCKET_5359,8773
+		SPR_ROCKET_5,SPR_ROCKET_6,::SPR_ROCKET_6359,8773
+		SPR_ROCKET_5,SPR_ROCKET_6,SPR_ROCKET_7,::SPR_ROCKET_7359,8773
+		SPR_ROCKET_5,SPR_ROCKET_6,SPR_ROCKET_7,SPR_ROCKET_8,::SPR_ROCKET_8359,8773
+		SPR_SMOKE_1,::SPR_SMOKE_1361,8829
+		SPR_SMOKE_1,SPR_SMOKE_2,::SPR_SMOKE_2361,8829
+		SPR_SMOKE_1,SPR_SMOKE_2,SPR_SMOKE_3,::SPR_SMOKE_3361,8829
+		SPR_SMOKE_1,SPR_SMOKE_2,SPR_SMOKE_3,SPR_SMOKE_4,::SPR_SMOKE_4361,8829
+		SPR_BOOM_1,::SPR_BOOM_1362,8880
+		SPR_BOOM_1,SPR_BOOM_2,::SPR_BOOM_2362,8880
+		SPR_BOOM_1,SPR_BOOM_2,SPR_BOOM_3,::SPR_BOOM_3362,8880
+		SPR_HROCKET_1,::SPR_HROCKET_1368,8972
+		SPR_HROCKET_1,SPR_HROCKET_2,::SPR_HROCKET_2368,8972
+		SPR_HROCKET_1,SPR_HROCKET_2,SPR_HROCKET_3,::SPR_HROCKET_3368,8972
+		SPR_HROCKET_1,SPR_HROCKET_2,SPR_HROCKET_3,SPR_HROCKET_4,::SPR_HROCKET_4368,8972
+		SPR_HROCKET_5,::SPR_HROCKET_5369,9031
+		SPR_HROCKET_5,SPR_HROCKET_6,::SPR_HROCKET_6369,9031
+		SPR_HROCKET_5,SPR_HROCKET_6,SPR_HROCKET_7,::SPR_HROCKET_7369,9031
+		SPR_HROCKET_5,SPR_HROCKET_6,SPR_HROCKET_7,SPR_HROCKET_8,::SPR_HROCKET_8369,9031
+		SPR_HSMOKE_1,::SPR_HSMOKE_1371,9091
+		SPR_HSMOKE_1,SPR_HSMOKE_2,::SPR_HSMOKE_2371,9091
+		SPR_HSMOKE_1,SPR_HSMOKE_2,SPR_HSMOKE_3,::SPR_HSMOKE_3371,9091
+		SPR_HSMOKE_1,SPR_HSMOKE_2,SPR_HSMOKE_3,SPR_HSMOKE_4,::SPR_HSMOKE_4371,9091
+		SPR_HBOOM_1,::SPR_HBOOM_1372,9146
+		SPR_HBOOM_1,SPR_HBOOM_2,::SPR_HBOOM_2372,9146
+		SPR_HBOOM_1,SPR_HBOOM_2,SPR_HBOOM_3,::SPR_HBOOM_3372,9146
+		SPR_SPARK1,::SPR_SPARK1374,9186
+		SPR_SPARK1,SPR_SPARK2,::SPR_SPARK2374,9186
+		SPR_SPARK1,SPR_SPARK2,SPR_SPARK3,::SPR_SPARK3374,9186
+		SPR_SPARK1,SPR_SPARK2,SPR_SPARK3,SPR_SPARK4,::SPR_SPARK4374,9186
+		SPR_GRETEL_W1,::SPR_GRETEL_W1381,9271
+		SPR_GRETEL_W1,SPR_GRETEL_W2,::SPR_GRETEL_W2381,9271
+		SPR_GRETEL_W1,SPR_GRETEL_W2,SPR_GRETEL_W3,::SPR_GRETEL_W3381,9271
+		SPR_GRETEL_W1,SPR_GRETEL_W2,SPR_GRETEL_W3,SPR_GRETEL_W4,::SPR_GRETEL_W4381,9271
+		SPR_GRETEL_SHOOT1,::SPR_GRETEL_SHOOT1382,9330
+		SPR_GRETEL_SHOOT1,SPR_GRETEL_SHOOT2,::SPR_GRETEL_SHOOT2382,9330
+		SPR_GRETEL_SHOOT1,SPR_GRETEL_SHOOT2,SPR_GRETEL_SHOOT3,::SPR_GRETEL_SHOOT3382,9330
+		SPR_GRETEL_SHOOT1,SPR_GRETEL_SHOOT2,SPR_GRETEL_SHOOT3,SPR_GRETEL_DEAD,::SPR_GRETEL_DEAD382,9330
+		SPR_GRETEL_DIE1,::SPR_GRETEL_DIE1384,9404
+		SPR_GRETEL_DIE1,SPR_GRETEL_DIE2,::SPR_GRETEL_DIE2384,9404
+		SPR_GRETEL_DIE1,SPR_GRETEL_DIE2,SPR_GRETEL_DIE3,::SPR_GRETEL_DIE3384,9404
+		SPR_FAT_W1,::SPR_FAT_W1389,9474
+		SPR_FAT_W1,SPR_FAT_W2,::SPR_FAT_W2389,9474
+		SPR_FAT_W1,SPR_FAT_W2,SPR_FAT_W3,::SPR_FAT_W3389,9474
+		SPR_FAT_W1,SPR_FAT_W2,SPR_FAT_W3,SPR_FAT_W4,::SPR_FAT_W4389,9474
+		SPR_FAT_SHOOT1,::SPR_FAT_SHOOT1390,9521
+		SPR_FAT_SHOOT1,SPR_FAT_SHOOT2,::SPR_FAT_SHOOT2390,9521
+		SPR_FAT_SHOOT1,SPR_FAT_SHOOT2,SPR_FAT_SHOOT3,::SPR_FAT_SHOOT3390,9521
+		SPR_FAT_SHOOT1,SPR_FAT_SHOOT2,SPR_FAT_SHOOT3,SPR_FAT_SHOOT4,::SPR_FAT_SHOOT4390,9521
+		SPR_FAT_DIE1,::SPR_FAT_DIE1392,9585
+		SPR_FAT_DIE1,SPR_FAT_DIE2,::SPR_FAT_DIE2392,9585
+		SPR_FAT_DIE1,SPR_FAT_DIE2,SPR_FAT_DIE3,::SPR_FAT_DIE3392,9585
+		SPR_FAT_DIE1,SPR_FAT_DIE2,SPR_FAT_DIE3,SPR_FAT_DEAD,::SPR_FAT_DEAD392,9585
+		SPR_BJ_W1,::SPR_BJ_W1397,9653
+		SPR_BJ_W1,SPR_BJ_W2,::SPR_BJ_W2397,9653
+		SPR_BJ_W1,SPR_BJ_W2,SPR_BJ_W3,::SPR_BJ_W3397,9653
+		SPR_BJ_W1,SPR_BJ_W2,SPR_BJ_W3,SPR_BJ_W4,::SPR_BJ_W4397,9653
+		SPR_BJ_JUMP1,::SPR_BJ_JUMP1398,9696
+		SPR_BJ_JUMP1,SPR_BJ_JUMP2,::SPR_BJ_JUMP2398,9696
+		SPR_BJ_JUMP1,SPR_BJ_JUMP2,SPR_BJ_JUMP3,::SPR_BJ_JUMP3398,9696
+		SPR_BJ_JUMP1,SPR_BJ_JUMP2,SPR_BJ_JUMP3,SPR_BJ_JUMP4,::SPR_BJ_JUMP4398,9696
+		SPR_TRANS_W1,::SPR_TRANS_W1407,9822
+		SPR_TRANS_W1,SPR_TRANS_W2,::SPR_TRANS_W2407,9822
+		SPR_TRANS_W1,SPR_TRANS_W2,SPR_TRANS_W3,::SPR_TRANS_W3407,9822
+		SPR_TRANS_W1,SPR_TRANS_W2,SPR_TRANS_W3,SPR_TRANS_W4,::SPR_TRANS_W4407,9822
+		SPR_TRANS_SHOOT1,::SPR_TRANS_SHOOT1408,9877
+		SPR_TRANS_SHOOT1,SPR_TRANS_SHOOT2,::SPR_TRANS_SHOOT2408,9877
+		SPR_TRANS_SHOOT1,SPR_TRANS_SHOOT2,SPR_TRANS_SHOOT3,::SPR_TRANS_SHOOT3408,9877
+		SPR_TRANS_SHOOT1,SPR_TRANS_SHOOT2,SPR_TRANS_SHOOT3,SPR_TRANS_DEAD,::SPR_TRANS_DEAD408,9877
+		SPR_TRANS_DIE1,::SPR_TRANS_DIE1410,9947
+		SPR_TRANS_DIE1,SPR_TRANS_DIE2,::SPR_TRANS_DIE2410,9947
+		SPR_TRANS_DIE1,SPR_TRANS_DIE2,SPR_TRANS_DIE3,::SPR_TRANS_DIE3410,9947
+		SPR_WILL_W1,::SPR_WILL_W1415,10013
+		SPR_WILL_W1,SPR_WILL_W2,::SPR_WILL_W2415,10013
+		SPR_WILL_W1,SPR_WILL_W2,SPR_WILL_W3,::SPR_WILL_W3415,10013
+		SPR_WILL_W1,SPR_WILL_W2,SPR_WILL_W3,SPR_WILL_W4,::SPR_WILL_W4415,10013
+		SPR_WILL_SHOOT1,::SPR_WILL_SHOOT1416,10064
+		SPR_WILL_SHOOT1,SPR_WILL_SHOOT2,::SPR_WILL_SHOOT2416,10064
+		SPR_WILL_SHOOT1,SPR_WILL_SHOOT2,SPR_WILL_SHOOT3,::SPR_WILL_SHOOT3416,10064
+		SPR_WILL_SHOOT1,SPR_WILL_SHOOT2,SPR_WILL_SHOOT3,SPR_WILL_SHOOT4,::SPR_WILL_SHOOT4416,10064
+		SPR_WILL_DIE1,::SPR_WILL_DIE1418,10132
+		SPR_WILL_DIE1,SPR_WILL_DIE2,::SPR_WILL_DIE2418,10132
+		SPR_WILL_DIE1,SPR_WILL_DIE2,SPR_WILL_DIE3,::SPR_WILL_DIE3418,10132
+		SPR_WILL_DIE1,SPR_WILL_DIE2,SPR_WILL_DIE3,SPR_WILL_DEAD,::SPR_WILL_DEAD418,10132
+		SPR_UBER_W1,::SPR_UBER_W1423,10212
+		SPR_UBER_W1,SPR_UBER_W2,::SPR_UBER_W2423,10212
+		SPR_UBER_W1,SPR_UBER_W2,SPR_UBER_W3,::SPR_UBER_W3423,10212
+		SPR_UBER_W1,SPR_UBER_W2,SPR_UBER_W3,SPR_UBER_W4,::SPR_UBER_W4423,10212
+		SPR_UBER_SHOOT1,::SPR_UBER_SHOOT1424,10263
+		SPR_UBER_SHOOT1,SPR_UBER_SHOOT2,::SPR_UBER_SHOOT2424,10263
+		SPR_UBER_SHOOT1,SPR_UBER_SHOOT2,SPR_UBER_SHOOT3,::SPR_UBER_SHOOT3424,10263
+		SPR_UBER_SHOOT1,SPR_UBER_SHOOT2,SPR_UBER_SHOOT3,SPR_UBER_SHOOT4,::SPR_UBER_SHOOT4424,10263
+		SPR_UBER_DIE1,::SPR_UBER_DIE1426,10331
+		SPR_UBER_DIE1,SPR_UBER_DIE2,::SPR_UBER_DIE2426,10331
+		SPR_UBER_DIE1,SPR_UBER_DIE2,SPR_UBER_DIE3,::SPR_UBER_DIE3426,10331
+		SPR_UBER_DIE1,SPR_UBER_DIE2,SPR_UBER_DIE3,SPR_UBER_DIE4,::SPR_UBER_DIE4426,10331
+		SPR_UBER_DEAD,::SPR_UBER_DEAD427,10390
+		SPR_DEATH_W1,::SPR_DEATH_W1432,10430
+		SPR_DEATH_W1,SPR_DEATH_W2,::SPR_DEATH_W2432,10430
+		SPR_DEATH_W1,SPR_DEATH_W2,SPR_DEATH_W3,::SPR_DEATH_W3432,10430
+		SPR_DEATH_W1,SPR_DEATH_W2,SPR_DEATH_W3,SPR_DEATH_W4,::SPR_DEATH_W4432,10430
+		SPR_DEATH_SHOOT1,::SPR_DEATH_SHOOT1433,10485
+		SPR_DEATH_SHOOT1,SPR_DEATH_SHOOT2,::SPR_DEATH_SHOOT2433,10485
+		SPR_DEATH_SHOOT1,SPR_DEATH_SHOOT2,SPR_DEATH_SHOOT3,::SPR_DEATH_SHOOT3433,10485
+		SPR_DEATH_SHOOT1,SPR_DEATH_SHOOT2,SPR_DEATH_SHOOT3,SPR_DEATH_SHOOT4,::SPR_DEATH_SHOOT4433,10485
+		SPR_DEATH_DIE1,::SPR_DEATH_DIE1435,10557
+		SPR_DEATH_DIE1,SPR_DEATH_DIE2,::SPR_DEATH_DIE2435,10557
+		SPR_DEATH_DIE1,SPR_DEATH_DIE2,SPR_DEATH_DIE3,::SPR_DEATH_DIE3435,10557
+		SPR_DEATH_DIE1,SPR_DEATH_DIE2,SPR_DEATH_DIE3,SPR_DEATH_DIE4,::SPR_DEATH_DIE4435,10557
+		SPR_DEATH_DIE5,::SPR_DEATH_DIE5436,10620
+		SPR_DEATH_DIE5,SPR_DEATH_DIE6,::SPR_DEATH_DIE6436,10620
+		SPR_DEATH_DIE5,SPR_DEATH_DIE6,SPR_DEATH_DEAD,::SPR_DEATH_DEAD436,10620
+		SPR_SPECTRE_W1,::SPR_SPECTRE_W1441,10684
+		SPR_SPECTRE_W1,SPR_SPECTRE_W2,::SPR_SPECTRE_W2441,10684
+		SPR_SPECTRE_W1,SPR_SPECTRE_W2,SPR_SPECTRE_W3,::SPR_SPECTRE_W3441,10684
+		SPR_SPECTRE_W1,SPR_SPECTRE_W2,SPR_SPECTRE_W3,SPR_SPECTRE_W4,::SPR_SPECTRE_W4441,10684
+		SPR_SPECTRE_F1,::SPR_SPECTRE_F1442,10747
+		SPR_SPECTRE_F1,SPR_SPECTRE_F2,::SPR_SPECTRE_F2442,10747
+		SPR_SPECTRE_F1,SPR_SPECTRE_F2,SPR_SPECTRE_F3,::SPR_SPECTRE_F3442,10747
+		SPR_SPECTRE_F1,SPR_SPECTRE_F2,SPR_SPECTRE_F3,SPR_SPECTRE_F4,::SPR_SPECTRE_F4442,10747
+		SPR_ANGEL_W1,::SPR_ANGEL_W1447,10835
+		SPR_ANGEL_W1,SPR_ANGEL_W2,::SPR_ANGEL_W2447,10835
+		SPR_ANGEL_W1,SPR_ANGEL_W2,SPR_ANGEL_W3,::SPR_ANGEL_W3447,10835
+		SPR_ANGEL_W1,SPR_ANGEL_W2,SPR_ANGEL_W3,SPR_ANGEL_W4,::SPR_ANGEL_W4447,10835
+		SPR_ANGEL_SHOOT1,::SPR_ANGEL_SHOOT1448,10890
+		SPR_ANGEL_SHOOT1,SPR_ANGEL_SHOOT2,::SPR_ANGEL_SHOOT2448,10890
+		SPR_ANGEL_SHOOT1,SPR_ANGEL_SHOOT2,SPR_ANGEL_TIRED1,::SPR_ANGEL_TIRED1448,10890
+		SPR_ANGEL_SHOOT1,SPR_ANGEL_SHOOT2,SPR_ANGEL_TIRED1,SPR_ANGEL_TIRED2,::SPR_ANGEL_TIRED2448,10890
+		SPR_ANGEL_DIE1,::SPR_ANGEL_DIE1450,10962
+		SPR_ANGEL_DIE1,SPR_ANGEL_DIE2,::SPR_ANGEL_DIE2450,10962
+		SPR_ANGEL_DIE1,SPR_ANGEL_DIE2,SPR_ANGEL_DIE3,::SPR_ANGEL_DIE3450,10962
+		SPR_ANGEL_DIE1,SPR_ANGEL_DIE2,SPR_ANGEL_DIE3,SPR_ANGEL_DIE4,::SPR_ANGEL_DIE4450,10962
+		SPR_ANGEL_DIE5,::SPR_ANGEL_DIE5451,11025
+		SPR_ANGEL_DIE5,SPR_ANGEL_DIE6,::SPR_ANGEL_DIE6451,11025
+		SPR_ANGEL_DIE5,SPR_ANGEL_DIE6,SPR_ANGEL_DIE7,::SPR_ANGEL_DIE7451,11025
+		SPR_ANGEL_DIE5,SPR_ANGEL_DIE6,SPR_ANGEL_DIE7,SPR_ANGEL_DEAD,::SPR_ANGEL_DEAD451,11025
+		SPR_KNIFEREADY,::SPR_KNIFEREADY458,11127
+		SPR_KNIFEREADY,SPR_KNIFEATK1,::SPR_KNIFEATK1458,11127
+		SPR_KNIFEREADY,SPR_KNIFEATK1,SPR_KNIFEATK2,::SPR_KNIFEATK2458,11127
+		SPR_KNIFEREADY,SPR_KNIFEATK1,SPR_KNIFEATK2,SPR_KNIFEATK3,::SPR_KNIFEATK3458,11127
+		SPR_KNIFEATK4,::SPR_KNIFEATK4459,11187
+		SPR_PISTOLREADY,::SPR_PISTOLREADY461,11205
+		SPR_PISTOLREADY,SPR_PISTOLATK1,::SPR_PISTOLATK1461,11205
+		SPR_PISTOLREADY,SPR_PISTOLATK1,SPR_PISTOLATK2,::SPR_PISTOLATK2461,11205
+		SPR_PISTOLREADY,SPR_PISTOLATK1,SPR_PISTOLATK2,SPR_PISTOLATK3,::SPR_PISTOLATK3461,11205
+		SPR_PISTOLATK4,::SPR_PISTOLATK4462,11269
+		SPR_MACHINEGUNREADY,::SPR_MACHINEGUNREADY464,11288
+		SPR_MACHINEGUNREADY,SPR_MACHINEGUNATK1,::SPR_MACHINEGUNATK1464,11288
+		SPR_MACHINEGUNREADY,SPR_MACHINEGUNATK1,SPR_MACHINEGUNATK2,::SPR_MACHINEGUNATK2464,11288
+		SPR_MACHINEGUNREADY,SPR_MACHINEGUNATK1,SPR_MACHINEGUNATK2,MACHINEGUNATK3,::MACHINEGUNATK3464,11288
+		SPR_MACHINEGUNATK4,::SPR_MACHINEGUNATK4465,11364
+		SPR_CHAINREADY,::SPR_CHAINREADY467,11387
+		SPR_CHAINREADY,SPR_CHAINATK1,::SPR_CHAINATK1467,11387
+		SPR_CHAINREADY,SPR_CHAINATK1,SPR_CHAINATK2,::SPR_CHAINATK2467,11387
+		SPR_CHAINREADY,SPR_CHAINATK1,SPR_CHAINATK2,SPR_CHAINATK3,::SPR_CHAINATK3467,11387
+		SPR_CHAINATK4,::SPR_CHAINATK4468,11447
+typedef long fixed;481,11659
+	di_north,::di_north484,11695
+	di_east,::di_east485,11706
+	di_south,::di_south486,11716
+	di_west::di_west487,11727
+} controldir_t;488,11736
+	dr_normal,::dr_normal491,11768
+	dr_lock1,::dr_lock1492,11780
+	dr_lock2,::dr_lock2493,11791
+	dr_lock3,::dr_lock3494,11802
+	dr_lock4,::dr_lock4495,11813
+	dr_elevator::dr_elevator496,11824
+} door_t;497,11837
+	ac_badobject ::ac_badobject500,11863
+	ac_no,::ac_no501,11883
+	ac_yes,::ac_yes502,11891
+	ac_allways::ac_allways503,11900
+} activetype;504,11912
+	nothing,::nothing507,11942
+	playerobj,::playerobj508,11952
+	inertobj,::inertobj509,11964
+	guardobj,::guardobj510,11975
+	officerobj,::officerobj511,11986
+	ssobj,::ssobj512,11999
+	dogobj,::dogobj513,12007
+	bossobj,::bossobj514,12016
+	schabbobj,::schabbobj515,12026
+	fakeobj,::fakeobj516,12038
+	mechahitlerobj,::mechahitlerobj517,12048
+	mutantobj,::mutantobj518,12065
+	needleobj,::needleobj519,12077
+	fireobj,::fireobj520,12089
+	bjobj,::bjobj521,12099
+	ghostobj,::ghostobj522,12107
+	realhitlerobj,::realhitlerobj523,12118
+	gretelobj,::gretelobj524,12134
+	giftobj,::giftobj525,12146
+	fatobj,::fatobj526,12156
+	rocketobj,::rocketobj527,12165
+	spectreobj,::spectreobj529,12178
+	angelobj,::angelobj530,12191
+	transobj,::transobj531,12202
+	uberobj,::uberobj532,12213
+	willobj,::willobj533,12223
+	deathobj,::deathobj534,12233
+	hrocketobj,::hrocketobj535,12244
+	sparkobj::sparkobj536,12257
+} classtype;537,12267
+	dressing,::dressing540,12296
+	block,::block541,12307
+	bo_gibs,::bo_gibs542,12315
+	bo_alpo,::bo_alpo543,12325
+	bo_firstaid,::bo_firstaid544,12335
+	bo_key1,::bo_key1545,12349
+	bo_key2,::bo_key2546,12359
+	bo_key3,::bo_key3547,12369
+	bo_key4,::bo_key4548,12379
+	bo_cross,::bo_cross549,12389
+	bo_chalice,::bo_chalice550,12400
+	bo_bible,::bo_bible551,12413
+	bo_crown,::bo_crown552,12424
+	bo_clip,::bo_clip553,12435
+	bo_clip2,::bo_clip2554,12445
+	bo_machinegun,::bo_machinegun555,12456
+	bo_chaingun,::bo_chaingun556,12472
+	bo_food,::bo_food557,12486
+	bo_fullheal,::bo_fullheal558,12496
+	bo_25clip,::bo_25clip559,12510
+	bo_spear::bo_spear560,12522
+} stat_t;561,12532
+	east,::east564,12558
+	northeast,::northeast565,12565
+	north,::north566,12577
+	northwest,::northwest567,12585
+	west,::west568,12597
+	southwest,::southwest569,12604
+	south,::south570,12616
+	southeast,::southeast571,12624
+	nodir::nodir572,12636
+} dirtype;573,12643
+#define NUMENEMIES	576,12656
+	en_guard,::en_guard578,12694
+	en_officer,::en_officer579,12705
+	en_ss,::en_ss580,12718
+	en_dog,::en_dog581,12726
+	en_boss,::en_boss582,12735
+	en_schabbs,::en_schabbs583,12745
+	en_fake,::en_fake584,12758
+	en_hitler,::en_hitler585,12768
+	en_mutant,::en_mutant586,12780
+	en_blinky,::en_blinky587,12792
+	en_clyde,::en_clyde588,12804
+	en_pinky,::en_pinky589,12815
+	en_inky,::en_inky590,12826
+	en_gretel,::en_gretel591,12836
+	en_gift,::en_gift592,12848
+	en_fat,::en_fat593,12858
+	en_spectre,::en_spectre594,12867
+	en_angel,::en_angel595,12880
+	en_trans,::en_trans596,12891
+	en_uber,::en_uber597,12902
+	en_will,::en_will598,12912
+	en_death::en_death599,12922
+} enemy_t;600,12932
+typedef struct	statestruct603,12945
+	boolean	rotate;statestruct::rotate605,12974
+	int		shapenum;statestruct::shapenum606,12991
+	int		tictime;statestruct::tictime607,13054
+	void	(*think)statestruct::think608,13069
+	struct	statestruct	*next;statestruct::next609,13101
+} statetype;610,13128
+typedef struct statstruct619,13225
+	byte	tilex,statstruct::tilex621,13253
+	byte	tilex,tiley;statstruct::tiley621,13253
+	byte	*visspot;statstruct::visspot622,13272
+	int		shapenum;statstruct::shapenum623,13288
+	byte	flags;statstruct::flags624,13352
+	byte	itemnumber;statstruct::itemnumber625,13365
+} statobj_t;626,13383
+typedef struct doorstruct635,13477
+	byte	tilex,doorstruct::tilex637,13505
+	byte	tilex,tiley;doorstruct::tiley637,13505
+	boolean	vertical;doorstruct::vertical638,13524
+	byte	lock;doorstruct::lock639,13543
+	enum	{dr_open,doorstruct::dr_open640,13555
+	enum	{dr_open,dr_closed,doorstruct::dr_closed640,13555
+	enum	{dr_open,dr_closed,dr_opening,doorstruct::dr_opening640,13555
+	enum	{dr_open,dr_closed,dr_opening,dr_closing}doorstruct::dr_closing640,13555
+	enum	{dr_open,dr_closed,dr_opening,dr_closing}	action;doorstruct::action640,13555
+	int		ticcount;doorstruct::ticcount641,13611
+} doorobj_t;642,13627
+typedef struct objstruct651,13723
+	activetype	active;objstruct::active653,13750
+	int			ticcount;objstruct::ticcount654,13770
+	classtype	obclass;objstruct::obclass655,13787
+	statetype	*state;objstruct::state656,13807
+	byte		flags;objstruct::flags658,13827
+	long		distance;objstruct::distance660,13866
+	dirtype		dir;objstruct::dir661,13928
+	fixed 		x,objstruct::x663,13944
+	fixed 		x,y;objstruct::y663,13944
+	unsigned	tilex,objstruct::tilex664,13958
+	unsigned	tilex,tiley;objstruct::tiley664,13958
+	byte		areanumber;objstruct::areanumber665,13981
+	int	 		viewx;objstruct::viewx667,14001
+	unsigned	viewheight;objstruct::viewheight668,14016
+	fixed		transx,objstruct::transx669,14038
+	fixed		transx,transy;objstruct::transy669,14038
+	int 		angle;objstruct::angle671,14082
+	int			hitpoints;objstruct::hitpoints672,14096
+	long		speed;objstruct::speed673,14114
+	int			temp1,objstruct::temp1675,14129
+	int			temp1,temp2,objstruct::temp2675,14129
+	int			temp1,temp2,temp3;objstruct::temp3675,14129
+	struct		objstruct	*next,objstruct::next676,14155
+	struct		objstruct	*next,*prev;objstruct::prev676,14155
+} objtype;677,14187
+#define NUMBUTTONS	680,14200
+	bt_nobutton=::bt_nobutton682,14228
+	bt_attack=::bt_attack683,14245
+	bt_strafe,::bt_strafe684,14259
+	bt_run,::bt_run685,14271
+	bt_use,::bt_use686,14280
+	bt_readyknife,::bt_readyknife687,14289
+	bt_readypistol,::bt_readypistol688,14305
+	bt_readymachinegun,::bt_readymachinegun689,14322
+	bt_readychaingun::bt_readychaingun690,14343
+#define NUMWEAPONS	694,14366
+	wp_knife,::wp_knife696,14402
+	wp_pistol,::wp_pistol697,14413
+	wp_machinegun,::wp_machinegun698,14425
+	wp_chaingun::wp_chaingun699,14441
+} weapontype;700,14454
+	gd_baby,::gd_baby704,14485
+	gd_easy,::gd_easy705,14495
+	gd_medium,::gd_medium706,14505
+	gd_hard::gd_hard707,14517
+	int			difficulty;::difficulty718,14613
+	int			mapon;::mapon719,14632
+	long		oldscore,::oldscore720,14646
+	long		oldscore,score,::score720,14646
+	long		oldscore,score,nextextra;::nextextra720,14646
+	int			lives;::lives721,14679
+	int			health;::health722,14693
+	int			ammo;::ammo723,14708
+	int			keys;::keys724,14721
+	weapontype		bestweapon,::bestweapon725,14734
+	weapontype		bestweapon,weapon,::weapon725,14734
+	weapontype		bestweapon,weapon,chosenweapon;::chosenweapon725,14734
+	int			faceframe;::faceframe727,14780
+	int			attackframe,::attackframe728,14798
+	int			attackframe,attackcount,::attackcount728,14798
+	int			attackframe,attackcount,weaponframe;::weaponframe728,14798
+	int			episode,::episode730,14843
+	int			episode,secretcount,::secretcount730,14843
+	int			episode,secretcount,treasurecount,::treasurecount730,14843
+	int			episode,secretcount,treasurecount,killcount,::killcount730,14843
+				secrettotal,::secrettotal731,14895
+				secrettotal,treasuretotal,::treasuretotal731,14895
+				secrettotal,treasuretotal,killtotal;::killtotal731,14895
+	long		TimeCount;::TimeCount732,14936
+	long		killx,::killx733,14954
+	long		killx,killy;::killy733,14954
+	boolean		victoryflag;::victoryflag734,14974
+} gametype;735,15031
+	ex_stillplaying,::ex_stillplaying739,15060
+	ex_completed,::ex_completed740,15078
+	ex_died,::ex_died741,15093
+	ex_warped,::ex_warped742,15103
+	ex_resetgame,::ex_resetgame743,15115
+	ex_loadedgame,::ex_loadedgame744,15130
+	ex_victorious,::ex_victorious745,15146
+	ex_abort,::ex_abort746,15162
+	ex_demodone,::ex_demodone747,15173
+	ex_secretlevel::ex_secretlevel748,15187
+} exit_t;749,15203
+#define	PlaySoundLocTile(851,17410
+#define	PlaySoundLocActor(852,17572
+#define UPDATESIZE	885,18468
+#define TURNTICS	1028,21504
+#define SPDPATROL	1029,21524
+#define SPDDOG	1030,21546
+#define COMPSCALECODESTART	1064,22350
+	unsigned	codeofs[::codeofs1068,22445
+	unsigned	width[::width1069,22468
+	byte		code[::code1070,22489
+}	t_compscale;1071,22504
+	unsigned	leftpix,::leftpix1075,22537
+	unsigned	leftpix,rightpix;::rightpix1075,22537
+	unsigned	dataofs[::dataofs1076,22565
+}	t_compshape;1078,22636
+#define s_nakedbody 1181,25260
+
+BUDIOSOD.H,4327
+#define NUMSOUNDS	8,167
+#define NUMSNDCHUNKS	9,189
+		HITWALLSND,::HITWALLSND15,262
+		MISSILEHITSND,::MISSILEHITSND16,294
+		SELECTITEMSND,::SELECTITEMSND17,326
+		GHOSTSIGHTSND,::GHOSTSIGHTSND18,358
+		MOVEGUN2SND,::MOVEGUN2SND19,390
+		MOVEGUN1SND,::MOVEGUN1SND20,422
+		NOWAYSND,::NOWAYSND21,454
+		NAZIHITPLAYERSND,::NAZIHITPLAYERSND22,486
+		MISSILEFIRESND,::MISSILEFIRESND23,518
+		PLAYERDEATHSND,::PLAYERDEATHSND24,550
+		DOGDEATHSND,::DOGDEATHSND25,582
+		ATKGATLINGSND,::ATKGATLINGSND26,615
+		GETKEYSND,::GETKEYSND27,648
+		NOITEMSND,::NOITEMSND28,681
+		WALK1SND,::WALK1SND29,714
+		WALK2SND,::WALK2SND30,747
+		TAKEDAMAGESND,::TAKEDAMAGESND31,780
+		GAMEOVERSND,::GAMEOVERSND32,813
+		OPENDOORSND,::OPENDOORSND33,846
+		CLOSEDOORSND,::CLOSEDOORSND34,879
+		DONOTHINGSND,::DONOTHINGSND35,912
+		HALTSND,::HALTSND36,945
+		DEATHSCREAM2SND,::DEATHSCREAM2SND37,978
+		ATKKNIFESND,::ATKKNIFESND38,1011
+		ATKPISTOLSND,::ATKPISTOLSND39,1044
+		DEATHSCREAM3SND,::DEATHSCREAM3SND40,1077
+		ATKMACHINEGUNSND,::ATKMACHINEGUNSND41,1110
+		HITENEMYSND,::HITENEMYSND42,1143
+		SHOOTDOORSND,::SHOOTDOORSND43,1176
+		DEATHSCREAM1SND,::DEATHSCREAM1SND44,1209
+		GETMACHINESND,::GETMACHINESND45,1242
+		GETAMMOSND,::GETAMMOSND46,1275
+		SHOOTSND,::SHOOTSND47,1308
+		HEALTH1SND,::HEALTH1SND48,1341
+		HEALTH2SND,::HEALTH2SND49,1374
+		BONUS1SND,::BONUS1SND50,1407
+		BONUS2SND,::BONUS2SND51,1440
+		BONUS3SND,::BONUS3SND52,1473
+		GETGATLINGSND,::GETGATLINGSND53,1506
+		ESCPRESSEDSND,::ESCPRESSEDSND54,1539
+		LEVELDONESND,::LEVELDONESND55,1572
+		DOGBARKSND,::DOGBARKSND56,1605
+		ENDBONUS1SND,::ENDBONUS1SND57,1638
+		ENDBONUS2SND,::ENDBONUS2SND58,1671
+		BONUS1UPSND,::BONUS1UPSND59,1704
+		BONUS4SND,::BONUS4SND60,1737
+		PUSHWALLSND,::PUSHWALLSND61,1770
+		NOBONUSSND,::NOBONUSSND62,1803
+		PERCENT100SND,::PERCENT100SND63,1836
+		BOSSACTIVESND,::BOSSACTIVESND64,1869
+		DEATHSCREAM4SND,::DEATHSCREAM4SND65,1902
+		SCHUTZADSND,::SCHUTZADSND66,1935
+		AHHHGSND,::AHHHGSND67,1968
+		DEATHSCREAM5SND,::DEATHSCREAM5SND68,2001
+		DEATHSCREAM7SND,::DEATHSCREAM7SND69,2034
+		DEATHSCREAM8SND,::DEATHSCREAM8SND70,2067
+		LEBENSND,::LEBENSND71,2100
+		DEATHSCREAM6SND,::DEATHSCREAM6SND72,2133
+		NAZIFIRESND,::NAZIFIRESND73,2166
+		BOSSFIRESND,::BOSSFIRESND74,2199
+		SSFIRESND,::SSFIRESND75,2232
+		SLURPIESND,::SLURPIESND76,2265
+		GHOSTFADESND,::GHOSTFADESND77,2298
+		DEATHSCREAM9SND,::DEATHSCREAM9SND78,2331
+		GETAMMOBOXSND,::GETAMMOBOXSND79,2364
+		ANGELSIGHTSND,::ANGELSIGHTSND80,2397
+		SPIONSND,::SPIONSND81,2430
+		NEINSOVASSND,::NEINSOVASSND82,2463
+		DOGATTACKSND,::DOGATTACKSND83,2496
+		ANGELFIRESND,::ANGELFIRESND84,2529
+		TRANSSIGHTSND,::TRANSSIGHTSND85,2562
+		TRANSDEATHSND,::TRANSDEATHSND86,2595
+		WILHELMSIGHTSND,::WILHELMSIGHTSND87,2628
+		WILHELMDEATHSND,::WILHELMDEATHSND88,2661
+		UBERDEATHSND,::UBERDEATHSND89,2694
+		KNIGHTSIGHTSND,::KNIGHTSIGHTSND90,2727
+		KNIGHTDEATHSND,::KNIGHTDEATHSND91,2760
+		ANGELDEATHSND,::ANGELDEATHSND92,2793
+		KNIGHTMISSILESND,::KNIGHTMISSILESND93,2826
+		GETSPEARSND,::GETSPEARSND94,2859
+		ANGELTIREDSND,::ANGELTIREDSND95,2892
+		LASTSOUND::LASTSOUND96,2925
+	     } soundnames;97,2937
+#define STARTPCSOUNDS	102,2980
+#define STARTADLIBSOUNDS	103,3005
+#define STARTDIGISOUNDS	104,3033
+#define STARTMUSIC	105,3062
+		XFUNKIE_MUS,::XFUNKIE_MUS111,3133
+		DUNGEON_MUS,::DUNGEON_MUS112,3165
+		XDEATH_MUS,::XDEATH_MUS113,3197
+		GETTHEM_MUS,::GETTHEM_MUS114,3229
+		XTIPTOE_MUS,::XTIPTOE_MUS115,3261
+		GOINGAFT_MUS,::GOINGAFT_MUS116,3293
+		URAHERO_MUS,::URAHERO_MUS117,3325
+		XTHEEND_MUS,::XTHEEND_MUS118,3357
+		NAZI_OMI_MUS,::NAZI_OMI_MUS119,3389
+		POW_MUS,::POW_MUS120,3421
+		TWELFTH_MUS,::TWELFTH_MUS121,3453
+		SEARCHN_MUS,::SEARCHN_MUS122,3486
+		SUSPENSE_MUS,::SUSPENSE_MUS123,3519
+		ZEROHOUR_MUS,::ZEROHOUR_MUS124,3552
+		WONDERIN_MUS,::WONDERIN_MUS125,3585
+		ULTIMATE_MUS,::ULTIMATE_MUS126,3618
+		ENDLEVEL_MUS,::ENDLEVEL_MUS127,3651
+		XEVIL_MUS,::XEVIL_MUS128,3684
+		XJAZNAZI_MUS,::XJAZNAZI_MUS129,3717
+		COPYPRO_MUS,::COPYPRO_MUS130,3750
+		XAWARD_MUS,::XAWARD_MUS131,3783
+		XPUTIT_MUS,::XPUTIT_MUS132,3816
+		XGETYOU_MUS,::XGETYOU_MUS133,3849
+		XTOWER2_MUS,::XTOWER2_MUS134,3882
+		LASTMUSIC::LASTMUSIC135,3915
+	     } musicnames;136,3927
+
+ID_MM.C,1596
+#define LOCKBIT	41,713
+#define PURGEBITS	42,782
+#define PURGEMASK	43,847
+#define BASEATTRIBUTES	44,872
+#define MAXUMBS	46,924
+typedef struct mmblockstruct48,945
+	unsigned	start,mmblockstruct::start50,976
+	unsigned	start,length;mmblockstruct::length50,976
+	unsigned	attributes;mmblockstruct::attributes51,1000
+	memptr		*useptr;mmblockstruct::useptr52,1022
+	struct mmblockstruct far *next;mmblockstruct::next53,1072
+} mmblocktype;54,1105
+#define GETNEWBLOCK 60,1232
+#define FREEBLOCK(62,1317
+mminfotype	mminfo;72,1571
+memptr		bufferseg;73,1590
+boolean		mmerror;74,1609
+boolean		mmstarted;87,1874
+void far	*farheap;farheap89,1895
+void		*nearheap;nearheap90,1914
+mmblocktype	far mmblocks[mmblocks92,1932
+			,far *mmhead,mmhead93,1968
+			,far *mmhead,far *mmfree,mmfree93,1968
+			,far *mmhead,far *mmfree,far *mmrover,mmrover93,1968
+			,far *mmhead,far *mmfree,far *mmrover,far *mmnew;mmnew93,1968
+boolean		bombonerror;95,2022
+unsigned	numUMBs,101,2180
+unsigned	numUMBs,UMBbase[UMBbase101,2180
+boolean MML_CheckForXMS 129,2744
+void MML_SetupXMS 156,3042
+void MML_ShutdownXMS 208,3820
+void MML_UseSpace 237,4315
+void MML_ClearBlock 298,5454
+static	char *ParmStrings[ParmStrings331,5978
+void MM_Startup 333,6030
+void MM_Shutdown 413,7750
+void MM_GetPtr 435,8058
+#define HEIGHTRATIO	526,10143
+void MM_FreePtr 559,10702
+void MM_SetPurge 594,11309
+void MM_SetLock 630,11853
+void MM_SortMem 666,12441
+void MM_ShowMemory 772,14189
+void MM_DumpData 822,15143
+long MM_UnusedMemory 889,16229
+long MM_TotalFree 919,16654
+void MM_BombOnError 948,17121
+
+GFXV_SOD.H,7730
+		C_BACKDROPPIC=::C_BACKDROPPIC10,185
+		C_MOUSELBACKPIC,::C_MOUSELBACKPIC11,204
+		C_CURSOR1PIC,::C_CURSOR1PIC12,248
+		C_CURSOR2PIC,::C_CURSOR2PIC13,292
+		C_NOTSELECTEDPIC,::C_NOTSELECTEDPIC14,336
+		C_SELECTEDPIC,::C_SELECTEDPIC15,380
+		C_CUSTOMIZEPIC,::C_CUSTOMIZEPIC17,440
+		C_JOY1PIC,::C_JOY1PIC18,484
+		C_JOY2PIC,::C_JOY2PIC19,529
+		C_MOUSEPIC,::C_MOUSEPIC20,574
+		C_JOYSTICKPIC,::C_JOYSTICKPIC21,619
+		C_KEYBOARDPIC,::C_KEYBOARDPIC22,664
+		C_CONTROLPIC,::C_CONTROLPIC23,709
+		C_OPTIONSPIC,::C_OPTIONSPIC25,770
+		C_FXTITLEPIC,::C_FXTITLEPIC27,831
+		C_DIGITITLEPIC,::C_DIGITITLEPIC28,876
+		C_MUSICTITLEPIC,::C_MUSICTITLEPIC29,921
+		C_HOWTOUGHPIC,::C_HOWTOUGHPIC31,982
+		C_BABYMODEPIC,::C_BABYMODEPIC32,1027
+		C_EASYPIC,::C_EASYPIC33,1072
+		C_NORMALPIC,::C_NORMALPIC34,1117
+		C_HARDPIC,::C_HARDPIC35,1162
+		C_DISKLOADING1PIC,::C_DISKLOADING1PIC37,1223
+		C_DISKLOADING2PIC,::C_DISKLOADING2PIC38,1268
+		C_LOADGAMEPIC,::C_LOADGAMEPIC39,1313
+		C_SAVEGAMEPIC,::C_SAVEGAMEPIC40,1358
+		HIGHSCORESPIC,::HIGHSCORESPIC42,1419
+		C_WONSPEARPIC,::C_WONSPEARPIC43,1464
+		BJCOLLAPSE1PIC,::BJCOLLAPSE1PIC45,1525
+		BJCOLLAPSE2PIC,::BJCOLLAPSE2PIC46,1570
+		BJCOLLAPSE3PIC,::BJCOLLAPSE3PIC47,1615
+		BJCOLLAPSE4PIC,::BJCOLLAPSE4PIC48,1660
+		ENDPICPIC,::ENDPICPIC49,1705
+		L_GUYPIC,::L_GUYPIC51,1766
+		L_COLONPIC,::L_COLONPIC52,1811
+		L_NUM0PIC,::L_NUM0PIC53,1856
+		L_NUM1PIC,::L_NUM1PIC54,1901
+		L_NUM2PIC,::L_NUM2PIC55,1946
+		L_NUM3PIC,::L_NUM3PIC56,1991
+		L_NUM4PIC,::L_NUM4PIC57,2036
+		L_NUM5PIC,::L_NUM5PIC58,2081
+		L_NUM6PIC,::L_NUM6PIC59,2126
+		L_NUM7PIC,::L_NUM7PIC60,2171
+		L_NUM8PIC,::L_NUM8PIC61,2216
+		L_NUM9PIC,::L_NUM9PIC62,2261
+		L_PERCENTPIC,::L_PERCENTPIC63,2306
+		L_APIC,::L_APIC64,2351
+		L_BPIC,::L_BPIC65,2396
+		L_CPIC,::L_CPIC66,2441
+		L_DPIC,::L_DPIC67,2486
+		L_EPIC,::L_EPIC68,2531
+		L_FPIC,::L_FPIC69,2576
+		L_GPIC,::L_GPIC70,2621
+		L_HPIC,::L_HPIC71,2666
+		L_IPIC,::L_IPIC72,2711
+		L_JPIC,::L_JPIC73,2756
+		L_KPIC,::L_KPIC74,2801
+		L_LPIC,::L_LPIC75,2846
+		L_MPIC,::L_MPIC76,2891
+		L_NPIC,::L_NPIC77,2936
+		L_OPIC,::L_OPIC78,2981
+		L_PPIC,::L_PPIC79,3026
+		L_QPIC,::L_QPIC80,3071
+		L_RPIC,::L_RPIC81,3116
+		L_SPIC,::L_SPIC82,3161
+		L_TPIC,::L_TPIC83,3206
+		L_UPIC,::L_UPIC84,3251
+		L_VPIC,::L_VPIC85,3296
+		L_WPIC,::L_WPIC86,3341
+		L_XPIC,::L_XPIC87,3386
+		L_YPIC,::L_YPIC88,3431
+		L_ZPIC,::L_ZPIC89,3476
+		L_EXPOINTPIC,::L_EXPOINTPIC90,3521
+		L_APOSTROPHEPIC,::L_APOSTROPHEPIC91,3566
+		L_GUY2PIC,::L_GUY2PIC92,3611
+		L_BJWINSPIC,::L_BJWINSPIC93,3656
+		TITLE1PIC,::TITLE1PIC95,3717
+		TITLE2PIC,::TITLE2PIC96,3762
+		ENDSCREEN11PIC,::ENDSCREEN11PIC98,3823
+		ENDSCREEN12PIC,::ENDSCREEN12PIC100,3884
+		ENDSCREEN3PIC,::ENDSCREEN3PIC101,3929
+		ENDSCREEN4PIC,::ENDSCREEN4PIC102,3974
+		ENDSCREEN5PIC,::ENDSCREEN5PIC103,4019
+		ENDSCREEN6PIC,::ENDSCREEN6PIC104,4064
+		ENDSCREEN7PIC,::ENDSCREEN7PIC105,4109
+		ENDSCREEN8PIC,::ENDSCREEN8PIC106,4154
+		ENDSCREEN9PIC,::ENDSCREEN9PIC107,4199
+		STATUSBARPIC,::STATUSBARPIC108,4244
+		PG13PIC,::PG13PIC109,4289
+		CREDITSPIC,::CREDITSPIC110,4334
+		IDGUYS1PIC,::IDGUYS1PIC112,4395
+		IDGUYS2PIC,::IDGUYS2PIC113,4440
+		COPYPROTTOPPIC,::COPYPROTTOPPIC115,4501
+		COPYPROTBOXPIC,::COPYPROTBOXPIC116,4546
+		BOSSPIC1PIC,::BOSSPIC1PIC117,4591
+		BOSSPIC2PIC,::BOSSPIC2PIC118,4636
+		BOSSPIC3PIC,::BOSSPIC3PIC119,4681
+		BOSSPIC4PIC,::BOSSPIC4PIC120,4726
+		KNIFEPIC,::KNIFEPIC122,4788
+		GUNPIC,::GUNPIC123,4834
+		MACHINEGUNPIC,::MACHINEGUNPIC124,4880
+		GATLINGGUNPIC,::GATLINGGUNPIC125,4926
+		NOKEYPIC,::NOKEYPIC126,4972
+		GOLDKEYPIC,::GOLDKEYPIC127,5018
+		SILVERKEYPIC,::SILVERKEYPIC128,5064
+		N_BLANKPIC,::N_BLANKPIC129,5110
+		N_0PIC,::N_0PIC130,5156
+		N_1PIC,::N_1PIC131,5202
+		N_2PIC,::N_2PIC132,5248
+		N_3PIC,::N_3PIC133,5294
+		N_4PIC,::N_4PIC134,5340
+		N_5PIC,::N_5PIC135,5386
+		N_6PIC,::N_6PIC136,5432
+		N_7PIC,::N_7PIC137,5478
+		N_8PIC,::N_8PIC138,5524
+		N_9PIC,::N_9PIC139,5570
+		FACE1APIC,::FACE1APIC140,5616
+		FACE1BPIC,::FACE1BPIC141,5662
+		FACE1CPIC,::FACE1CPIC142,5708
+		FACE2APIC,::FACE2APIC143,5754
+		FACE2BPIC,::FACE2BPIC144,5800
+		FACE2CPIC,::FACE2CPIC145,5846
+		FACE3APIC,::FACE3APIC146,5892
+		FACE3BPIC,::FACE3BPIC147,5938
+		FACE3CPIC,::FACE3CPIC148,5984
+		FACE4APIC,::FACE4APIC149,6030
+		FACE4BPIC,::FACE4BPIC150,6076
+		FACE4CPIC,::FACE4CPIC151,6122
+		FACE5APIC,::FACE5APIC152,6168
+		FACE5BPIC,::FACE5BPIC153,6214
+		FACE5CPIC,::FACE5CPIC154,6260
+		FACE6APIC,::FACE6APIC155,6306
+		FACE6BPIC,::FACE6BPIC156,6352
+		FACE6CPIC,::FACE6CPIC157,6398
+		FACE7APIC,::FACE7APIC158,6444
+		FACE7BPIC,::FACE7BPIC159,6490
+		FACE7CPIC,::FACE7CPIC160,6536
+		FACE8APIC,::FACE8APIC161,6582
+		GOTGATLINGPIC,::GOTGATLINGPIC162,6628
+		GODMODEFACE1PIC,::GODMODEFACE1PIC163,6674
+		GODMODEFACE2PIC,::GODMODEFACE2PIC164,6720
+		GODMODEFACE3PIC,::GODMODEFACE3PIC165,6766
+		BJWAITING1PIC,::BJWAITING1PIC166,6812
+		BJWAITING2PIC,::BJWAITING2PIC167,6858
+		BJOUCHPIC,::BJOUCHPIC168,6904
+		PAUSEDPIC,::PAUSEDPIC169,6950
+		GETPSYCHEDPIC,::GETPSYCHEDPIC170,6996
+		ORDERSCREEN=::ORDERSCREEN174,7045
+		ERRORSCREEN,::ERRORSCREEN175,7064
+		TITLEPALETTE,::TITLEPALETTE176,7110
+		END1PALETTE,::END1PALETTE177,7156
+		END2PALETTE,::END2PALETTE178,7202
+		END3PALETTE,::END3PALETTE179,7248
+		END4PALETTE,::END4PALETTE180,7294
+		END5PALETTE,::END5PALETTE181,7340
+		END6PALETTE,::END6PALETTE182,7386
+		END7PALETTE,::END7PALETTE183,7432
+		END8PALETTE,::END8PALETTE184,7478
+		END9PALETTE,::END9PALETTE185,7524
+		IDGUYSPALETTE,::IDGUYSPALETTE186,7570
+		T_DEMO0,::T_DEMO0187,7616
+		T_DEMO1,::T_DEMO1188,7662
+		T_DEMO2,::T_DEMO2189,7708
+		T_DEMO3,::T_DEMO3190,7754
+		T_ENDART1,::T_ENDART1191,7800
+		ENUMEND::ENUMEND192,7846
+	     } graphicnums;193,7856
+#define BACKDROP_LUMP_START	198,7898
+#define BACKDROP_LUMP_END	199,7929
+#define CONTROL_LUMP_START	201,7959
+#define CONTROL_LUMP_END	202,7989
+#define OPTIONS_LUMP_START	204,8019
+#define OPTIONS_LUMP_END	205,8050
+#define SOUND_LUMP_START	207,8080
+#define SOUND_LUMP_END	208,8109
+#define NEWGAME_LUMP_START	210,8138
+#define NEWGAME_LUMP_END	211,8169
+#define LOADSAVE_LUMP_START	213,8199
+#define LOADSAVE_LUMP_END	214,8231
+#define HIGHSCORES_LUMP_START	216,8262
+#define HIGHSCORES_LUMP_END	217,8296
+#define ENDGAME_LUMP_START	219,8329
+#define ENDGAME_LUMP_END	220,8360
+#define LEVELEND_LUMP_START	222,8390
+#define LEVELEND_LUMP_END	223,8422
+#define TITLESCREEN_LUMP_START	225,8453
+#define TITLESCREEN_LUMP_END	226,8488
+#define ENDGAME1_LUMP_START	228,8522
+#define ENDGAME1_LUMP_END	229,8554
+#define ENDGAME2_LUMP_START	231,8585
+#define ENDGAME2_LUMP_END	232,8617
+#define EASTEREGG_LUMP_START	234,8648
+#define EASTEREGG_LUMP_END	235,8681
+#define COPYPROT_LUMP_START	237,8713
+#define COPYPROT_LUMP_END	238,8745
+#define LATCHPICS_LUMP_START	240,8777
+#define LATCHPICS_LUMP_END	241,8811
+#define NUMCHUNKS 247,8879
+#define NUMFONT 248,8904
+#define NUMFONTM 249,8927
+#define NUMPICS 250,8950
+#define NUMPICM 251,8975
+#define NUMSPRITES 252,8998
+#define NUMTILE8 253,9021
+#define NUMTILE8M 254,9045
+#define NUMTILE16 255,9068
+#define NUMTILE16M 256,9091
+#define NUMTILE32 257,9114
+#define NUMTILE32M 258,9137
+#define NUMEXTERNS 259,9160
+#define STRUCTPIC 263,9221
+#define STARTFONT 265,9245
+#define STARTFONTM 266,9268
+#define STARTPICS 267,9291
+#define STARTPICM 268,9314
+#define STARTSPRITES 269,9339
+#define STARTTILE8 270,9364
+#define STARTTILE8M 271,9389
+#define STARTTILE16 272,9414
+#define STARTTILE16M 273,9439
+#define STARTTILE32 274,9464
+#define STARTTILE32M 275,9489
+#define STARTEXTERNS 276,9514
+
+ID_VL.C,1396
+unsigned	bufferofs;15,222
+unsigned	displayofs,16,242
+unsigned	displayofs,pelpan;16,242
+unsigned	screenseg=18,271
+unsigned	linewidth;20,340
+unsigned	ylookup[ylookup21,360
+boolean		screenfaded;23,393
+unsigned	bordercolor;24,415
+boolean		fastpalette;26,438
+byte	        palette1[palette128,493
+byte	        palette1[256][3],palette2[palette228,493
+void	VL_Startup 51,910
+static	char *ParmStrings[ParmStrings69,1209
+void	VL_Startup 71,1258
+void	VL_Shutdown 104,1721
+void	VL_SetVGAPlaneMode 118,1851
+void	VL_SetTextMode 139,2082
+void VL_ClearVideo 160,2364
+void VL_DePlaneVGA 204,3112
+void VL_SetLineWidth 260,4232
+void VL_SetSplitScreen 293,4618
+void VL_FillPalette 328,5295
+void VL_SetColor 354,5670
+void VL_GetColor	375,6018
+void VL_SetPalette 399,6484
+void VL_GetPalette 457,7317
+void VL_FadeOut 482,7698
+void VL_FadeIn 535,8570
+void VL_TestPaletteSet 584,9332
+void VL_ColorBorder 607,9650
+byte	pixmasks[pixmasks629,9976
+byte	leftmasks[leftmasks630,10006
+byte	rightmasks[rightmasks631,10040
+void VL_Plot 642,10132
+void VL_Hlin 664,10406
+void VL_Vlin 712,11124
+void VL_Bar 742,11468
+void VL_MemToLatch 805,12474
+void VL_MemToScreen 847,13073
+void VL_MaskedToScreen 885,13729
+void VL_LatchToScreen 923,14382
+void VL_ScreenToScreen 974,15125
+void VL_DrawTile8String 1028,15857
+void VL_DrawLatch8String 1076,16669
+void VL_SizeTile8String 1145,17558
+
+SHAREMSG.H,0

@@ -22,7 +22,7 @@ byte	update[UPDATEHIGH][UPDATEWIDE];
 
 //==========================================================================
 
-pictabletype	_seg *pictable;
+pictabletype *pictable;
 
 
 int	px,py;
@@ -37,14 +37,16 @@ void	VWL_UpdateScreenBlocks (void);
 
 //==========================================================================
 
-void VW_DrawPropString (char far *string)
+void VW_DrawPropString (char *string)
 {
-	fontstruct	far	*font;
+	fprintf(stderr, "implement VW_DrawPropString");
+	/*
+	fontstruct	*font;
 	int		width,step,height,i;
-	byte	far *source, far *dest, far *origdest;
+	byte	        *source, *dest, *origdest;
 	byte	ch,mask;
 
-	font = (fontstruct far *)grsegs[STARTFONT+fontnumber];
+	font = (fontstruct *)grsegs[STARTFONT+fontnumber];
 	height = bufferheight = font->height;
 	dest = origdest = MK_FP(SCREENSEG,bufferofs+ylookup[py]+(px>>2));
 	mask = 1<<(px&3);
@@ -90,11 +92,14 @@ asm	mov	ds,ax
 	}
 bufferheight = height;
 bufferwidth = ((dest+1)-origdest)*4;
+	*/
 }
 
 
-void VW_DrawColorPropString (char far *string)
+void VW_DrawColorPropString (char *string)
 {
+	fprintf(stderr, "implemnt VW_DrawColorPropString");
+	/*
 	fontstruct	far	*font;
 	int		width,step,height,i;
 	byte	far *source, far *dest, far *origdest;
@@ -153,6 +158,7 @@ asm	mov	ds,ax
 	}
 bufferheight = height;
 bufferwidth = ((dest+1)-origdest)*4;
+	*/
 }
 
 
@@ -167,10 +173,10 @@ bufferwidth = ((dest+1)-origdest)*4;
 =================
 */
 
-void VL_MungePic (byte far *source, unsigned width, unsigned height)
+void VL_MungePic (byte *source, unsigned width, unsigned height)
 {
 	unsigned	x,y,plane,size,pwidth;
-	byte		_seg *temp, far *dest, far *srcline;
+	byte		*temp, *dest, *srcline;
 
 	size = width*height;
 
@@ -180,8 +186,8 @@ void VL_MungePic (byte far *source, unsigned width, unsigned height)
 //
 // copy the pic to a temp buffer
 //
-	MM_GetPtr (&(memptr)temp,size);
-	_fmemcpy (temp,source,size);
+	MM_GetPtr ((memptr*)&temp,size);
+	memcpy (temp,source,size);
 
 //
 // munge it back into the original buffer
@@ -200,25 +206,25 @@ void VL_MungePic (byte far *source, unsigned width, unsigned height)
 		}
 	}
 
-	MM_FreePtr (&(memptr)temp);
+	MM_FreePtr ((memptr*)&temp);
 }
 
-void VWL_MeasureString (char far *string, word *width, word *height
-	, fontstruct _seg *font)
+void VWL_MeasureString (char *string, word *width, word *height
+	, fontstruct *font)
 {
 	*height = font->height;
 	for (*width = 0;*string;string++)
-		*width += font->width[*((byte far *)string)];	// proportional width
+		*width += font->width[*((byte *)string)];	// proportional width
 }
 
-void	VW_MeasurePropString (char far *string, word *width, word *height)
+void	VW_MeasurePropString (char *string, word *width, word *height)
 {
-	VWL_MeasureString(string,width,height,(fontstruct _seg *)grsegs[STARTFONT+fontnumber]);
+	VWL_MeasureString(string,width,height,(fontstruct *)grsegs[STARTFONT+fontnumber]);
 }
 
-void	VW_MeasureMPropString  (char far *string, word *width, word *height)
+void	VW_MeasureMPropString  (char *string, word *width, word *height)
 {
-	VWL_MeasureString(string,width,height,(fontstruct _seg *)grsegs[STARTFONTM+fontnumber]);
+	VWL_MeasureString(string,width,height,(fontstruct *)grsegs[STARTFONTM+fontnumber]);
 }
 
 
@@ -297,7 +303,7 @@ void VWB_DrawTile8 (int x, int y, int tile)
 void VWB_DrawTile8M (int x, int y, int tile)
 {
 	if (VW_MarkUpdateBlock (x,y,x+7,y+7))
-		VL_MemToScreen (((byte far *)grsegs[STARTTILE8M])+tile*64,8,8,x,y);
+		VL_MemToScreen (((byte *)grsegs[STARTTILE8M])+tile*64,8,8,x,y);
 }
 
 
@@ -312,12 +318,12 @@ void VWB_DrawPic (int x, int y, int chunknum)
 	height = pictable[picnum].height;
 
 	if (VW_MarkUpdateBlock (x,y,x+width-1,y+height-1))
-		VL_MemToScreen (grsegs[chunknum],width,height,x,y);
+		VL_MemToScreen ((byte*)grsegs[chunknum],width,height,x,y);
 }
 
 
 
-void VWB_DrawPropString	 (char far *string)
+void VWB_DrawPropString	 (char *string)
 {
 	int x;
 	x=px;
@@ -352,7 +358,8 @@ void VWB_Vlin (int y1, int y2, int x, int color)
 
 void VW_UpdateScreen (void)
 {
-	VH_UpdateScreen ();
+	PRINT_UNIMPLEMENTED;
+	//VH_UpdateScreen ();
 }
 
 
@@ -396,8 +403,10 @@ void LatchDrawPic (unsigned x, unsigned y, unsigned picnum)
 
 void LoadLatchMem (void)
 {
+	PRINT_UNIMPLEMENTED;
+	/*
 	int	i,j,p,m,width,height,start,end;
-	byte	far *src;
+	byte	*src;
 	unsigned	destoff;
 
 //
@@ -405,7 +414,7 @@ void LoadLatchMem (void)
 //
 	latchpics[0] = freelatch;
 	CA_CacheGrChunk (STARTTILE8);
-	src = (byte _seg *)grsegs[STARTTILE8];
+	src = (byte *)grsegs[STARTTILE8];
 	destoff = freelatch;
 
 	for (i=0;i<NUMTILE8;i++)
@@ -446,12 +455,13 @@ void LoadLatchMem (void)
 		CA_CacheGrChunk (i);
 		width = pictable[i-STARTPICS].width;
 		height = pictable[i-STARTPICS].height;
-		VL_MemToLatch (grsegs[i],width,height,destoff);
+		VL_MemToLatch ((byte*)grsegs[i],width,height,destoff);
 		destoff += width/4 *height;
 		UNCACHEGRCHUNK(i);
 	}
 
 	EGAMAPMASK(15);
+	*/
 }
 
 //==========================================================================
@@ -471,6 +481,8 @@ extern	ControlInfo	c;
 boolean FizzleFade (unsigned source, unsigned dest,
 	unsigned width,unsigned height, unsigned frames, boolean abortable)
 {
+	PRINT_UNIMPLEMENTED;
+	/*
 	int			pixperframe;
 	unsigned	drawofs,pagedelta;
 	byte 		mask,maskb[8] = {1,2,4,8};
@@ -543,5 +555,5 @@ noxor:
 		;
 	} while (1);
 
-
+	*/
 }

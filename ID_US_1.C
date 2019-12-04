@@ -50,8 +50,8 @@ static	boolean		US_Started;
 					CursorBad;
 		int			CursorX,CursorY;
 
-		void		(*USL_MeasureString)(char far *,word *,word *) = VW_MeasurePropString,
-					(*USL_DrawString)(char far *) = VWB_DrawPropString;
+		void		(*USL_MeasureString)(char *,word *,word *) = VW_MeasurePropString,
+					(*USL_DrawString)(char *) = VWB_DrawPropString;
 
 		SaveGame	Games[MaxSaveGames];
 		HighScore	Scores[MaxScores] =
@@ -80,6 +80,8 @@ static	boolean		US_Started;
 int
 USL_HardError(word errval,int ax,int bp,int si)
 {
+	fprintf(stderr, "implement USL_HardError\n");
+	/*
 #define IGNORE  0
 #define RETRY   1
 #define	ABORT   2
@@ -155,6 +157,7 @@ oh_kill_me:
 #undef	IGNORE
 #undef	RETRY
 #undef	ABORT
+	*/
 }
 #pragma	warn	+par
 #pragma	warn	+rch
@@ -172,8 +175,8 @@ US_Startup(void)
 
 	if (US_Started)
 		return;
-
-	harderr(USL_HardError);	// Install the fatal error handler
+	// @todo install signal handler
+	//harderr(USL_HardError);	// Install the fatal error handler
 
 	US_InitRndT(true);		// Initialize the random number generator
 
@@ -272,7 +275,7 @@ US_CheckParm(char *parm,char **strings)
 //
 ///////////////////////////////////////////////////////////////////////////
 void
-US_SetPrintRoutines(void (*measure)(char far *,word *,word *),void (*print)(char far *))
+US_SetPrintRoutines(void (*measure)(char *,word *,word *),void (*print)(char *))
 {
 	USL_MeasureString = measure;
 	USL_DrawString = print;
@@ -285,9 +288,9 @@ US_SetPrintRoutines(void (*measure)(char far *,word *,word *),void (*print)(char
 //
 ///////////////////////////////////////////////////////////////////////////
 void
-US_Print(char far *s)
+US_Print(char *s)
 {
-	char	c,far *se;
+	char	c,*se;
 	word	w,h;
 
 	while (*s)
@@ -325,8 +328,8 @@ void
 US_PrintUnsigned(longword n)
 {
 	char	buffer[32];
-
-	US_Print(ultoa(n,buffer,10));
+	snprintf(buffer, 32, "%lu", n);
+	US_Print(buffer);
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -338,8 +341,8 @@ void
 US_PrintSigned(long n)
 {
 	char	buffer[32];
-
-	US_Print(ltoa(n,buffer,10));
+	snprintf(buffer, 32, "%lu", n);
+	US_Print(buffer);
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -348,7 +351,7 @@ US_PrintSigned(long n)
 //
 ///////////////////////////////////////////////////////////////////////////
 void
-USL_PrintInCenter(char far *s,Rect r)
+USL_PrintInCenter(char *s,Rect r)
 {
 	word	w,h,
 			rw,rh;
@@ -368,7 +371,7 @@ USL_PrintInCenter(char far *s,Rect r)
 //
 ///////////////////////////////////////////////////////////////////////////
 void
-US_PrintCentered(char far *s)
+US_PrintCentered(char *s)
 {
 	Rect	r;
 
@@ -387,7 +390,7 @@ US_PrintCentered(char far *s)
 //
 ///////////////////////////////////////////////////////////////////////////
 void
-US_CPrintLine(char far *s)
+US_CPrintLine(char *s)
 {
 	word	w,h;
 
@@ -408,9 +411,9 @@ US_CPrintLine(char far *s)
 //
 ///////////////////////////////////////////////////////////////////////////
 void
-US_CPrint(char far *s)
+US_CPrint(char *s)
 {
-	char	c,far *se;
+	char	c,*se;
 
 	while (*s)
 	{
@@ -574,6 +577,8 @@ boolean
 US_LineInput(int x,int y,char *buf,char *def,boolean escok,
 				int maxchars,int maxwidth)
 {
+	fprintf(stderr, "implement US_LineInput");
+	/*
 	boolean		redraw,
 				cursorvis,cursormoved,
 				done,result;
@@ -752,4 +757,6 @@ US_LineInput(int x,int y,char *buf,char *def,boolean escok,
 
 	IN_ClearKeysDown();
 	return(result);
+	*/
+	return true;
 }

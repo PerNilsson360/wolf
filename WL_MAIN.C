@@ -1,6 +1,9 @@
 // WL_MAIN.C
 
-#include <conio.h>
+//#include <conio.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <math.h>
 #include "WL_DEF.H"
 #pragma hdrstop
 
@@ -77,7 +80,8 @@ char	configname[13]="CONFIG.";
 
 =============================================================================
 */
-
+int _argc;
+char **_argv;
 
 /*
 ====================
@@ -89,12 +93,12 @@ char	configname[13]="CONFIG.";
 
 void ReadConfig(void)
 {
-	int                     file;
+	int             file;
 	SDMode          sd;
 	SMMode          sm;
 	SDSMode         sds;
 
-
+	
 	if ( (file = open(configname,O_BINARY | O_RDONLY)) != -1)
 	{
 	//
@@ -122,6 +126,7 @@ void ReadConfig(void)
 
 		close(file);
 
+		/* @todo add sound support
 		if (sd == sdm_AdLib && !AdLibPresent && !SoundBlasterPresent)
 		{
 			sd = sdm_PC;
@@ -131,7 +136,8 @@ void ReadConfig(void)
 		if ((sds == sds_SoundBlaster && !SoundBlasterPresent) ||
 			(sds == sds_SoundSource && !SoundSourcePresent))
 			sds = sds_Off;
-
+		*/
+		
 		if (!MousePresent)
 			mouseenabled = false;
 		if (!JoysPresent[joystickport])
@@ -236,7 +242,7 @@ void WriteConfig(void)
 =
 ========================
 */
-
+/*
 char    *JHParmStrings[] = {"no386",nil};
 void Patch386 (void)
 {
@@ -260,7 +266,7 @@ extern int far  CheckIs386(void);
 	else
 		IsA386 = false;
 }
-
+*/
 //===========================================================================
 
 /*
@@ -301,7 +307,7 @@ void DiskFlopAnim(int x,int y)
 }
 
 
-long DoChecksum(byte far *source,unsigned size,long checksum)
+long DoChecksum(byte *source,unsigned size,long checksum)
 {
  unsigned i;
 
@@ -322,6 +328,8 @@ long DoChecksum(byte far *source,unsigned size,long checksum)
 
 boolean SaveTheGame(int file,int x,int y)
 {
+    fprintf(stderr, "SaveTheGame not implemented\n");
+    /*
 	struct diskfree_t dfree;
 	long avail,size,checksum;
 	objtype *ob,nullobj;
@@ -426,7 +434,7 @@ boolean SaveTheGame(int file,int x,int y)
 	// WRITE OUT CHECKSUM
 	//
 	CA_FarWrite (file,(void far *)&checksum,sizeof(checksum));
-
+    */
 	return(true);
 }
 
@@ -442,6 +450,8 @@ boolean SaveTheGame(int file,int x,int y)
 
 boolean LoadTheGame(int file,int x,int y)
 {
+    fprintf(stderr, "implement LoadTheGame");
+    /*
 	long checksum,oldchecksum;
 	objtype *ob,nullobj;
 
@@ -538,7 +548,7 @@ boolean LoadTheGame(int file,int x,int y)
 	   gamestate.bestweapon = wp_pistol;
 	 gamestate.ammo = 8;
 	}
-
+    */
 	return true;
 }
 
@@ -726,6 +736,8 @@ void SetupWalls (void)
 
 void SignonScreen (void)                        // VGA version
 {
+    fprintf(stderr, "implement SignonScreen");
+    /*
 	unsigned        segstart,seglength;
 
 	VL_SetVGAPlaneMode ();
@@ -734,6 +746,7 @@ void SignonScreen (void)                        // VGA version
 
 	if (!virtualreality)
 	{
+	    
 		VW_SetScreen(0x8000,0);
 		VL_MungePic (&introscn,320,200);
 		VL_MemToScreen (&introscn,320,200,0,0);
@@ -751,6 +764,7 @@ void SignonScreen (void)                        // VGA version
 		seglength--;
 	}
 	MML_UseSpace (segstart,seglength);
+    */
 }
 
 
@@ -764,7 +778,8 @@ void SignonScreen (void)                        // VGA version
 
 void FinishSignon (void)
 {
-
+    fprintf(stderr, "implement FinishSignon\n");
+/*
 #ifndef SPEAR
 	VW_Bar (0,189,300,11,peekb(0xa000,0));
 	WindowX = 0;
@@ -804,6 +819,7 @@ void FinishSignon (void)
 	if (!NoWait)
 		VW_WaitVBL(3*70);
 #endif
+*/
 }
 
 //===========================================================================
@@ -816,7 +832,7 @@ void FinishSignon (void)
 =================
 */
 
-boolean MS_CheckParm (char far *check)
+boolean MS_CheckParm (char *check)
 {
 	int             i;
 	char    *parm;
@@ -829,7 +845,7 @@ boolean MS_CheckParm (char far *check)
 			if (!*parm++)
 				break;                          // hit end of string without an alphanum
 
-		if ( !_fstricmp(check,parm) )
+		if ( !strcasecmp(check,parm) )
 			return true;
 	}
 
@@ -972,7 +988,7 @@ void InitDigiMap (void)
 
 #ifndef SPEAR
 CP_iteminfo	MusicItems={CTL_X,CTL_Y,6,0,32};
-CP_itemtype far MusicMenu[]=
+CP_itemtype MusicMenu[]=
 	{
 		{1,"Get Them!",0},
 		{1,"Searching",0},
@@ -1014,6 +1030,8 @@ CP_itemtype far MusicMenu[]=
 #ifndef SPEARDEMO
 void DoJukebox(void)
 {
+    fprintf(stderr, "implement DoJukebox\n");
+    /*
 	int which,lastsong=-1;
 	unsigned start,songs[]=
 		{
@@ -1128,6 +1146,7 @@ void DoJukebox(void)
 #else
 	UnCacheLump (CONTROLS_LUMP_START,CONTROLS_LUMP_END);
 #endif
+    */
 }
 #endif
 
@@ -1163,24 +1182,6 @@ void InitGame (void)
 	SD_Startup ();
 	CA_Startup ();
 	US_Startup ();
-
-
-#ifndef SPEAR
-	if (mminfo.mainmem < 235000L)
-#else
-	if (mminfo.mainmem < 257000L && !MS_CheckParm("debugmode"))
-#endif
-	{
-		memptr screen;
-
-		CA_CacheGrChunk (ERRORSCREEN);
-		screen = grsegs[ERRORSCREEN];
-		ShutdownId();
-		movedata ((unsigned)screen,7+7*160,0xb800,0,17*160);
-		gotoxy (1,23);
-		exit(1);
-	}
-
 
 //
 // build some tables
@@ -1258,11 +1259,13 @@ close(profilehandle);
 	displayofs = PAGE1START;
 	bufferofs = PAGE2START;
 
+	/*
 	if (virtualreality)
 	{
 		NoWait = true;
 		geninterrupt(0x60);
 	}
+	*/
 }
 
 //===========================================================================
@@ -1324,11 +1327,8 @@ void ShowViewSize (int width)
 
 void NewViewSize (int width)
 {
-	CA_UpLevel ();
-	MM_SortMem ();
 	viewsize = width;
 	SetViewSize (width*16,width*16*HEIGHTRATIO);
-	CA_DownLevel ();
 }
 
 
@@ -1345,6 +1345,8 @@ void NewViewSize (int width)
 
 void Quit (char *error)
 {
+	fprintf(stderr, "implement Quit\n");
+	/*
 	unsigned        finscreen;
 	memptr	screen;
 
@@ -1390,7 +1392,7 @@ void Quit (char *error)
 //asm	mov ah,2
 //asm	int	0x10
 	}
-
+	*/
 	exit(0);
 }
 
@@ -1477,8 +1479,10 @@ void    DemoLoop (void)
 	StartCPMusic(INTROSONG);
 
 #ifndef JAPAN
+	
 	if (!NoWait)
-		PG13 ();
+		fprintf(stderr, "implement PG13");
+		//PG13 ();
 #endif
 
 #endif
@@ -1580,35 +1584,13 @@ void    DemoLoop (void)
 =
 ==========================
 */
-
-char    *nosprtxt[] = {"nospr",nil};
-
-void main (void)
+int main (int argc, char **argv)
 {
-	int     i;
-
-
-#ifdef BETA
-	//
-	// THIS IS FOR BETA ONLY!
-	//
-	struct dosdate_t d;
-
-	_dos_getdate(&d);
-	if (d.year > YEAR ||
-		(d.month >= MONTH && d.day >= DAY))
-	{
-	 printf("Sorry, BETA-TESTING is over. Thanks for you help.\n");
-	 exit(1);
-	}
-#endif
-
+        _argc = argc;
+	_argv = argv;
+	
 	CheckForEpisodes();
-
-	Patch386 ();
-
 	InitGame ();
-
 	DemoLoop();
 
 	Quit("Demo loop exited???");

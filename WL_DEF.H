@@ -4,8 +4,8 @@
 #define DAY		30
 
 #include "ID_HEADS.H"
-#include <MATH.H>
-#include <VALUES.H>
+//#include <MATH.H>
+//#include <VALUES.H>
 
 #include "WL_MENU.H"
 
@@ -37,6 +37,7 @@
 #define SIGN(x) 	((x)>0?1:-1)
 #define ABS(x) 		((int)(x)>0?(x):-(x))
 #define LABS(x) 	((long)(x)>0?(x):-(x))
+#define O_BINARY 0		// Linux does not differentiate binary and text files
 
 /*
 =============================================================================
@@ -477,7 +478,7 @@ enum	{
 =============================================================================
 */
 
-typedef long fixed;
+typedef int32_t fixed;
 
 typedef enum {
 	di_north,
@@ -598,13 +599,14 @@ typedef enum {
 	en_death
 } enemy_t;
 
+struct objstruct;
 
 typedef struct	statestruct
 {
 	boolean	rotate;
 	int		shapenum;			// a shapenum of -1 means get from ob->temp1
 	int		tictime;
-	void	(*think) (),(*action) ();
+	void	(*think) (struct objstruct*),(*action) (struct objstruct*);
 	struct	statestruct	*next;
 } statetype;
 
@@ -756,41 +758,41 @@ typedef	enum	{
 =============================================================================
 */
 
-extern	boolean		MS_CheckParm (char far *string);
+extern	boolean		MS_CheckParm (char *string);
 
 extern	char		str[80],str2[20];
-extern	int			tedlevelnum;
+extern	int		tedlevelnum;
 extern	boolean		tedlevel;
 extern	boolean		nospr;
 extern	boolean		IsA386;
 
-extern	byte far	*scalermemory;
+extern	byte            *scalermemory;
 
 extern	fixed		focallength;
 extern	unsigned	viewangles;
 extern	unsigned	screenofs;
-extern	int		    viewwidth;
-extern	int			viewheight;
-extern	int			centerx;
-extern	int			shootdelta;
+extern	int		viewwidth;
+extern	int		viewheight;
+extern	int		centerx;
+extern	int		shootdelta;
 
-extern	int			dirangle[9];
+extern	int		dirangle[9];
 
 extern	boolean         startgame,loadedgame,virtualreality;
 extern	int		mouseadjustment;
 //
 // math tables
 //
-extern	int			pixelangle[MAXVIEWWIDTH];
-extern	long		far finetangent[FINEANGLES/4];
-extern	fixed 		far sintable[],far *costable;
+extern	int		pixelangle[MAXVIEWWIDTH];
+extern	long		finetangent[FINEANGLES/4];
+extern	fixed 		sintable[],*costable;
 
 //
 // derived constants
 //
 extern	fixed 	scale,maxslope;
 extern	long	heightnumerator;
-extern	int		minheightdiv;
+extern	int	minheightdiv;
 
 extern	char	configname[13];
 
@@ -822,7 +824,7 @@ void		ShutdownId (void);
 extern	boolean		ingame,fizzlein;
 extern	unsigned	latchpics[NUMLATCHPICS];
 extern	gametype	gamestate;
-extern	int			doornum;
+extern	int		doornum;
 
 extern	char		demoname[13];
 
@@ -869,7 +871,7 @@ extern	exit_t		playstate;
 
 extern	boolean		madenoise;
 
-extern	objtype 	objlist[MAXACTORS],*new,*obj,*player,*lastobj,
+extern	objtype 	objlist[MAXACTORS],*newobj,*obj,*player,*lastobj,
 					*objfreelist,*killerobj;
 extern	statobj_t	statobjlist[MAXSTATS],*laststatobj;
 extern	doorobj_t	doorobjlist[MAXDOORS],*lastdoorobj;
@@ -904,11 +906,11 @@ extern	int			viewsize;
 //
 // curent user input
 //
-extern	int			controlx,controly;		// range from -100 to 100
+extern	int		controlx,controly;		// range from -100 to 100
 extern	boolean		buttonstate[NUMBUTTONS];
 
 extern	boolean		demorecord,demoplayback;
-extern	char		far *demoptr, far *lastdemoptr;
+extern	char		*demoptr,*lastdemoptr;
 extern	memptr		demobuffer;
 
 
@@ -924,8 +926,8 @@ void 	PollControls (void);
 void 	StopMusic(void);
 void 	StartMusic(void);
 void	PlayLoop (void);
-void StartDamageFlash (int damage);
-void StartBonusFlash (void);
+void    StartDamageFlash (int damage);
+void    StartBonusFlash (void);
 
 /*
 =============================================================================
@@ -938,7 +940,7 @@ void StartBonusFlash (void);
 void IntroScreen (void);
 void PreloadGraphics(void);
 void LevelCompleted (void);
-void	CheckHighScore (long score,word other);
+void CheckHighScore (long score,word other);
 void Victory (void);
 void ClearSplitVWB (void);
 
@@ -979,21 +981,22 @@ extern	fixed	mindist;
 //
 // math tables
 //
-extern	int			pixelangle[MAXVIEWWIDTH];
-extern	long		far finetangent[FINEANGLES/4];
-extern	fixed 		far sintable[],far *costable;
+extern	int	pixelangle[MAXVIEWWIDTH];
+extern	long    finetangent[FINEANGLES/4];
+extern	fixed 	sintable[],*costable;
 
 //
 // derived constants
 //
 extern	fixed 	scale;
-extern	long	heightnumerator,mindist;
+extern	long	heightnumerator;
+extern  fixed   mindist;
 
 //
 // refresh variables
 //
 extern	fixed	viewx,viewy;			// the focal point
-extern	int		viewangle;
+extern	int	viewangle;
 extern	fixed	viewsin,viewcos;
 
 extern	long		postsource;
@@ -1077,8 +1080,8 @@ typedef struct
 }	t_compshape;
 
 
-extern	t_compscale _seg *scaledirectory[MAXSCALEHEIGHT+1];
-extern	long			fullscalefarcall[MAXSCALEHEIGHT+1];
+extern	t_compscale     *scaledirectory[MAXSCALEHEIGHT+1];
+extern	long		fullscalefarcall[MAXSCALEHEIGHT+1];
 
 extern	byte		bitmasks1[8][8];
 extern	byte		bitmasks2[8][8];
@@ -1147,7 +1150,7 @@ extern	int			doornum;
 
 extern	unsigned	doorposition[MAXDOORS],pwallstate;
 
-extern	byte		far areaconnect[NUMAREAS][NUMAREAS];
+extern	byte		areaconnect[NUMAREAS][NUMAREAS];
 
 extern	boolean		areabyplayer[NUMAREAS];
 

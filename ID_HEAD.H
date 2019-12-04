@@ -1,5 +1,7 @@
 // ID_HEAD.H
 
+#include <stdio.h>
+#include <stdbool.h>
 
 #define	EXTENSION	"WLF"
 #define WOLF
@@ -13,7 +15,7 @@
 
 #include "VERSION.H"
 
-typedef	enum	{false,true}	boolean;
+typedef	bool            boolean;
 typedef	unsigned	char		byte;
 typedef	unsigned	int			word;
 typedef	unsigned	long		longword;
@@ -31,4 +33,6 @@ typedef	struct
 
 
 void	Quit (char *error);		// defined in user program
+
+#define PRINT_UNIMPLEMENTED fprintf(stderr, "implement %s", __PRETTY_FUNCTION__)
 
